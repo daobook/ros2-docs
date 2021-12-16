@@ -104,10 +104,9 @@ html_theme_options = {
 
 html_context = {
     'display_github': True,
-    'github_user': 'daobook',
-    'github_repo': 'ros2-docs',
-    # Will be overridden when building multiversion
-    'github_version': 'xin/source/',
+    'github_user': 'ros2',
+    'github_repo': 'ros2_documentation',
+    'github_version': 'rolling/source/',  # Will be overridden when building multiversion
 }
 
 templates_path = [

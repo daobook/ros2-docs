@@ -20,19 +20,19 @@ msgstr ""
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:8
 msgid "Building ROS 2 on Ubuntu Linux"
-msgstr ""
+msgstr "在 Ubuntu Linux 上构建 ROS 2"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:13
 msgid "Table of Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:16
 msgid "System requirements"
-msgstr ""
+msgstr "系统需求"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:17
 msgid "The current Debian-based target platforms for Galactic Geochelone are:"
-msgstr ""
+msgstr "Galactic Geochelone 目前基于 Debian 的目标平台是："
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:19
 msgid "Tier 1: Ubuntu Linux - Focal Fossa (20.04) 64-bit"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:23
 msgid "Other Linux platforms with varying support levels include:"
-msgstr ""
+msgstr "其他支持级别不同的 Linux 平台包括："
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:25
 msgid ""
@@ -68,11 +68,11 @@ msgstr ""
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:32
 msgid "System setup"
-msgstr ""
+msgstr "系统设置"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:35
 msgid "Set locale"
-msgstr ""
+msgstr "设置语言环境"
 
 #: ../../source/Installation/_Ubuntu-Set-Locale.rst:1
 msgid ""
@@ -82,10 +82,13 @@ msgid ""
 "However, it should be fine if you're using a different UTF-8 supported "
 "locale."
 msgstr ""
+"确保您有一个支持 ``UTF-8`` 的语言环境（locale）。"
+"如果您在一个最小的环境中（例如 docker 容器），locale 设置可能是 ``POSIX`` 这样的最小环境。"
+"我们使用以下设置进行测试。但是，如果您使用的是支持 UTF-8 的不同语言环境，那么这应该没问题。"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:40
 msgid "Add the ROS 2 apt repository"
-msgstr ""
+msgstr "添加 ROS 2 apt 存储库"
 
 #: ../../source/Installation/_Apt-Repositories.rst:1
 msgid ""
@@ -94,36 +97,42 @@ msgid ""
 "<https://help.ubuntu.com/community/Repositories/Ubuntu>`_ is enabled by "
 "checking the output of this command."
 msgstr ""
+"您需要将 ROS 2 apt 存储库添加到系统中。"
+"首先，通过检查这个命令的输出，确保 `Ubuntu Universe 存储库 "
+"<https://help.ubuntu.com/community/Repositories/Ubuntu>`_ 是启用的。"
 
 #: ../../source/Installation/_Apt-Repositories.rst:10
 msgid ""
 "If you don't see an output line like the one above, then enable the "
 "Universe repository with these instructions."
 msgstr ""
+"如果您没有看到如上所示的输出行，那么使用以下指令启用 Universe 存储库。"
 
 #: ../../source/Installation/_Apt-Repositories.rst:18
 msgid ""
 "Now add the ROS 2 apt repository to your system. First authorize our GPG "
 "key with apt."
 msgstr ""
+"现在将 ROS 2 apt 存储库添加到系统中。首先用 apt 授权我们的 GPG 密钥。"
 
 #: ../../source/Installation/_Apt-Repositories.rst:26
 msgid "Then add the repository to your sources list."
-msgstr ""
+msgstr "然后将存储库添加到源代码列表中。"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:45
 msgid "Install development tools and ROS tools"
-msgstr ""
+msgstr "安装开发工具和 ROS 工具"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:76
 msgid ""
 "Ubuntu 18.04 is not an officially supported platform, but may still work."
 "  You'll need at least the following additional dependencies:"
 msgstr ""
+"Ubuntu 18.04 不是官方支持的平台，但仍然可以工作。你至少需要以下额外的依赖项："
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:85
 msgid "Get ROS 2 code"
-msgstr ""
+msgstr "获得 ROS 2 代码"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:87
 msgid "Create a workspace and clone all repos:"
