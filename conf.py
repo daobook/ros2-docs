@@ -40,7 +40,7 @@ default_role = 'any'
 suppress_warnings = ['image.nonlocal_uri']
 
 # General information about the project.
-project = 'ROS 2 documentation'
+project = 'ROS 2 中文文档'
 author = 'Open Robotics'
 copyright = '{}, {}'.format(time.strftime('%Y'), author)
 
@@ -104,8 +104,8 @@ html_theme_options = {
 
 html_context = {
     'display_github': True,
-    'github_user': 'ros2',
-    'github_repo': 'ros2_documentation',
+    'github_user': 'daobook',
+    'github_repo': 'ros2-docs',
     # Will be overridden when building multiversion
     'github_version': 'xin/source/',
 }
@@ -131,15 +131,15 @@ distro_full_names = {
     'foxy': 'Foxy Fitzroy',
     'galactic': 'Galactic Geochelone',
     'rolling': 'Rolling Ridley',
-    'xin': 'Galactic Geochelone 中文'
+    'xin': 'Galactic Geochelone Chinese'
 }
 
 # These default values will be overridden when building multiversion
 macros = {
-    'DISTRO': 'rolling',
-    'DISTRO_TITLE': 'Rolling',
-    'DISTRO_TITLE_FULL': 'Rolling Ridley',
-    'REPOS_FILE_BRANCH': 'master',
+    'DISTRO': 'xin',
+    'DISTRO_TITLE': 'xin',
+    'DISTRO_TITLE_FULL': 'Galactic Geochelone',
+    'REPOS_FILE_BRANCH': 'xin',
 }
 
 html_favicon = 'favicon.ico'

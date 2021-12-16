@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Open Robotics
+# This file is distributed under the same license as the ROS 2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ROS 2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:6
+msgid "ament_cmake_python user documentation"
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:8
+msgid ""
+"``ament_cmake_python`` is a package that provides CMake functions for "
+"packages of the ``ament_cmake`` build type that contain Python code. See "
+"the :doc:`ament_cmake user documentation <Ament-CMake-Documentation>` for"
+" more information."
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:13
+msgid ""
+"Pure Python packages should use the ``ament_python`` build type in most "
+"cases. To create an ``ament_python`` package, see :doc:`Creating your "
+"first ROS 2 package <../Tutorials/Creating-Your-First-ROS2-Package>`. "
+"``ament_cmake_python`` should only be used in cases where that is not "
+"possible, like when mixing C/C++ and Python code."
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:19
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:22
+msgid "Basics"
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:25
+msgid "Basic project outline"
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:27
+msgid ""
+"The outline of a package called \"my_project\" with the ``ament_cmake`` "
+"build type that uses ``ament_cmake_python`` looks like:"
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:39
+msgid ""
+"The ``__init__.py`` file can be empty, but it is needed to `make Python "
+"treat the directory containing it as a package "
+"<https://docs.python.org/3/tutorial/modules.html#packages>`__. There can "
+"also be a ``src`` or ``include`` directory alongside the "
+"``CMakeLists.txt`` which holds C/C++ code."
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:43
+msgid "Using ament_cmake_python"
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:45
+msgid ""
+"The package must declare a dependency on ``ament_cmake_python`` in its "
+"``package.xml``."
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:51
+msgid "The ``CMakeLists.txt`` should contain:"
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:59
+msgid ""
+"The argument to ``ament_python_install_package()`` is the name of the "
+"directory alongside the ``CMakeLists.txt`` that contains the Python file."
+" In this case, it is ``my_project``, or ``${PROJECT_NAME}``."
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:62
+msgid ""
+"Then, another Python package that correctly depends on ``my_project`` can"
+" use it as a normal Python module:"
+msgstr ""
+
+#: ../../source/How-To-Guides/Ament-CMake-Python-Documentation.rst:68
+msgid "Assuming ``my_script.py`` contains a function called ``my_function()``."
+msgstr ""
+

@@ -1,0 +1,480 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Open Robotics
+# This file is distributed under the same license as the ROS 2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ROS 2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:4
+msgid "Writing a simple publisher and subscriber (Python)"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:6
+msgid "**Goal:** Create and run a publisher and subscriber node using Python"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:8
+msgid "**Tutorial level:** Beginner"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:10
+msgid "**Time:** 20 minutes"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:14
+msgid "Contents"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:17
+msgid "Background"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:19
+msgid ""
+"In this tutorial, you will create :doc:`nodes <./Understanding-"
+"ROS2-Nodes>` that pass information in the form of string messages to each"
+" other over a :doc:`topic <./Topics/Understanding-ROS2-Topics>`. The "
+"example used here is a simple “talker” and “listener” system; one node "
+"publishes data and the other subscribes to the topic so it can receive "
+"that data."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:23
+msgid ""
+"The code used in these examples can be found `here "
+"<https://github.com/ros2/examples/tree/master/rclpy/topics>`__."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:26
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:28
+msgid ""
+"In previous tutorials, you learned how to :doc:`create a workspace "
+"<./Workspace/Creating-A-Workspace>` and :doc:`create a package "
+"<./Creating-Your-First-ROS2-Package>`."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:30
+msgid ""
+"A basic understanding of Python is recommended, but not entirely "
+"necessary."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:33
+msgid "Tasks"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:36
+msgid "1 Create a package"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:38
+msgid ""
+"Open a new terminal and :doc:`source your ROS 2 installation "
+"<./Configuring-ROS2-Environment>` so that ``ros2`` commands will work."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:40
+msgid ""
+"Navigate into the ``dev_ws`` directory created in a :ref:`previous "
+"tutorial <new-directory>`."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:42
+msgid ""
+"Recall that packages should be created in the ``src`` directory, not the "
+"root of the workspace. So, navigate into ``dev_ws/src``, and run the "
+"package creation command:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:49
+msgid ""
+"Your terminal will return a message verifying the creation of your "
+"package ``py_pubsub`` and all its necessary files and folders."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:52
+msgid "2 Write the publisher node"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:54
+msgid ""
+"Navigate into ``dev_ws/src/py_pubsub/py_pubsub``. Recall that this "
+"directory is a `Python package "
+"<https://docs.python.org/3/tutorial/modules.html#packages>`__ with the "
+"same name as the ROS 2 package it's nested in."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:57
+msgid "Download the example talker code by entering the following command:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:61
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:282
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:418
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:437
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:459
+msgid "Linux"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:67
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:288
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:424
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:443
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:465
+msgid "macOS"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:73
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:294
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:428
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:449
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:471
+msgid "Windows"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:75
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:296
+msgid "In a Windows command line prompt:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:81
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:302
+msgid "Or in powershell:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:87
+msgid ""
+"Now there will be a new file named ``publisher_member_function.py`` "
+"adjacent to ``__init__.py``."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:89
+msgid "Open the file using your preferred text editor."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:135
+msgid "2.1 Examine the code"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:137
+msgid ""
+"The first lines of code after the comments import ``rclpy`` so its "
+"``Node`` class can be used."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:144
+msgid ""
+"The next statement imports the built-in string message type that the node"
+" uses to structure the data that it passes on the topic."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:150
+msgid ""
+"These lines represent the node’s dependencies. Recall that dependencies "
+"have to be added to ``package.xml``, which you’ll do in the next section."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:153
+msgid ""
+"Next, the ``MinimalPublisher`` class is created, which inherits from (or "
+"is a subclass of) ``Node``."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:159
+msgid ""
+"Following is the definition of the class’s constructor. "
+"``super().__init__`` calls the ``Node`` class’s constructor and gives it "
+"your node name, in this case ``minimal_publisher``."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:162
+msgid ""
+"``create_publisher`` declares that the node publishes messages of type "
+"``String`` (imported from the ``std_msgs.msg`` module), over a topic "
+"named ``topic``, and that the “queue size\" is 10. Queue size is a "
+"required QoS (quality of service) setting that limits the amount of "
+"queued messages if a subscriber is not receiving them fast enough."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:165
+msgid ""
+"Next, a timer is created with a callback to execute every 0.5 seconds. "
+"``self.i`` is a counter used in the callback."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:177
+msgid ""
+"``timer_callback`` creates a message with the counter value appended, and"
+" publishes it to the console with ``get_logger().info``."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:188
+msgid "Lastly, the main function is defined."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:205
+msgid ""
+"First the ``rclpy`` library is initialized, then the node is created, and"
+" then it “spins” the node so its callbacks are called."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:208
+msgid "2.2 Add dependencies"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:210
+msgid ""
+"Navigate one level back to the ``dev_ws/src/py_pubsub`` directory, where "
+"the ``setup.py``, ``setup.cfg``, and ``package.xml`` files have been "
+"created for you."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:212
+msgid "Open ``package.xml`` with your text editor."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:214
+msgid ""
+"As mentioned in the :doc:`previous tutorial <./Creating-Your-First-"
+"ROS2-Package>`, make sure to fill in the ``<description>``, "
+"``<maintainer>`` and ``<license>`` tags:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:222
+msgid ""
+"After the lines above, add the following dependencies corresponding to "
+"your node’s import statements:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:229
+msgid ""
+"This declares the package needs ``rclpy`` and ``std_msgs`` when its code "
+"is executed."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:231
+msgid "Make sure to save the file."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:234
+msgid "2.3 Add an entry point"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:236
+msgid ""
+"Open the ``setup.py`` file. Again, match the ``maintainer``, "
+"``maintainer_email``, ``description`` and ``license`` fields to your "
+"``package.xml``:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:246
+msgid ""
+"Add the following line within the ``console_scripts`` brackets of the "
+"``entry_points`` field:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:256
+msgid "Don’t forget to save."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:259
+msgid "2.4 Check setup.cfg"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:261
+msgid ""
+"The contents of the ``setup.cfg`` file should be correctly populated "
+"automatically, like so:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:270
+msgid ""
+"This is simply telling setuptools to put your executables in ``lib``, "
+"because ``ros2 run`` will look for them there."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:272
+msgid ""
+"You could build your package now, source the local setup files, and run "
+"it, but let’s create the subscriber node first so you can see the full "
+"system at work."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:275
+msgid "3 Write the subscriber node"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:277
+msgid ""
+"Return to ``dev_ws/src/py_pubsub/py_pubsub`` to create the next node. "
+"Enter the following code in your terminal:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:308
+msgid "Now the directory should have these files:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:315
+msgid "3.1 Examine the code"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:317
+msgid "Open the ``subscriber_member_function.py`` with your text editor."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:359
+msgid ""
+"The subscriber node’s code is nearly identical to the publisher’s. The "
+"constructor creates a subscriber with the same arguments as the "
+"publisher. Recall from the :doc:`topics tutorial <./Topics/Understanding-"
+"ROS2-Topics>` that the topic name and message type used by the publisher "
+"and subscriber must match to allow them to communicate."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:371
+msgid ""
+"The subscriber’s constructor and callback don’t include any timer "
+"definition, because it doesn't need one. Its callback gets called as soon"
+" as it receives a message."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:374
+#, python-format
+msgid ""
+"The callback definition simply prints an info message to the console, "
+"along with the data it received. Recall that the publisher defines "
+"``msg.data = 'Hello World: %d' % self.i``"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:382
+msgid ""
+"The ``main`` definition is almost exactly the same, replacing the "
+"creation and spinning of the publisher with the subscriber."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:390
+msgid ""
+"Since this node has the same dependencies as the publisher, there’s "
+"nothing new to add to ``package.xml``. The ``setup.cfg`` file can also "
+"remain untouched."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:395
+msgid "3.2 Add an entry point"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:397
+msgid ""
+"Reopen ``setup.py`` and add the entry point for the subscriber node below"
+" the publisher’s entry point. The ``entry_points`` field should now look "
+"like this:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:409
+msgid ""
+"Make sure to save the file, and then your pub/sub system should be ready "
+"for use."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:412
+msgid "4 Build and run"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:413
+msgid ""
+"You likely already have the ``rclpy`` and ``std_msgs`` packages installed"
+" as part of your ROS 2 system. It's good practice to run ``rosdep`` in "
+"the root of your workspace (``dev_ws``) to check for missing dependencies"
+" before building:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:426
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:430
+msgid "rosdep only runs on Linux, so you can skip ahead to next step."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:433
+msgid "Still in the root of your workspace, ``dev_ws``, build your new package:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:455
+msgid "Open a new terminal, navigate to ``dev_ws``, and source the setup files:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:477
+msgid "Now run the talker node:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:483
+msgid ""
+"The terminal should start publishing info messages every 0.5 seconds, "
+"like so:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:494
+msgid ""
+"Open another terminal, source the setup files from inside ``dev_ws`` "
+"again, and then start the listener node:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:500
+msgid ""
+"The listener will start printing messages to the console, starting at "
+"whatever message count the publisher is on at that time, like so:"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:510
+msgid "Enter ``Ctrl+C`` in each terminal to stop the nodes from spinning."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:514
+msgid "Summary"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:516
+msgid ""
+"You created two nodes to publish and subscribe to data over a topic. "
+"Before running them, you added their dependencies and entry points to the"
+" package configuration files."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:520
+msgid "Next steps"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:522
+msgid ""
+"Next you'll create another simple ROS 2 package using the service/client "
+"model. Again, you can choose to write it in either :doc:`C++ <./Writing-A"
+"-Simple-Cpp-Service-And-Client>` or :doc:`Python <./Writing-A-Simple-Py-"
+"Service-And-Client>`."
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:526
+msgid "Related content"
+msgstr ""
+
+#: ../../source/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber.rst:528
+msgid ""
+"There are several ways you could write a publisher and subscriber in "
+"Python; check out the ``minimal_publisher`` and ``minimal_subscriber`` "
+"packages in the `ros2/examples "
+"<https://github.com/ros2/examples/tree/master/rclpy/topics>`_ repo."
+msgstr ""
+

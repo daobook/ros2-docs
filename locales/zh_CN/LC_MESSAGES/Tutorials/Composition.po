@@ -1,0 +1,314 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Open Robotics
+# This file is distributed under the same license as the ROS 2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ROS 2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/Tutorials/Composition.rst:6
+msgid "Composing multiple nodes in a single process"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:10
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:13
+msgid "Background"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:15
+msgid "See the `conceptual article <../Concepts/About-Composition>`."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:18
+msgid "Run the demos"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:20
+msgid ""
+"The demos use executables from `rclcpp_components "
+"<https://github.com/ros2/rclcpp/tree/master/rclcpp_components>`__, "
+"`ros2component "
+"<https://github.com/ros2/ros2cli/tree/master/ros2component>`__, and  "
+"`composition <https://github.com/ros2/demos/tree/master/composition>`__ "
+"packages, and can be run with the following commands."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:24
+msgid "Discover available components"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:26
+msgid ""
+"To see what components are registered and available in the workspace, "
+"execute the following in a shell:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:41
+msgid "Run-time composition using ROS services with a publisher and subscriber"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:43
+#: ../../source/Tutorials/Composition.rst:182
+#: ../../source/Tutorials/Composition.rst:240
+msgid "In the first shell, start the component container:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:49
+#: ../../source/Tutorials/Composition.rst:188
+msgid "Verify that the container is running via ``ros2`` command line tools:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:56
+msgid ""
+"In the second shell load the talker component (see `talker "
+"<https://github.com/ros2/demos/blob/master/composition/src/talker_component.cpp>`__"
+" source code):"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:63
+msgid ""
+"The command will return the unique ID of the loaded component as well as "
+"the node name."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:65
+msgid ""
+"Now the first shell should show a message that the component was loaded "
+"as well as repeated message for publishing a message."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:67
+msgid ""
+"Run another command in the second shell to load the listener component "
+"(see `listener "
+"<https://github.com/ros2/demos/blob/master/composition/src/listener_component.cpp>`__"
+" source code):"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:74
+msgid ""
+"The ``ros2`` command line utility can now be used to inspect the state of"
+" the container:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:83
+msgid "Now the first shell should show repeated output for each received message."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:86
+msgid "Run-time composition using ROS services with a server and client"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:88
+msgid "The example with a server and a client is very similar."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:90
+msgid "In the first shell:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:96
+msgid ""
+"In the second shell (see `server "
+"<https://github.com/ros2/demos/blob/master/composition/src/server_component.cpp>`__"
+" and `client "
+"<https://github.com/ros2/demos/blob/master/composition/src/client_component.cpp>`__"
+" source code):"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:103
+msgid ""
+"In this case the client sends a request to the server, the server "
+"processes the request and replies with a response, and the client prints "
+"the received response."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:106
+msgid "Compile-time composition using ROS services"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:108
+msgid ""
+"This demos shows that the same shared libraries can be reused to compile "
+"a single executable running multiple components. The executable contains "
+"all four components from above: talker and listener as well as server and"
+" client."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:111
+msgid ""
+"In the shell call (see `source code "
+"<https://github.com/ros2/demos/blob/master/composition/src/manual_composition.cpp>`__):"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:117
+msgid ""
+"This should show repeated messages from both pairs, the talker and the "
+"listener as well as the server and the client."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:121
+msgid ""
+"Manually-composed components will not be reflected in the ``ros2 "
+"component list`` command line tool output."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:124
+msgid "Run-time composition using dlopen"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:126
+msgid ""
+"This demo presents an alternative to run-time composition by creating a "
+"generic container process and explicitly passing the libraries to load "
+"without using ROS interfaces. The process will open each library and "
+"create one instance of each \"rclcpp::Node\" class in the library `source"
+" code "
+"<https://github.com/ros2/demos/blob/master/composition/src/dlopen_composition.cpp>`__)."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:131
+msgid "Linux"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:137
+msgid "macOS"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:143
+msgid "Windows"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:149
+msgid "to get the path to where composition is installed. Then call"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:155
+msgid ""
+"Now the shell should show repeated output for each sent and received "
+"message."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:159
+msgid ""
+"dlopen-composed components will not be reflected in the ``ros2 component "
+"list`` command line tool output."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:163
+msgid "Composition using launch actions"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:165
+msgid ""
+"While the command line tools are useful for debugging and diagnosing "
+"component configurations, it is frequently more convenient to start a set"
+" of components at the same time. To automate this action, we can use the "
+"functionality in ``ros2 launch``."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:174
+msgid "Advanced Topics"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:176
+msgid ""
+"Now that we have seen the basic operation of components, we can discuss a"
+" few more advanced topics."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:180
+msgid "Unloading components"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:195
+msgid "In the second shell load both the talker and listener as we have before:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:204
+msgid "Use the unique ID to unload the node from the component container."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:212
+msgid ""
+"In the first shell, verify that the repeated messages from talker and "
+"listener have stopped."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:216
+msgid "Remapping container name and namespace"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:218
+msgid ""
+"The component manager name and namespace can be remapped via standard "
+"command line arguments:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:224
+msgid ""
+"In a second shell, components can be loaded by using the updated "
+"container name:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:232
+#: ../../source/Tutorials/Composition.rst:270
+msgid "Namespace remappings of the container do not affect loaded components."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:236
+msgid "Remap component names and namespaces"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:238
+msgid ""
+"Component names and namespaces may be adjusted via arguments to the load "
+"command."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:247
+msgid "Some examples of how to remap names and namespaces:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:258
+msgid "The corresponding entries appear in ``ros2 component list``:"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:273
+msgid "Composable nodes as shared libraries"
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:275
+msgid ""
+"If you want to export a composable node as a shared library from a "
+"package and use that node in another package that does link-time "
+"composition, add code to the CMake file which imports the actual targets "
+"in downstream packages."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:277
+msgid "Then install the generated file and export the generated file."
+msgstr ""
+
+#: ../../source/Tutorials/Composition.rst:279
+msgid ""
+"A practical example can be seen here: `ROS Discourse - Ament best "
+"practice for sharing libraries <https://discourse.ros.org/t/ament-best-"
+"practice-for-sharing-libraries/3602>`__"
+msgstr ""
+

@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Open Robotics
+# This file is distributed under the same license as the ROS 2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ROS 2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:2
+msgid "Using substitutions in launch files"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:4
+msgid "**Goal:** Learn about substitutions in ROS 2 launch files"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:6
+msgid "**Tutorial level:** Advanced"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:8
+msgid "**Time:** 15 minutes"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:12
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:15
+msgid "Background"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:17
+msgid ""
+"Launch files are used to start nodes, services and execute processes. "
+"This set of actions may have arguments, which affect their behavior. "
+"Substitutions can be used in arguments to provide more flexibility when "
+"describing reusable launch files. Substitutions are variables that are "
+"only evaluated during execution of the launch description and can be used"
+" to acquire specific information like a launch configuration, an "
+"environment variable, or to evaluate an arbitrary Python expression."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:22
+msgid "This tutorial shows usage examples of substitutions in ROS 2 launch files."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:25
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:27
+msgid ""
+"This tutorial uses the :doc:`turtlesim <../Turtlesim/Introducing-"
+"Turtlesim>` package. This tutorial also assumes you have :doc:`created a "
+"new package <../Creating-Your-First-ROS2-Package>` of build type "
+"``ament_python`` called ``launch_tutorial``."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:31
+msgid "Using substitutions"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:34
+msgid "1 Parent launch file"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:36
+msgid ""
+"Firstly, we will create a launch file that will call and pass arguments "
+"to another launch file. To do this, create an ``example_main.launch.py`` "
+"file in the ``/launch`` folder of the ``launch_tutorial`` package."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:72
+msgid ""
+"In the ``example_main.launch.py`` file, the ``FindPackageShare`` "
+"substitution is used to find the path to the ``launch_tutorial`` package."
+" The ``PathJoinSubstitution`` substitution is then used to join the path "
+"to that package path with the ``example_substitutions.launch.py`` file "
+"name."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:83
+msgid ""
+"The ``launch_arguments`` dictionary with ``turtlesim_ns`` and "
+"``use_provided_red`` arguments is passed to the "
+"``IncludeLaunchDescription`` action. The ``TextSubstitution`` "
+"substitution is used to define the ``new_background_r`` argument with the"
+" value of the ``background_r`` key in the ``colors`` dictionary."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:95
+msgid "2 Substitutions example launch file"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:97
+msgid "Now create an ``example_substitutions.launch.py`` file in the same folder."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:183
+msgid ""
+"In the ``example_substitutions.launch.py`` file, ``turtlesim_ns``, "
+"``use_provided_red``, and ``new_background_r`` launch configurations are "
+"defined. They are used to store values of launch arguments in the above "
+"variables and to pass them to required actions. These "
+"``LaunchConfiguration`` substitutions allow us to acquire the value of "
+"the launch argument in any part of the launch description."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:187
+msgid ""
+"``DeclareLaunchArgument`` is used to define the launch argument that can "
+"be passed from the above launch file or from the console."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:208
+msgid ""
+"The ``turtlesim_node`` node with the ``namespace`` set to "
+"``turtlesim_ns`` ``LaunchConfiguration`` substitution is defined."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:219
+msgid ""
+"Afterwards, the ``ExecuteProcess`` action called ``spawn_turtle`` is "
+"defined with the corresponding ``cmd`` argument. This command makes a "
+"call to the spawn service of the turtlesim node."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:222
+msgid ""
+"Additionally, the ``LaunchConfiguration`` substitution is used to get the"
+" value of the ``turtlesim_ns`` launch argument to construct a command "
+"string."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:237
+msgid ""
+"The same approach is used for the ``change_background_r`` and "
+"``change_background_r_conditioned`` actions that change the turtlesim "
+"background's red color parameter. The difference is that the "
+"``change_background_r_conditioned`` action is only executed if the "
+"provided ``new_background_r`` argument equals ``200`` and the "
+"``use_provided_red`` launch argument is set to ``True``. The evaluation "
+"inside the ``IfCondition`` is done using the ``PythonExpression`` "
+"substitution."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:271
+msgid "Launching example"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:273
+msgid ""
+"Now you can launch the ``example_main.launch.py`` file using the ``ros2 "
+"launch`` command."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:279
+msgid "This will do the following:"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:281
+msgid "Start a turtlesim node with a blue background"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:282
+msgid "Spawn the second turtle"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:283
+msgid "Change the color to purple"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:284
+msgid ""
+"Change the color to pink after two seconds if the provided "
+"``background_r`` argument is ``200`` and ``use_provided_red`` argument is"
+" ``True``"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:287
+msgid "Modifying launch arguments"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:289
+msgid ""
+"If you want to change the provided launch arguments, you can either "
+"update them in ``launch_arguments`` dictionary in the "
+"``example_main.launch.py`` or launch the "
+"``example_substitutions.launch.py`` with preferred arguments. To see "
+"arguments that may be given to the launch file, run the following "
+"command:"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:296
+msgid ""
+"This will show the arguments that may be given to the launch file and "
+"their default values."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:314
+msgid "Now you can pass the desired arguments to the launch file as follows:"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:322
+msgid "Documentation"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:324
+msgid ""
+"`The launch documentation "
+"<https://github.com/ros2/launch/blob/master/launch/doc/source/architecture.rst>`_"
+" provides detailed information about available substitutions."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:327
+msgid "Summary"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:329
+msgid ""
+"In this tutorial, you learned about using substitutions in launch files. "
+"You learned about their possibilities and capabilities to create reusable"
+" launch files."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Substitutions.rst:332
+msgid ""
+"You can now learn more about :doc:`using event handlers in launch files "
+"<./Using-Event-Handlers>` which are used to define a complex set of rules"
+" which can be used to dynamically modify the launch file."
+msgstr ""
+

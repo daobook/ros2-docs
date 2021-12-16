@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Open Robotics
+# This file is distributed under the same license as the ROS 2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ROS 2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:2
+msgid "Using event handlers in launch files"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:4
+msgid "**Goal:** Learn about event handlers in ROS 2 launch files"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:6
+msgid "**Tutorial level:** Advanced"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:8
+msgid "**Time:** 15 minutes"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:12
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:15
+msgid "Background"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:17
+msgid ""
+"Launch in ROS 2 is a system that executes and manages user-defined "
+"processes. It is responsible for monitoring the state of processes it "
+"launched, as well as reporting and reacting to changes in the state of "
+"those processes. These changes are called events and can be handled by "
+"registering an event handler with the launch system. Event handlers can "
+"be registered for specific events and can be useful for monitoring the "
+"state of processes. Additionally, they can be used to define a complex "
+"set of rules which can be used to dynamically modify the launch file."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:23
+msgid ""
+"This tutorial shows usage examples of event handlers in ROS 2 launch "
+"files."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:26
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:28
+msgid ""
+"This tutorial uses the :doc:`turtlesim <../Turtlesim/Introducing-"
+"Turtlesim>` package. This tutorial also assumes you have :doc:`created a "
+"new package <../Creating-Your-First-ROS2-Package>` of build type "
+"``ament_python`` called ``launch_tutorial``."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:31
+msgid ""
+"This tutorial extends the code shown in the :doc:`Using substitutions in "
+"launch files <./Using-Substitutions>` tutorial."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:34
+msgid "Using event handlers"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:37
+msgid "1 Event hanlders example launch file"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:39
+msgid ""
+"Create a new file called ``example_event_handlers.launch.py`` file in the"
+" ``/launch`` folder of the ``launch_tutorial`` package."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:178
+msgid ""
+"``RegisterEventHandler`` actions for the ``OnProcessStart``, "
+"``OnProcessIO``, ``OnExecutionComplete``, ``OnProcessExit``, and "
+"``OnShutdown`` events were defined in the launch description."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:180
+msgid ""
+"The ``OnProcessStart`` event handler is used to register a callback "
+"function that is executed when the turtlesim node starts. It logs a "
+"message to the console and executes the ``spawn_turtle`` action when the "
+"turtlesim node starts."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:195
+msgid ""
+"The ``OnProcessIO`` event handler is used to register a callback function"
+" that is executed when the ``spawn_turtle`` action writes to its standard"
+" output. It logs the result of the spawn request."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:210
+msgid ""
+"The ``OnExecutionComplete`` event handler is used to register a callback "
+"function that is executed when the ``spawn_turtle`` action completes. It "
+"logs a message to the console and executes the ``change_background_r`` "
+"and ``change_background_r_conditioned`` actions when the spawn action "
+"completes."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:229
+msgid ""
+"The ``OnProcessExit`` event handler is used to register a callback "
+"function that is executed when the turtlesim node exits. It logs a "
+"message to the console and executes the ``EmitEvent`` action to emit a "
+"``Shutdown`` event when the turtlesim node exits. It means that the "
+"launch process will shutdown when the turtlesim window is closed."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:247
+msgid ""
+"Finally, the ``OnShutdown`` event handler is used to register a callback "
+"function that is executed when the launch file is asked to shutdown. It "
+"logs a message to the console why the launch file is asked to shutdown. "
+"It logs the message with a reason for shutdown like the closure of "
+"turtlesim window or ``ctrl-c`` signal made by the user."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:263
+msgid "Launching example"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:265
+msgid ""
+"Now you can launch the ``example_event_handlers.launch.py`` file using "
+"the ``ros2 launch`` command."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:271
+msgid "This will do the following:"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:273
+msgid "Start a turtlesim node with a blue background"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:274
+msgid "Spawn the second turtle"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:275
+msgid "Change the color to purple"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:276
+msgid ""
+"Change the color to pink after two seconds if the provided "
+"``background_r`` argument is ``200`` and ``use_provided_red`` argument is"
+" ``True``"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:277
+msgid "Shutdown the launch file when the turtlesim window is closed"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:279
+msgid "Additionally, it will log messages to the console when:"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:281
+msgid "The turtlesim node starts"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:282
+msgid "The spawn action is executed"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:283
+msgid "The ``change_background_r`` action is executed"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:284
+msgid "The ``change_background_r_conditioned`` action is executed"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:285
+msgid "The turtlesim node exits"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:286
+msgid "The launch process is asked to shutdown."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:289
+msgid "Documentation"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:291
+msgid ""
+"`The launch documentation "
+"<https://github.com/ros2/launch/blob/master/launch/doc/source/architecture.rst>`_"
+" provides detailed information about available event handlers."
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:294
+msgid "Summary"
+msgstr ""
+
+#: ../../source/Tutorials/Launch-Files/Using-Event-Handlers.rst:296
+msgid ""
+"In this tutorial, you learned about using event hanlders in launch files."
+" You learned about their syntax and usage examples to define a complex "
+"set of rules to dynamically modify launch files."
+msgstr ""
+

@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Open Robotics
+# This file is distributed under the same license as the ROS 2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ROS 2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:8
+msgid "Releasing a ROS 2 package with bloom"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:12
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:15
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:17
+msgid ""
+"This page describes how to prepare a repository for release on the public"
+" ROS 2 buildfarm. After you've created a package, this is the next step "
+"towards getting your package in to the publicly-available Debian packages"
+" (i.e., you will be able to install the package via ``apt``). This page "
+"includes the ROS 2-specific instructions to execute before following the "
+"`Bloom release tutorial on the ROS Wiki "
+"<https://wiki.ros.org/bloom/Tutorials/FirstTimeRelease>`__."
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:20
+msgid "Required Tools"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:22
+msgid "``bloom`` >= 0.10.7"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:23
+msgid "``catkin_pkg`` >= 0.4.23"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:26
+msgid "Ensure that you have the latest version of bloom and catkin_pkg"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:28
+msgid "See above version requirements."
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:32
+msgid ""
+"Make sure you have the ros repositories in your sources (see instructions"
+" :ref:`here <linux-install-debians-setup-sources>`)."
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:35
+msgid "Install the latest version of bloom and catkin_pkg:"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:41
+msgid ""
+"If you're using a version of bloom older than 0.6.8 you'll need to use "
+"the v3 index url for releasing."
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:48
+msgid "No differences from ROS 1 Bloom"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:50
+msgid ""
+"If you've bloomed packages before in ROS 1, the ROS 2 process is exactly "
+"the same."
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:53
+msgid "Procedure"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:55
+msgid ""
+"Same as in ROS 1: `Following this tutorial "
+"<https://wiki.ros.org/bloom/Tutorials/FirstTimeRelease>`__"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:57
+msgid ""
+"If porting a ROS 1 package to ROS 2, it's recommended to create a new "
+"``-release`` repository."
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:60
+msgid "Build Status"
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:62
+msgid ""
+"Individual build details on the build farm `Jenkins "
+"<http://build.ros2.org/>`__ frontend."
+msgstr ""
+
+#: ../../source/How-To-Guides/Releasing-a-ROS-2-package-with-bloom.rst:63
+msgid ""
+"The `ROS 2 Package Status Pages <http://repo.ros2.org/status_page/>`__ "
+"(e.g. `Galactic-Default "
+"<http://repo.ros2.org/status_page/ros_galactic_default.html>`__)."
+msgstr ""
+

@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Open Robotics
+# This file is distributed under the same license as the ROS 2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ROS 2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:4
+msgid "Creating custom ROS 2 msg and srv files"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:6
+msgid ""
+"**Goal:** Define custom interface files (``.msg`` and ``.srv``) and use "
+"them with Python and C++ nodes."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:8
+msgid "**Tutorial level:** Beginner"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:10
+msgid "**Time:** 20 minutes"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:14
+msgid "Contents"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:17
+msgid "Background"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:19
+msgid ""
+"In previous tutorials you utilized message and service interfaces to "
+"learn about :doc:`topics <./Topics/Understanding-ROS2-Topics>`, "
+":doc:`services <./Services/Understanding-ROS2-Services>`, and simple "
+"publisher/subscriber (:doc:`C++ <./Writing-A-Simple-Cpp-Publisher-And-"
+"Subscriber>`/:doc:`Python<./Writing-A-Simple-Py-Publisher-And-"
+"Subscriber>`) and service/client (:doc:`C++ <./Writing-A-Simple-Cpp-"
+"Service-And-Client>`/:doc:`Python<./Writing-A-Simple-Py-Service-And-"
+"Client>`) nodes. The interfaces you used were predefined in those cases."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:22
+msgid ""
+"While it’s good practice to use predefined interface definitions, you "
+"will probably need to define your own messages and services sometimes as "
+"well. This tutorial will introduce you to the simplest method of creating"
+" custom interface definitions."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:26
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:28
+msgid ""
+"You should have a :doc:`ROS 2 workspace "
+"<./Workspace/Creating-A-Workspace>`."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:30
+msgid ""
+"This tutorial also uses the packages created in the publisher/subscriber "
+"(:doc:`C++ <./Writing-A-Simple-Cpp-Publisher-And-Subscriber>` and "
+":doc:`Python<./Writing-A-Simple-Py-Publisher-And-Subscriber>`) and "
+"service/client  (:doc:`C++ <./Writing-A-Simple-Cpp-Service-And-Client>` "
+"and :doc:`Python<./Writing-A-Simple-Py-Service-And-Client>`) tutorials to"
+" try out the new custom messages."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:33
+msgid "Tasks"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:36
+msgid "1 Create a new package"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:38
+msgid ""
+"For this tutorial you will be creating custom ``.msg`` and ``.srv`` files"
+" in their own package, and then utilizing them in a separate package. "
+"Both packages should be in the same workspace."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:41
+msgid ""
+"Since we will use the pub/sub and service/client packages created in "
+"earlier tutorials, make sure you are in the same workspace as those "
+"packages (``dev_ws/src``), and then run the following command to create a"
+" new package:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:47
+msgid ""
+"``tutorial_interfaces`` is the name of the new package. Note that it is a"
+" CMake package; there currently isn’t a way to generate a ``.msg`` or "
+"``.srv`` file in a pure Python package. You can create a custom interface"
+" in a CMake package, and then use it in a Python node, which will be "
+"covered in the last section."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:51
+msgid ""
+"It is good practice to keep ``.msg`` and ``.srv`` files in their own "
+"directories within a package. Create the directories in "
+"``dev_ws/src/tutorial_interfaces``:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:61
+msgid "2 Create custom definitions"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:64
+msgid "2.1 msg definition"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:66
+msgid ""
+"In the ``tutorial_interfaces/msg`` directory you just created, make a new"
+" file called ``Num.msg`` with one line of code declaring its data "
+"structure:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:72
+msgid ""
+"This is your custom message that transfers a single 64-bit integer called"
+" ``num``."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:75
+msgid "2.2 srv definition"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:77
+msgid ""
+"Back in the ``tutorial_interfaces/srv`` directory you just created, make "
+"a new file called ``AddThreeInts.srv`` with the following request and "
+"response structure:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:87
+msgid ""
+"This is your custom service that requests three integers named ``a``, "
+"``b``, and ``c``, and responds with an integer called ``sum``."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:90
+msgid "3 ``CMakeLists.txt``"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:92
+msgid ""
+"To convert the interfaces you defined into language-specific code (like "
+"C++ and Python) so that they can be used in those languages, add the "
+"following lines to ``CMakeLists.txt``:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:104
+msgid "4 ``package.xml``"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:106
+msgid ""
+"Because the interfaces rely on ``rosidl_default_generators`` for "
+"generating language-specific code, you need to declare a dependency on "
+"it. Add the following lines to ``package.xml``"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:118
+msgid "5 Build the ``tutorial_interfaces`` package"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:120
+msgid ""
+"Now that all the parts of your custom interfaces package are in place, "
+"you can build the package. In the root of your workspace (``~/dev_ws``), "
+"run the following command:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:125
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:152
+msgid "Linux"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:131
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:158
+msgid "macOS"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:137
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:164
+msgid "Windows"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:143
+msgid "Now the interfaces will be discoverable by other ROS 2 packages."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:146
+msgid "6 Confirm msg and srv creation"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:148
+msgid ""
+"In a new terminal, run the following command from within your workspace "
+"(``dev_ws``) to source it:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:170
+msgid ""
+"Now you can confirm that your interface creation worked by using the "
+"``ros2 interface show`` command:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:177
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:189
+msgid "should return:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:183
+msgid "And"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:200
+msgid "7 Test the new interfaces"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:202
+msgid ""
+"For this step you can use the packages you created in previous tutorials."
+" A few simple modifications to the nodes, ``CMakeLists`` and ``package`` "
+"files will allow you to use your new interfaces."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:206
+msgid "7.1 Testing ``Num.msg`` with pub/sub"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:208
+msgid ""
+"With some slight modifications to the publisher/subscriber package "
+"created in a previous tutorial (:doc:`C++ <./Writing-A-Simple-Cpp-"
+"Publisher-And-Subscriber>` or :doc:`Python <./Writing-A-Simple-Py-"
+"Publisher-And-Subscriber>`), you can see ``Num.msg`` in action. Since "
+"you’ll be changing the standard string msg to a numerical one, the output"
+" will be slightly different."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:211
+msgid "Publisher:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:215
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:305
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:415
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:432
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:460
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:499
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:570
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:712
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:729
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:758
+msgid "C++"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:259
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:343
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:421
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:444
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:470
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:532
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:623
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:718
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:742
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:768
+msgid "Python"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:301
+msgid "Subscriber:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:383
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:678
+msgid "CMakeLists.txt:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:385
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:680
+msgid "Add the following lines (C++ only):"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:409
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:706
+msgid "package.xml:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:411
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:708
+msgid "Add the following line:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:428
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:725
+msgid ""
+"After making the above edits and saving all the changes, build the "
+"package:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:438
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:450
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:735
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:748
+msgid "On Windows:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:456
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:754
+msgid "Then open two new terminals, source ``dev_ws`` in each, and run:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:480
+msgid ""
+"Since ``Num.msg`` relays only an integer, the talker should only be "
+"publishing integer values, as opposed to the string it published "
+"previously:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:490
+msgid "7.2 Testing ``AddThreeInts.srv`` with service/client"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:492
+msgid ""
+"With some slight modifications to the service/client package created in a"
+" previous tutorial (:doc:`C++ <./Writing-A-Simple-Cpp-Service-And-"
+"Client>` or :doc:`Python <./Writing-A-Simple-Py-Service-And-Client>`), "
+"you can see ``AddThreeInts.srv`` in action. Since you’ll be changing the "
+"original two integer request srv to a three integer request srv, the "
+"output will be slightly different."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:495
+msgid "Service:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:566
+msgid "Client:"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:780
+msgid "Summary"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:782
+msgid ""
+"In this tutorial, you learned how to create custom interfaces in their "
+"own package and how to utilize those interfaces from within other "
+"packages."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:784
+msgid ""
+"This is a simple method of interface creation and utilization. You can "
+"learn more about interfaces :doc:`here <../Concepts/About-ROS-"
+"Interfaces>`."
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:788
+msgid "Next steps"
+msgstr ""
+
+#: ../../source/Tutorials/Custom-ROS2-Interfaces.rst:790
+msgid ""
+"The :doc:`next tutorial <./Single-Package-Define-And-Use-Interface>` "
+"covers more ways to use interfaces in ROS 2."
+msgstr ""
+

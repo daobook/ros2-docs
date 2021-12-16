@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Open Robotics
+# This file is distributed under the same license as the ROS 2 documentation
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ROS 2 documentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../source/Tutorials.rst:4
+msgid "Tutorials"
+msgstr ""
+
+#: ../../source/Tutorials.rst:6
+msgid ""
+"The tutorials are a collection of step-by-step instructions meant to "
+"steadily build skills in ROS 2."
+msgstr ""
+
+#: ../../source/Tutorials.rst:8
+msgid ""
+"The best way to approach the tutorials is to walk through them for the "
+"first time in order, as they build off of each other and are not meant to"
+" be comprehensive documentation."
+msgstr ""
+
+#: ../../source/Tutorials.rst:10
+msgid ""
+"For quick solutions to more specific questions, see the :doc:`How-To-"
+"Guides`."
+msgstr ""
+
+#: ../../source/Tutorials.rst:13
+msgid "Beginner"
+msgstr ""
+
+#: ../../source/Tutorials.rst:16
+msgid "Beginner: CLI Tools"
+msgstr ""
+
+#: ../../source/Tutorials.rst:33
+msgid "Beginner: Client Libraries"
+msgstr ""
+
+#: ../../source/Tutorials.rst:52
+msgid "Intermediate"
+msgstr ""
+
+#: ../../source/Tutorials.rst:71
+msgid "Advanced"
+msgstr ""
+
+#: ../../source/Tutorials.rst:84
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../source/Tutorials.rst:95
+msgid "Demos"
+msgstr ""
+
+#: ../../source/Tutorials.rst:108
+msgid ""
+"`Use quality-of-service settings to handle lossy networks <Tutorials"
+"/Quality-of-Service>`."
+msgstr ""
+
+#: ../../source/Tutorials.rst:109
+msgid "`Management of nodes with managed lifecycles <Tutorials/Managed-Nodes>`."
+msgstr ""
+
+#: ../../source/Tutorials.rst:110
+msgid ""
+"`Efficient intra-process communication <Tutorials/Intra-Process-"
+"Communication>`."
+msgstr ""
+
+#: ../../source/Tutorials.rst:111
+msgid ""
+"`Bridge communication between ROS 1 and ROS 2 "
+"<https://github.com/ros2/ros1_bridge/blob/master/README.md>`__."
+msgstr ""
+
+#: ../../source/Tutorials.rst:112
+msgid ""
+"`Recording and playback of topic data with rosbag using the ROS 1 bridge "
+"<Tutorials/Rosbag-with-ROS1-Bridge>`."
+msgstr ""
+
+#: ../../source/Tutorials.rst:113
+msgid ""
+"`Turtlebot 2 demo using ROS 2 "
+"<https://github.com/ros2/turtlebot2_demo>`__."
+msgstr ""
+
+#: ../../source/Tutorials.rst:114
+msgid ""
+"`TurtleBot 3 demo using ROS 2 "
+"<https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-"
+"start/>`__. [community-contributed]"
+msgstr ""
+
+#: ../../source/Tutorials.rst:115
+msgid ""
+"`Simulate the TurtleBot 3 on ROS [community-contributed] "
+"<https://ubuntu.com/blog/simulate-the-turtlebot3>`__."
+msgstr ""
+
+#: ../../source/Tutorials.rst:116
+msgid ""
+"`Navigate TurtleBot 3 in simulation "
+"<https://github.com/cyberbotics/webots_ros2/wiki/Navigate-TurtleBot3>`__."
+" [community-contributed]"
+msgstr ""
+
+#: ../../source/Tutorials.rst:117
+msgid ""
+"`SLAM with TurtleBot3 in simulation "
+"<https://github.com/cyberbotics/webots_ros2/wiki/SLAM-with-"
+"TurtleBot3>`__. [community-contributed]"
+msgstr ""
+
+#: ../../source/Tutorials.rst:118
+msgid ""
+"`MoveIt 2 arm motion planning demo "
+"<http://moveit2_tutorials.picknik.ai/>`__."
+msgstr ""
+
+#: ../../source/Tutorials.rst:119
+msgid ""
+"`Write real-time safe code that uses the ROS 2 APIs <Tutorials/Real-Time-"
+"Programming>`."
+msgstr ""
+
+#: ../../source/Tutorials.rst:120
+msgid ""
+"`Use the robot state publisher to publish joint states and TF <Tutorials"
+"/dummy-robot-demo>`."
+msgstr ""
+
+#: ../../source/Tutorials.rst:121
+msgid ""
+"`Use DDS-Security "
+"<https://github.com/ros2/sros2/blob/master/README.md>`__."
+msgstr ""
+
+#: ../../source/Tutorials.rst:122
+msgid ""
+"`Logging and logger configuration <Tutorials/Logging-and-logger-"
+"configuration>`."
+msgstr ""
+
+#: ../../source/Tutorials.rst:125
+msgid "Examples"
+msgstr ""
+
+#: ../../source/Tutorials.rst:127
+msgid "`Python and C++ minimal examples <https://github.com/ros2/examples>`__."
+msgstr ""
+
