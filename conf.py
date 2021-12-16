@@ -49,9 +49,9 @@ copyright = '{}, {}'.format(time.strftime('%Y'), author)
 # built documents.
 #
 # The short X.Y version.
-version = u''
+version = ''
 # The full version, including alpha/beta/rc tags.
-release = u''
+release = ''
 
 # Define the default role to use for links
 default_role = 'any'
@@ -61,7 +61,9 @@ default_role = 'any'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'zh_CN'
+locale_dirs = ['../locales/']  # path is example but recommended.
+gettext_compact = False  # optional.
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -73,7 +75,8 @@ pygments_style = 'sphinx'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-extensions = ['sphinx.ext.intersphinx', 'sphinx_tabs.tabs', 'sphinx_multiversion', 'sphinx_rtd_theme', 'sphinx.ext.ifconfig', 'sphinx_copybutton', 'sphinx.ext.graphviz']
+extensions = ['sphinx.ext.intersphinx', 'sphinx_tabs.tabs', 'sphinx_multiversion',
+              'sphinx_rtd_theme', 'sphinx.ext.ifconfig', 'sphinx_copybutton', 'sphinx.ext.graphviz']
 
 # Intersphinx mapping
 
@@ -103,7 +106,8 @@ html_context = {
     'display_github': True,
     'github_user': 'ros2',
     'github_repo': 'ros2_documentation',
-    'github_version': 'rolling/source/',  # Will be overridden when building multiversion
+    # Will be overridden when building multiversion
+    'github_version': 'xin/source/',
 }
 
 templates_path = [
@@ -112,13 +116,13 @@ templates_path = [
 
 # smv_tag_whitelist = None
 
-smv_branch_whitelist = r'^(rolling|galactic|foxy|eloquent|dashing|crystal)$'
+smv_branch_whitelist = r'^(xin|rolling|galactic|foxy|eloquent|dashing|crystal)$'
 
 
 smv_released_pattern = r'^refs/(heads|remotes/[^/]+)/(galactic|foxy|eloquent|dashing|crystal).*$'
 smv_remote_whitelist = r'^(origin)$'
 smv_latest_version = 'galactic'
-smv_eol_versions = ['crystal', 'dashing', 'eloquent']
+smv_eol_versions = ['crystal', 'dashing', 'eloquent', 'xin']
 
 distro_full_names = {
     'crystal': 'Crystal Clemmys',
@@ -127,6 +131,7 @@ distro_full_names = {
     'foxy': 'Foxy Fitzroy',
     'galactic': 'Galactic Geochelone',
     'rolling': 'Rolling Ridley',
+    'xin': 'Galactic Geochelone 中文'
 }
 
 # These default values will be overridden when building multiversion
@@ -153,6 +158,7 @@ html_sourcelink_suffix = ''
 htmlhelp_basename = 'ros2_docsdoc'
 
 html_baseurl = 'https://docs.ros.org/en'
+
 
 class RedirectFrom(Directive):
 
@@ -256,6 +262,7 @@ def make_router(origin, destination):
                 return newnode
     return _missing_reference
 
+
 def smv_rewrite_configs(app, config):
     # When using Sphinx multiversion, there is no way at initial configuration time
     # to determine the distribution we are currently targeting (conf.py is read before
@@ -263,10 +270,13 @@ def smv_rewrite_configs(app, config):
     # conf.py).  Instead, hook into the 'config-inited' event which is late enough
     # to rewrite the various configuration items with the current version.
     if app.config.smv_current_version != '':
-        app.config.html_baseurl = app.config.html_baseurl + '/' + app.config.smv_current_version
-        app.config.project = 'ROS 2 Documentation: ' + app.config.smv_current_version.title()
+        app.config.html_baseurl = app.config.html_baseurl + \
+            '/' + app.config.smv_current_version
+        app.config.project = 'ROS 2 Documentation: ' + \
+            app.config.smv_current_version.title()
 
-        app.config.html_logo = 'source/Releases/' + app.config.smv_current_version + '-small.png'
+        app.config.html_logo = 'source/Releases/' + \
+            app.config.smv_current_version + '-small.png'
 
         # Override default values
         distro = app.config.smv_current_version
@@ -274,19 +284,22 @@ def smv_rewrite_configs(app, config):
             'DISTRO': distro,
             'DISTRO_TITLE': distro.title(),
             'DISTRO_TITLE_FULL': distro_full_names[distro],
-            'REPOS_FILE_BRANCH' : 'master' if distro == 'rolling' else distro,
+            'REPOS_FILE_BRANCH': 'master' if distro == 'rolling' else distro,
         }
+
 
 def github_link_rewrite_branch(app, pagename, templatename, context, doctree):
     if app.config.smv_current_version != '':
         context['github_version'] = app.config.smv_current_version + '/source/'
         context['eol_versions'] = app.config.smv_eol_versions
 
+
 def expand_macros(app, docname, source):
     result = source[0]
     for key, value in app.config.macros.items():
         result = result.replace(f'{{{key}}}', value)
     source[0] = result
+
 
 def setup(app):
     app.connect('config-inited', smv_rewrite_configs)
