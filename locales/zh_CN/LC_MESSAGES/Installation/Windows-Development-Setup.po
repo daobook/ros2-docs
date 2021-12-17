@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,29 +20,30 @@ msgstr ""
 
 #: ../../source/Installation/Windows-Development-Setup.rst:4
 msgid "Building ROS 2 on Windows"
-msgstr ""
+msgstr "在 Windows 上构建 ROS 2"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:8
 msgid "Table of Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:10
 msgid ""
 "This guide is about how to setup a development environment for ROS 2 on "
 "Windows."
 msgstr ""
+"本指南是关于如何在 Windows 上为 ROS 2 设置一个开发环境。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:13
 msgid "System requirements"
-msgstr ""
+msgstr "系统需求"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:15
 msgid "Only Windows 10 is supported."
-msgstr ""
+msgstr "仅支持 Windows 10"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:18
 msgid "Language support"
-msgstr ""
+msgstr "语言支持"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:20
 msgid ""
@@ -51,20 +52,24 @@ msgid ""
 "`English language pack <https://support.microsoft.com/en-us/windows"
 "/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8>`_."
 msgstr ""
+"请确保你有一个支持 ``UTF-8`` 的区域设置。"
+"例如，对于中文 Windows 10 的安装，你可能需要安装一个 `英语语言包 "
+"<https://support.microsoft.com/en-us/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8>`_。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:2
 msgid "Installing prerequisites"
-msgstr ""
+msgstr "安装的先决条件"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:5
 msgid "Install Chocolatey"
-msgstr ""
+msgstr "安装 Chocolatey"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:7
 msgid ""
 "Chocolatey is a package manager for Windows, install it by following "
 "their installation instructions:"
 msgstr ""
+"Chocolatey 是一个用于 Windows 的软件包管理器，按照他们的安装说明进行安装："
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:9
 msgid "https://chocolatey.org/"
@@ -72,31 +77,33 @@ msgstr ""
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:11
 msgid "You'll use Chocolatey to install some other developer tools."
-msgstr ""
+msgstr "你将使用 Chocolatey 来安装其他一些开发工具。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:14
 msgid "Install Python"
-msgstr ""
+msgstr "安装 Python"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:16
 msgid ""
 "Open a Command Prompt and type the following to install Python via "
 "Chocolatey:"
 msgstr ""
+"打开一个命令提示符，输入以下内容，通过 Chocolatey 安装 Python："
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:23
 msgid "Install Visual C++ Redistributables"
-msgstr ""
+msgstr "安装 Visual C++ 的再发布程序"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:25
 msgid ""
 "Open a Command Prompt and type the following to install them via "
 "Chocolatey:"
 msgstr ""
+"打开一个命令提示符，输入以下内容，通过 Chocolatey 安装它们："
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:32
 msgid "Install OpenSSL"
-msgstr ""
+msgstr "安装 OpenSSL"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:34
 msgid ""
@@ -105,16 +112,20 @@ msgid ""
 "bottom of the page and download *Win64 OpenSSL v1.1.1L*. Don't download "
 "the Win32 or Light versions."
 msgstr ""
+"从 `这个页面 <https://slproweb.com/products/Win32OpenSSL.html>`__ "
+"下载 *Win64 OpenSSL v1.1.1L* OpenSSL 安装程序。"
+"滚动到页面底部并下载 *Win64 OpenSSL v1.1.1L*。不要下载 Win32 或 Light 版本。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:38
 msgid ""
 "Run the installer with default parameters, as the following commands "
 "assume you used the default installation directory."
 msgstr ""
+"用默认参数运行安装程序，因为以下命令假定你使用了默认的安装目录。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:40
 msgid "This command sets an environment variable that persists over sessions:"
-msgstr ""
+msgstr "这条命令设置了一个环境变量，该变量在不同的会话中持续存在："
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:46
 msgid ""
@@ -125,6 +136,9 @@ msgid ""
 "\"Path\" on the bottom pane, finally click \"Edit\" and add the path "
 "below."
 msgstr ""
+"你将需要把 OpenSSL-Win64 bin 文件夹追加到你的 PATH 中。"
+"你可以通过点击 Windows 图标，输入 \"环境变量\"，然后点击 \"编辑系统环境变量\" 来做到这一点。"
+"在出现的对话框中，点击 \"环境变量\"，然后点击底部窗格中的 \"Path\"，最后点击 \"编辑\" 并添加以下路径。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:50
 msgid "``C:\\Program Files\\OpenSSL-Win64\\bin\\``"
@@ -132,17 +146,18 @@ msgstr ""
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:53
 msgid "Install Visual Studio"
-msgstr ""
+msgstr "安装 Visual Studio"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:55
 msgid "Install Visual Studio 2019."
-msgstr ""
+msgstr "安装 Visual Studio 2019。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:57
 msgid ""
 "If you already have a paid version of Visual Studio 2019 (Professional, "
 "Enterprise), skip this step."
 msgstr ""
+"如果你已经有付费版本的 Visual Studio 2019（专业版、企业版），请跳过此步骤。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:59
 msgid ""
@@ -152,27 +167,34 @@ msgid ""
 "<https://visualstudio.microsoft.com/thank-you-downloading-visual-"
 "studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019>`_"
 msgstr ""
+"微软提供了一个免费的 Visual Studio 2019 版本，命名为社区，可用于构建使用 ROS 2 的应用程序。" 
+"`你可以通过这个链接直接下载安装程序。 "
+"<https://visualstudio.microsoft.com/thank-you-downloading-visual-"
+"studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019>`_"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:62
 msgid "Make sure that the Visual C++ features are installed."
-msgstr ""
+msgstr "确保 Visual C++ 的功能已经安装。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:64
 msgid ""
 "An easy way to make sure they're installed is to select the ``Desktop "
 "development with C++`` workflow during the install."
 msgstr ""
+"确保它们被安装的一个简单方法是在安装过程中选择 ``Desktop "
+"development with C++`` 的工作流程。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:68
 msgid ""
 "Make sure that no C++ CMake tools are installed by unselecting them in "
 "the list of components to be installed."
 msgstr ""
+"确保没有安装 C++ CMake 工具，在要安装的组件列表中取消选择它们。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:92
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:71
 msgid "Install additional DDS implementations (optional)"
-msgstr ""
+msgstr "安装额外的 DDS 实现（可选）"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:94
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:73
@@ -181,14 +203,16 @@ msgid ""
 "Eclipse Cyclone DDS, you can find instructions :doc:`here <DDS-"
 "Implementations>`."
 msgstr ""
+"如果你想使用除了默认的 Eclipse Cyclone DDS 之外的另一个 DDS 或 RTPS 供应商，"
+"你可以在 :doc:`这里 <DDS-Implementations>` 找到说明。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:76
 msgid "Install OpenCV"
-msgstr ""
+msgstr "安装 OpenCV"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:78
 msgid "Some of the examples require OpenCV to be installed."
-msgstr ""
+msgstr "一些例子需要安装 OpenCV。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:80
 msgid ""
@@ -196,12 +220,14 @@ msgid ""
 "https://github.com/ros2/ros2/releases/download/opencv-"
 "archives/opencv-3.4.6-vc16.VS2019.zip ."
 msgstr ""
+"你可以从 https://github.com/ros2/ros2/releases/download/opencv-archives/opencv-3.4.6-vc16.VS2019.zip 下载 OpenCV 3.4.6 的预编译版本。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:82
 msgid ""
 "Assuming you unpacked it to ``C:\\opencv``, type the following on a "
 "Command Prompt (requires Admin privileges):"
 msgstr ""
+"假设你把它解压到 ``C:\\opencv``，在命令提示符上输入以下内容（需要管理员权限）："
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:88
 msgid ""
@@ -209,10 +235,12 @@ msgid ""
 "to find the OpenCV libraries. You have to extend the ``PATH`` variable to"
 " ``C:\\opencv\\x64\\vc16\\bin``."
 msgstr ""
+"由于你使用的是预编译的 ROS 版本，我们必须告诉它在哪里可以找到 OpenCV 库。"
+"你必须将 ``PATH`` 变量扩展到 ``C:\\opencv\\x64\\vc16\\bin``。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:92
 msgid "Install dependencies"
-msgstr ""
+msgstr "安装依赖"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:94
 msgid ""
@@ -220,22 +248,26 @@ msgid ""
 "database. In order to ease the manual installation process, we provide "
 "the necessary Chocolatey packages."
 msgstr ""
+"在 Chocolatey 软件包数据库中，有几个依赖项是不可用的。"
+"为了简化手动安装过程，我们提供必要的 Chocolatey 软件包。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:97
 msgid "As some chocolatey packages rely on it, we start by installing CMake"
-msgstr ""
+msgstr "由于一些 chocolatey 包依赖于它，我们首先安装 CMake"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:103
 msgid ""
 "You will need to append the CMake bin folder ``C:\\Program "
 "Files\\CMake\\bin`` to your PATH."
 msgstr ""
+"你将需要把 CMake bin 文件夹 ``C:\\Program Files\CMake\bin`` 附加到你的 PATH 中。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:105
 msgid ""
 "Please download these packages from `this <https://github.com/ros2/choco-"
 "packages/releases/latest>`__ GitHub repository."
 msgstr ""
+"请从 `这个 <https://github.com/ros2/choco-packages/releases/latest>`__ 的 GitHub 仓库下载这些软件包。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:107
 msgid "asio.1.12.1.nupkg"
@@ -270,20 +302,22 @@ msgid ""
 "Once these packages are downloaded, open an administrative shell and "
 "execute the following command:"
 msgstr ""
+"一旦这些软件包被下载，打开一个管理 shell，执行以下命令："
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:121
 msgid ""
 "Please replace ``<PATH\\TO\\DOWNLOADS>`` with the folder you downloaded "
 "the packages to."
 msgstr ""
+"请将 ``<PATH\\TO\\DOWNLOADS>`` 替换成你下载软件包的文件夹。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:123
 msgid "You must also install some additional python dependencies:"
-msgstr ""
+msgstr "你还必须安装一些额外的 python 依赖项。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:131
 msgid "Install Qt5"
-msgstr ""
+msgstr "安装 Qt5"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:133
 msgid ""
@@ -291,10 +325,11 @@ msgid ""
 " our default set of sources, so if you don't know, then assume you are "
 "building it."
 msgstr ""
+"只有在你构建 rviz 的时候才需要这一节，但是它带有我们默认的源代码集，所以如果你不知道，那就假设你正在构建它。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:135
 msgid "First get the installer from Qt's website:"
-msgstr ""
+msgstr "首先从 Qt 的网站上获取安装程序。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:137
 msgid "https://www.qt.io/download"
@@ -305,10 +340,11 @@ msgid ""
 "Select the Open Source version and then the ``Qt Online Installer for "
 "Windows``."
 msgstr ""
+"选择开源版本，然后选择 \"Qt Online Installer for Windows\"。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:141
 msgid "Run the installer and install Qt5."
-msgstr ""
+msgstr "运行安装程序并安装 Qt5。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:143
 msgid ""
@@ -321,12 +357,17 @@ msgid ""
 "Windows, but later Qt5 versions will probably work too. Be sure to select"
 " ``MSVC 2019 64-bit``. After that, the default settings are fine."
 msgstr ""
+"我们建议你把它安装到默认位置 ``C:\\Qt``，但如果你选择其他地方，请确保更新下面的路径"
+"相应的。当选择要安装的组件时，你唯一绝对需要的是 ``Qt`` -> ``Qt 5.15.0`` 树下的适当的 MSVC 64 位组件。"
+"我们在写这篇文档时使用的是 ``5.15.0``，这也是我们推荐的，因为我们在 Windows 上测试的都是这个版本，"
+"但以后的 Qt5 版本也可能适用。请确保选择 ``MSVC 2019 64-bit``。之后，默认设置就可以了。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:149
 msgid ""
 "Finally, set the ``Qt5_DIR`` environment variable in the ``cmd.exe`` "
 "where you intend to build so that CMake can find it:"
 msgstr ""
+"最后，在你打算构建的 ``cmd.exe`` 中设置 ``Qt5_DIR`` 环境变量，以便 CMake 能够找到它："
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:156
 msgid ""
@@ -335,16 +376,19 @@ msgid ""
 "C:\\Qt\\5.15.0\\msvc2019_64\\plugins\\platforms`` instead, but that "
 "requires Administrator."
 msgstr ""
+"你可以用 ``setx -m Qt5_DIR C:\\Qt\\5.15.0\\msvc2019_64`` 和 "
+"``setx -m QT_QPA_PLATFORM_PLUGIN_PATH C:\\Qt\\5.15.0\\msvc2019_64\\plugins\\platforms`` 来永久设置它，但这需要管理员。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:160
 msgid ""
 "This path might change based on which MSVC version you're using or if you"
 " installed it to a different directory."
 msgstr ""
+"这个路径可能会根据你使用的 MSVC 版本而改变，或者你将其安装到不同的目录。"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:163
 msgid "RQt dependencies"
-msgstr ""
+msgstr "RQt 依赖"
 
 #: ../../source/Installation/_Windows-Install-Prerequisites.rst:165
 msgid ""
@@ -354,20 +398,24 @@ msgid ""
 "ask if to add graphviz to PATH, choose to either add it to the current "
 "user or all users."
 msgstr ""
+"要运行 rqt_graph，你需要 `下载 <https://graphviz.gitlab.io/_pages/Download/Download_windows.html>`__ "
+"并安装 `Graphviz <https://graphviz.gitlab.io/>`__。"
+"安装程序将询问是否将 graphviz 添加到 PATH 中，选择将其添加到当前用户或所有用户。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:26
 msgid "Additional prerequisites"
-msgstr ""
+msgstr "其他先决条件"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:28
 msgid ""
 "When building from source you'll need a few additional prerequisites "
 "installed."
 msgstr ""
+"从源代码构建时，你需要安装一些额外的先决条件。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:31
 msgid "Install additional prerequisites from Chocolatey"
-msgstr ""
+msgstr "从 Chocolatey 安装额外的先决条件"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:37
 msgid ""
@@ -378,22 +426,25 @@ msgid ""
 "\"Environment Variables\", the click \"Path\" on the bottom pane, then "
 "click \"Edit\" and add the path)."
 msgstr ""
+"你需要将 Git cmd 文件夹 ``C:\\Program Files\Git\cmd`` 添加到 PATH 中"
+"（你可以通过点击 Windows 图标，输入 \"环境变量\"，然后点击 \"编辑系统环境变量\"。"
+"在出现的对话框中，点击 \"环境变量\"，在底部窗格中点击 \"Path\"，然后点击 \"编辑\"，添加路径）"。
 
 #: ../../source/Installation/Windows-Development-Setup.rst:42
 msgid "Install Python prerequisites"
-msgstr ""
+msgstr "安装 Python 的先决条件"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:44
 msgid "Installing additional Python dependencies:"
-msgstr ""
+msgstr "安装额外的 Python 依赖项："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:51
 msgid "Install miscellaneous prerequisites"
-msgstr ""
+msgstr "安装杂项先决条件"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:53
 msgid "Next install xmllint:"
-msgstr ""
+msgstr "接下来安装 xmllint："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:55
 msgid ""
@@ -402,56 +453,62 @@ msgid ""
 "dependencies ``iconv`` and ``zlib``) from "
 "https://www.zlatkovic.com/projects/libxml/"
 msgstr ""
+"从 https://www.zlatkovic.com/projects/libxml/ 下载 ``libxml2`` （及其依赖的 ``iconv`` 和 ``zlib`` ）的 "
+"`64 位二进制档案 <https://www.zlatkovic.com/pub/libxml/64bit/>`__"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:56
 msgid "Unpack all archives into e.g. ``C:\\xmllint``"
-msgstr ""
+msgstr "将所有档案解压到例如 ``C:\\xmllint``"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:57
 msgid "Add ``C:\\xmllint\\bin`` to the ``PATH``."
-msgstr ""
+msgstr "添加 ``C:\\xmllint\\bin`` 到 ``PATH``。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:60
 msgid "Get the ROS 2 code"
-msgstr ""
+msgstr "获取 ROS 2 代码"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:62
 msgid "Now that we have the development tools we can get the ROS 2 source code."
-msgstr ""
+msgstr "现在我们有了开发工具，我们可以得到 ROS 2 的源代码。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:64
 msgid "First setup a development folder, for example ``C:\\dev\\ros2_galactic``:"
-msgstr ""
+msgstr "首先建立一个开发文件夹，比如说 ``C:\\dev\\ros2_galactic``"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:71
 msgid "Get the ``ros2.repos`` file which defines the repositories to clone from:"
-msgstr ""
+msgstr "获得 ``ros2.repos`` 文件，该文件定义了要克隆的仓库："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:81
 msgid ""
 "Next you can use ``vcs`` to import the repositories listed in the "
 "``ros2.repos`` file:"
 msgstr ""
+"接下来你可以使用 ``vcs`` 来导入 ``ros2.repos`` 文件中列出的存储库："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:97
 msgid "Build the ROS 2 code"
-msgstr ""
+msgstr "构建 ROS 2 代码"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:101
 msgid ""
 "To build ROS 2 you will need a Visual Studio Command Prompt (\"x64 Native"
 " Tools Command Prompt for VS 2019\") running as Administrator."
 msgstr ""
+"要构建 ROS 2，你将需要一个以管理员身份运行的 Visual Studio 命令提示符（\"x64 Native"
+" Tools Command Prompt for VS 2019\"）。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:103
 msgid ""
 "Fast RTPS is bundled with the ROS 2 source and will always be built "
 "unless you put an ``AMENT_IGNORE`` file in the ``src\\eProsima`` folder."
 msgstr ""
+"Fast RTPS 与 ROS 2 源代码捆绑在一起，除非你在 ``src\\eProsima`` 文件夹中放一个 ``AMENT_IGNORE`` 文件，否则将一直被构建。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:105
 msgid "To build the ``\\dev\\ros2_galactic`` folder tree:"
-msgstr ""
+msgstr "要建立 ``\\dev\\ros2_galactic`` 文件夹树："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:113
 msgid ""
@@ -461,6 +518,8 @@ msgid ""
 "behavior which is isolated install, i.e. where each package is installed "
 "to a different folder."
 msgstr ""
+"我们在这里使用 ``--merge-install`` 来避免在构建结束时 ``PATH`` 变量太长。"
+"如果你要修改这些说明来构建一个较小的工作区，那么你也许可以使用默认的行为，即隔离安装，即每个软件包都安装在不同的文件夹中。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:118
 msgid ""
@@ -468,52 +527,59 @@ msgid ""
 "path\\to\\colcon_executable`` ``colcon``. See `Extra stuff for debug "
 "mode`_ for more info on running Python code in debug builds on Windows."
 msgstr ""
+"如果你正在进行调试构建，使用 ``python_d path\\to\\colcon_executable`` ``colcon``。"
+"关于在 Windows 上调试构建中运行 Python 代码的更多信息，请参见 `Extra stuff for debug mode`_。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:122
 msgid "Environment setup"
-msgstr ""
+msgstr "环境设置"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:124
 msgid ""
 "Start a command shell and source the ROS 2 setup file to set up the "
 "workspace:"
 msgstr ""
+"启动一个命令 shell，并将 ROS 2 的设置文件作为源文件来设置工作区："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:130
 msgid ""
 "This will automatically set up the environment for any DDS vendors that "
 "support was built for."
 msgstr ""
+"这将自动为任何支持建立的 DDS 供应商设置环境。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:132
 msgid ""
 "It is normal that the previous command, if nothing else went wrong, "
 "outputs \"The system cannot find the path specified.\" exactly once."
 msgstr ""
+"正常情况下，如果没有其他问题，前面的命令会准确地输出 \"The system cannot find the path specified.\" 一次。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:135
 msgid "Test and run"
-msgstr ""
+msgstr "测试与运行"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:137
 msgid ""
 "Note that the first time you run any executable you will have to allow "
 "access to the network through a Windows Firewall popup."
 msgstr ""
+"请注意，第一次运行任何可执行文件时，你必须通过 Windows 防火墙的弹出窗口允许进入网络。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:139
 msgid "You can run the tests using this command:"
-msgstr ""
+msgstr "你可以用这个命令运行测试："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:147
 msgid ""
 "``--merge-install`` should only be used if it was also used in the build "
 "step."
 msgstr ""
+"``--merge-install`` 只有在构建步骤中也使用过的情况下才可以使用。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:149
 msgid "Afterwards you can get a summary of the tests using this command:"
-msgstr ""
+msgstr "之后，你可以用这个命令得到一个测试的总结："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:155
 msgid ""
@@ -521,12 +587,15 @@ msgid ""
 "workspace by sourcing the ``local_setup.bat`` file. Then, run a C++ "
 "``talker``\\ :"
 msgstr ""
+"要运行这些例子，首先打开一个干净的新的 ``cmd.exe``，通过激活 ``local_setup.bat`` 文件设置工作区。"
+"然后，运行一个 C++ ``talker``\\ ："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:163
 msgid ""
 "In a separate shell you can do the same, but instead run a Python "
 "``listener``\\ :"
 msgstr ""
+"在一个单独的 shell 中，你可以做同样的事情，但要运行一个 Python ``listener``\\ ："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:170
 msgid ""
@@ -534,12 +603,15 @@ msgid ""
 "and the ``listener`` saying ``I heard`` those messages. This verifies "
 "both the C++ and Python APIs are working properly. Hooray!"
 msgstr ""
+"你应该看到 ``talker`` 说它正在 ``Publishing`` 信息，``listener`` 说 ``I heard`` 这些信息。"
+"这就验证了 C++ 和 Python 的 API 都在正常工作。好耶！"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:177
 msgid ""
 "It is not recommended to build in the same cmd prompt that you've sourced"
 " the ``local_setup.bat``."
 msgstr ""
+"不建议在你激活了 ``local_setup.bat`` 的同一个 cmd 提示下构建。"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:180
 msgid "Next steps after installing"
@@ -578,29 +650,32 @@ msgstr ""
 
 #: ../../source/Installation/Windows-Development-Setup.rst:194
 msgid "Extra stuff for Debug mode"
-msgstr ""
+msgstr "调试模式的额外内容"
 
 #: ../../source/Installation/Windows-Development-Setup.rst:196
 msgid ""
 "If you want to be able to run all the tests in Debug mode, you'll need to"
 " install a few more things:"
 msgstr ""
+"如果你想能够在调试模式下运行所有的测试，你还需要安装一些东西："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:199
 msgid "To be able to extract the Python source tarball, you can use PeaZip:"
-msgstr ""
+msgstr "为了能够提取 Python 源代码的 tarball，你可以使用 PeaZip："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:206
 msgid ""
 "You'll also need SVN, since some of the Python source-build dependencies "
 "are checked out via SVN:"
 msgstr ""
+"你还需要 SVN，因为一些 Python 源代码构建的依赖项是通过 SVN 检出的："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:213
 msgid ""
 "You'll need to quit and restart the command prompt after installing the "
 "above."
 msgstr ""
+"安装完上述内容后，你需要退出并重新启动命令提示符："
 
 #: ../../source/Installation/Windows-Development-Setup.rst:214
 msgid "Get and extract the Python 3.8.3 source from the ``tgz``:"

@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -238,10 +238,12 @@ msgid ""
 "and the ``listener`` saying ``I heard`` those messages. This verifies "
 "both the C++ and Python APIs are working properly. Hooray!"
 msgstr ""
+"你应该看到 ``talker`` 说它 ``Publishing`` 信息，``listener`` 说 ``I heard`` 这些信息。"
+"这就验证了 C++ 和 Python 的 API 都在正常工作。好耶！"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:169
 msgid "Next steps after installing"
-msgstr ""
+msgstr "安装后的后续步骤"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:170
 msgid ""
@@ -249,10 +251,12 @@ msgid ""
 "your environment, create your own workspace and packages, and learn ROS 2"
 " core concepts."
 msgstr ""
+"继续学习 :doc:`教程和演示 <../Tutorials>` 来配置你的环境，"
+"创建你自己的工作空间和软件包，并学习 ROS 2 的核心概念。"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:173
 msgid "Using the ROS 1 bridge"
-msgstr ""
+msgstr "使用 ROS 1 桥接"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:174
 msgid ""
@@ -261,10 +265,13 @@ msgid ""
 "<https://github.com/ros2/ros1_bridge/blob/master/README.md>`__ on how to "
 "build and use the ROS 1 bridge."
 msgstr ""
+"ROS 1 桥接可以将主题从 ROS 1 连接到 ROS 2，反之亦然。"
+"关于如何构建和使用 ROS 1 桥接，请参见专门的 "
+"`文档 <https://github.com/ros2/ros1_bridge/blob/master/README.md>`__。"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:177
 msgid "Additional RMW implementations (optional)"
-msgstr ""
+msgstr "额外的 RMW 实现（可选）"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:178
 msgid ""
@@ -273,10 +280,13 @@ msgid ""
 "To-Guides/Working-with-multiple-RMW-implementations>` on how to work with"
 " multiple RMWs."
 msgstr ""
+"ROS 2 使用的默认中间件是 ``Cyclone DDS``，但中间件（RMW）可以在运行时替换。"
+"请参阅 :doc:`指南 <../How-To-Guides/Working-with-multiple-RMW-implementations>` "
+"关于如何使用多个 RMW。"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:182
 msgid "Alternate compilers"
-msgstr ""
+msgstr "备选编译器"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:184
 msgid ""
@@ -287,6 +297,10 @@ msgid ""
 "packages you want to be affected), CMake will reconfigure and use the "
 "different compiler."
 msgstr ""
+"使用 gcc 以外的不同编译器来编译 ROS 2 很容易。"
+"如果你把环境变量 ``CC`` 和 ``CXX`` 分别设置为工作中的 C 和 C++ 编译器的可执行文件，"
+"并重新触发 CMake 配置（通过使用 ``--force-cmake-config`` 或删除你想影响的包），"
+"CMake 将重新配置并使用不同的编译器。"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:187
 msgid "Clang"
@@ -294,31 +308,33 @@ msgstr ""
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:189
 msgid "To configure CMake to detect and use Clang:"
-msgstr ""
+msgstr "要配置 CMake 来检测和使用 Clang："
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:199
 msgid "Stay up to date"
-msgstr ""
+msgstr "保持最新状态"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:201
 msgid ""
 "See :doc:`./Maintaining-a-Source-Checkout` to periodically refresh your "
 "source installation."
 msgstr ""
+"参见 :doc:`./Maintaining-a-Source-Checkout`，定期刷新你的源码安装。"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:204
 msgid "Troubleshooting"
-msgstr ""
+msgstr "故障诊断"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:206
 msgid ""
 "Troubleshooting techniques can be found :ref:`here <linux-"
 "troubleshooting>`."
 msgstr ""
+"故障诊断技术可以在 :ref:`here <linux-troubleshooting>` 找到。"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:209
 msgid "Uninstall"
-msgstr ""
+msgstr "卸载"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:211
 msgid ""
@@ -327,21 +343,13 @@ msgid ""
 " sourcing the workspace's ``setup`` file. This way, your environment will"
 " behave as though there is no galactic install on your system."
 msgstr ""
+"如果你按照上面的指示用 colcon 安装了你的工作空间，\"uninstalling\" 可能只是打开一个新的终端，"
+"而不是 sourcing 工作空间的 ``setup`` 文件。"
+"这样一来，你的环境就会表现得好像你的系统上没有安装 galactic 一样。"
 
 #: ../../source/Installation/Ubuntu-Development-Setup.rst:214
 msgid ""
 "If you're also trying to free up space, you can delete the entire "
 "workspace directory with:"
 msgstr ""
-
-#~ msgid ""
-#~ "If you installed your workspace with "
-#~ "colcon as instructed above, \"uninstalling\""
-#~ " could be just a matter of "
-#~ "opening a new terminal and not "
-#~ "sourcing the workspace's ``setup`` file. "
-#~ "This way, your environment will behave"
-#~ " as though there is no xin "
-#~ "install on your system."
-#~ msgstr ""
-
+"如果你也想释放空间，你可以删除整个工作区目录："

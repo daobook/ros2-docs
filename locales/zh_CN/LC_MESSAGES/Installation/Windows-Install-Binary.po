@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,17 +20,18 @@ msgstr ""
 
 #: ../../source/Installation/Windows-Install-Binary.rst:2
 msgid "Installing ROS 2 on Windows"
-msgstr ""
+msgstr "在 Windows 上安装ROS 2"
 
 #: ../../source/Installation/Windows-Install-Binary.rst:6
 msgid "Table of Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Installation/Windows-Install-Binary.rst:8
 msgid ""
 "This page explains how to install ROS 2 on Windows from a pre-built "
 "binary package."
 msgstr ""
+"本页解释了如何从预建的二进制包中在 Windows 上安装 ROS 2。"
 
 #: ../../source/Installation/Windows-Install-Binary.rst:12
 msgid ""
@@ -42,10 +43,14 @@ msgid ""
 " ros2.repos file "
 "<https://github.com/ros2/ros2/blob/galactic/ros2.repos>`_."
 msgstr ""
+"预构建的二进制文件不包括所有的 ROS 2 软件包。"
+"包括了 `ROS 基本变体 <https://ros.org/reps/rep-2001.html#ros-base>`_ 中的所有软件包，"
+"而只包括了 `ROS 桌面变体 <https://ros.org/reps/rep-2001.html#desktop-variants>`_ 中的一个子集。"
+"包的确切列表由 `这个 ros2.repos 文件 <https://github.com/ros2/ros2/blob/galactic/ros2.repos>`_ 中列出的存储库描述。"
 
 #: ../../source/Installation/Windows-Install-Binary.rst:17
 msgid "System requirements"
-msgstr ""
+msgstr "系统需求"
 
 #: ../../source/Installation/Windows-Install-Binary.rst:19
 msgid "Only Windows 10 is supported."
