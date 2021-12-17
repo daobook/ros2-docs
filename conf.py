@@ -135,10 +135,10 @@ distro_full_names = {
 
 # These default values will be overridden when building multiversion
 macros = {
-    'DISTRO': 'xin',
-    'DISTRO_TITLE': 'xin',
+    'DISTRO': 'galactic',
+    'DISTRO_TITLE': 'galactic',
     'DISTRO_TITLE_FULL': 'Galactic Geochelone',
-    'REPOS_FILE_BRANCH': 'xin',
+    'REPOS_FILE_BRANCH': 'galactic',
 }
 
 html_favicon = 'favicon.ico'

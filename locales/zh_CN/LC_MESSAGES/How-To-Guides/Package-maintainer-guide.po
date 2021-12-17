@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ROS 2 documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"POT-Creation-Date: 2021-12-16 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,7 +296,7 @@ msgstr ""
 
 #: ../../source/How-To-Guides/Package-maintainer-guide.rst:140
 msgid ""
-"For instance, to release the ``rclcpp`` repository to the xin "
+"For instance, to release the ``rclcpp`` repository to the galactic "
 "distribution, the command would be:"
 msgstr ""
 
@@ -387,4 +387,10 @@ msgid ""
 "For questions on individual issues, please tag the ROS 2 GitHub team "
 "(@ros/team), and someone on the team will take a look."
 msgstr ""
+
+#~ msgid ""
+#~ "For instance, to release the ``rclcpp``"
+#~ " repository to the xin distribution, "
+#~ "the command would be:"
+#~ msgstr ""
 

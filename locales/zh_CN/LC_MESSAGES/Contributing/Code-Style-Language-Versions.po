@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ROS 2 documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"POT-Creation-Date: 2021-12-16 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,7 +138,7 @@ msgid "C++"
 msgstr ""
 
 #: ../../source/Contributing/Code-Style-Language-Versions.rst:57
-msgid "xin targets C++17."
+msgid "galactic targets C++17."
 msgstr ""
 
 #: ../../source/Contributing/Code-Style-Language-Versions.rst:63
@@ -802,4 +802,7 @@ msgstr ""
 #: ../../source/Contributing/Code-Style-Language-Versions.rst:404
 msgid "*[.md, .rst only]* A code block should specify a syntax (e.g. ``bash``)."
 msgstr ""
+
+#~ msgid "xin targets C++17."
+#~ msgstr ""
 

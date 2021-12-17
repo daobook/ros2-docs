@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ROS 2 documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 10:20+0800\n"
+"POT-Creation-Date: 2021-12-16 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,8 +43,8 @@ msgstr ""
 
 #: ../../source/Installation/RHEL-Install-RPMs.rst:16
 msgid ""
-"ROS 2 xin (RHEL 8): `amd64 "
-"<http://repo.ros2.org/status_page/ros_xin_rhel.html>`__"
+"ROS 2 galactic (RHEL 8): `amd64 "
+"<http://repo.ros2.org/status_page/ros_galactic_rhel.html>`__"
 msgstr ""
 
 #: ../../source/Installation/RHEL-Install-RPMs.rst:17
@@ -120,7 +120,7 @@ msgid "Try some examples"
 msgstr ""
 
 #: ../../source/Installation/RHEL-Install-RPMs.rst:85
-msgid "If you installed ``ros-xin-desktop`` above you can try some examples."
+msgid "If you installed ``ros-galactic-desktop`` above you can try some examples."
 msgstr ""
 
 #: ../../source/Installation/RHEL-Install-RPMs.rst:87
@@ -182,4 +182,12 @@ msgid ""
 "If you need to uninstall ROS 2 or switch to a source-based install once "
 "you have already installed from binaries, run the following command:"
 msgstr ""
+
+#~ msgid ""
+#~ "ROS 2 xin (RHEL 8): `amd64 "
+#~ "<http://repo.ros2.org/status_page/ros_xin_rhel.html>`__"
+#~ msgstr ""
+
+#~ msgid "If you installed ``ros-xin-desktop`` above you can try some examples."
+#~ msgstr ""
 

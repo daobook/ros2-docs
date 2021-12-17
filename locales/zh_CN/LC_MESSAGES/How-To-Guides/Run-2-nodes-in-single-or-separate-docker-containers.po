@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ROS 2 documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 10:02+0800\n"
+"POT-Creation-Date: 2021-12-16 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Run two nodes in a single docker container"
 msgstr ""
 
 #: ../../source/How-To-Guides/Run-2-nodes-in-single-or-separate-docker-containers.rst:13
-msgid "Pull the ROS docker image with tag \"xin-desktop\"."
+msgid "Pull the ROS docker image with tag \"galactic-desktop\"."
 msgstr ""
 
 #: ../../source/How-To-Guides/Run-2-nodes-in-single-or-separate-docker-containers.rst:20
@@ -83,4 +83,7 @@ msgid ""
 "To run the containers call ``docker-compose up`` in the same directory. "
 "You can close the containers with ``Ctrl+C``."
 msgstr ""
+
+#~ msgid "Pull the ROS docker image with tag \"xin-desktop\"."
+#~ msgstr ""
 

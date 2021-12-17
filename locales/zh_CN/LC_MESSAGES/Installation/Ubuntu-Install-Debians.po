@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ROS 2 documentation \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 10:20+0800\n"
+"POT-Creation-Date: 2021-12-16 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,9 +43,9 @@ msgstr ""
 
 #: ../../source/Installation/Ubuntu-Install-Debians.rst:20
 msgid ""
-"ROS 2 xin (Ubuntu Focal): `amd64 "
-"<http://repo.ros2.org/status_page/ros_xin_default.html>`__\\ , `arm64 "
-"<http://repo.ros2.org/status_page/ros_xin_ufv8.html>`__"
+"ROS 2 galactic (Ubuntu Focal): `amd64 "
+"<http://repo.ros2.org/status_page/ros_galactic_default.html>`__\\ , "
+"`arm64 <http://repo.ros2.org/status_page/ros_galactic_ufv8.html>`__"
 msgstr ""
 
 #: ../../source/Installation/Ubuntu-Install-Debians.rst:21
@@ -132,7 +132,7 @@ msgid "Try some examples"
 msgstr ""
 
 #: ../../source/Installation/Ubuntu-Install-Debians.rst:76
-msgid "If you installed ``ros-xin-desktop`` above you can try some examples."
+msgid "If you installed ``ros-galactic-desktop`` above you can try some examples."
 msgstr ""
 
 #: ../../source/Installation/Ubuntu-Install-Debians.rst:78
@@ -206,4 +206,14 @@ msgid ""
 "If you need to uninstall ROS 2 or switch to a source-based install once "
 "you have already installed from binaries, run the following command:"
 msgstr ""
+
+#~ msgid ""
+#~ "ROS 2 xin (Ubuntu Focal): `amd64 "
+#~ "<http://repo.ros2.org/status_page/ros_xin_default.html>`__\\ ,"
+#~ " `arm64 "
+#~ "<http://repo.ros2.org/status_page/ros_xin_ufv8.html>`__"
+#~ msgstr ""
+
+#~ msgid "If you installed ``ros-xin-desktop`` above you can try some examples."
+#~ msgstr ""
 
