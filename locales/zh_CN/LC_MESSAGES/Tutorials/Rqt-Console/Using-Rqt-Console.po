@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,13 +20,14 @@ msgstr ""
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:4
 msgid "Using rqt_console"
-msgstr ""
+msgstr "使用 rqt_console"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:6
 msgid ""
 "**Goal:** Get to know ``rqt_console``, a tool for introspecting log "
 "messages."
 msgstr ""
+"**目标**：了解 ``rqt_console``，一个用于内省日志信息的工具。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -38,11 +39,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:19
 msgid ""
@@ -52,6 +53,10 @@ msgid ""
 " organized manner, filter them, save them and even reload the saved files"
 " to introspect at a different time."
 msgstr ""
+"``rqt_console`` 是一个 GUI 工具，用于在 ROS 2 中内省日志消息。"
+"通常，日志消息显示在您的终端中。"
+"使用 ``rqt_console``，您可以随时间收集这些消息，以更有组织的方式仔细地查看它们，"
+"过滤它们，保存它们，甚至重新加载已保存的文件，以便在不同的时间进行内省。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:23
 msgid ""
@@ -59,44 +64,48 @@ msgid ""
 "variety of ways. Their content is usually informational, for the sake of "
 "the user."
 msgstr ""
+"节点使用日志以各种方式输出有关事件和状态的消息。为了用户的利益，它们的内容通常是信息的。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:27
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:29
 msgid ""
 "You will need :doc:`rqt_console and turtlesim <../Turtlesim/Introducing-"
 "Turtlesim>` installed."
 msgstr ""
+"您需要安装 :doc:`rqt_console 和 turtlesim <../Turtlesim/Introducing-Turtlesim>`。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:31
 msgid ""
 "As always, don’t forget to source ROS 2 in :doc:`every new terminal you "
 "open <../Configuring-ROS2-Environment>`."
 msgstr ""
+"和往常一样，不要忘记在你打开的每一个 "
+":doc:`新终端中都输入 ROS 2 <../Configuring-ROS2-Environment>`。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:35
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:38
 msgid "1 Setup"
-msgstr ""
+msgstr "1 设置"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:40
 msgid "Start ``rqt_console`` in a new terminal with the following command:"
-msgstr ""
+msgstr "在新的终端中使用以下命令启动 ``rqt_console``："
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:46
 msgid "The ``rqt_console`` window will open:"
-msgstr ""
+msgstr "``rqt_console`` 窗口将打开："
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:50
 msgid ""
 "The first section of the console is where log messages from your system "
 "will display."
-msgstr ""
+msgstr "控制台的第一部分是显示系统日志消息的地方。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:52
 msgid ""
@@ -104,20 +113,24 @@ msgid ""
 "severity levels. You can also add more exclusion filters using the plus-"
 "sign button to the right."
 msgstr ""
+"在中间，您可以选择通过排除严重性级别来过滤消息。"
+"您还可以使用右边的加号按钮添加更多的排除过滤器。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:55
 msgid ""
 "The bottom section is for highlighting messages that include a string you"
 " input. You can add more filters to this section as well."
 msgstr ""
+"底部部分用于突出显示包含您输入的字符串的消息。"
+"你也可以在这个部分添加更多的过滤器。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:58
 msgid "Now start ``turtlesim`` in a new terminal with the following command:"
-msgstr ""
+msgstr "现在用以下命令在一个新的终端中启动 ``turtlesim``："
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:65
 msgid "2 Messages on rqt_console"
-msgstr ""
+msgstr "2 rqt_console 消息"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:67
 msgid ""
@@ -126,6 +139,9 @@ msgid ""
 " command (discussed in detail in the :doc:`topics tutorial <../Topics"
 "/Understanding-ROS2-Topics>`) below:"
 msgstr ""
+"为了生成 ``rqt_console`` 要显示的日志消息，让我们让海龟撞到墙上。"
+"在一个新的终端中，输入下面的 ``ros2 topic pub`` 命令"
+"（在 :doc:`主题 <../Topics/Understanding-ROS2-Topics>` 教程中详细讨论）："
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:74
 msgid ""
@@ -134,62 +150,70 @@ msgid ""
 " see the same message with the ``Warn`` severity level displayed over and"
 " over, like so:"
 msgstr ""
+"因为上面的命令是以稳定的速度发布主题，所以海龟会不断地碰壁。"
+"在 ``rqt_console`` 中，您将看到 ``Warn`` 级别的相同消息反复显示，如下所示："
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:79
 msgid ""
 "Press ``Ctrl+C`` in the terminal where you ran the ``ros2 topic pub`` "
 "command to stop your turtle from running into the wall."
 msgstr ""
+"在你运行 ``ros2 topic pub`` 命令的终端中按 "
+"{kbd}`Ctrl` + {kbd}`C` 来阻止你的海龟撞到墙上。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:82
 msgid "3 Logger levels"
-msgstr ""
+msgstr "3 记录器级别"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:84
 msgid "ROS 2’s logger levels are ordered by severity:"
-msgstr ""
+msgstr "ROS 2 的记录器级别按严重程度排序："
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:94
 msgid ""
 "There is no exact standard for what each level indicates, but it’s safe "
 "to assume that:"
-msgstr ""
+msgstr "对于每个级别的含义没有确切的标准，但可以放心地假设："
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:96
 msgid ""
 "``Fatal`` messages indicate the system is going to terminate to try to "
 "protect itself from detriment."
-msgstr ""
+msgstr "``Fatal`` 消息表明，系统将终止试图保护自己免受损害。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:97
 msgid ""
 "``Error`` messages indicate significant issues that won't necessarily "
 "damage the system, but are preventing it from functioning properly."
 msgstr ""
+"``Error`` 消息指出了重要的问题，这些问题不一定会损害系统，但会阻止系统正常运行。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:98
 msgid ""
 "``Warn`` messages indicate unexpected activity or non-ideal results that "
 "might represent a deeper issue, but don't harm functionality outright."
 msgstr ""
+"``Warn`` 消息指出可能代表更深层次问题的意外活动或非理想结果，但不会完全损害功能。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:99
 msgid ""
 "``Info`` messages indicate event and status updates that serve as a "
 "visual verification that the system is running as expected."
 msgstr ""
+"``Info`` 消息指示事件和状态更新，作为系统按预期运行的可视化验证。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:100
 msgid ""
 "``Debug`` messages detail the entire step-by-step process of the system "
 "execution."
 msgstr ""
+"``Debug`` 消息详细说明了系统执行的整个逐步过程。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:102
 msgid ""
 "The default level is ``Info``. You will only see messages of the default "
 "severity level and more-severe levels."
-msgstr ""
+msgstr "默认级别为 ``Info``。您将只看到默认严重性级别和更严重级别的消息。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:105
 msgid ""
@@ -198,10 +222,13 @@ msgid ""
 "level to ``Warn``, you would only see messages of severity ``Warn``, "
 "``Error``, and ``Fatal``."
 msgstr ""
+"通常，只有 ``Debug`` 消息被隐藏，因为它们是唯一比 ``Info`` 级别轻的级别。"
+"例如，如果将默认级别设置为 ``Warn``，则只会看到严重性为 ``Warn``、``Error`` 和 "
+"``Fatal`` 的消息。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:109
 msgid "3.1 Set the default logger level"
-msgstr ""
+msgstr "3.1 设置默认的记录器级别"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:111
 msgid ""
@@ -209,6 +236,7 @@ msgid ""
 "``/turtlesim`` node using remapping. Enter the following command in your "
 "terminal:"
 msgstr ""
+"您可以在第一次使用重映射运行 ``/turtlesim`` 节点时设置默认记录器级别。在终端中输入以下命令："
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:118
 msgid ""
@@ -216,10 +244,12 @@ msgid ""
 " console last time you started ``turtlesim``. That’s because ``Info`` "
 "messages are lower priority than the new default severity, ``Warn``."
 msgstr ""
+"现在，您将不会看到上次启动 ``turtlesim`` 时在控制台中出现的初始 ``Info`` 级别警告。"
+"这是因为 ``Info`` 消息的优先级低于新的默认严重性 ``Warn``。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:122
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:124
 msgid ""
@@ -228,14 +258,16 @@ msgid ""
 " any number of reasons, usually to find out where something went wrong "
 "and the series of events leading up to that."
 msgstr ""
+"如果需要仔细检查来自系统的日志消息，``rqt_console`` 可能非常有用。"
+"出于各种原因，您可能需要检查日志消息，通常是为了找出哪里出了问题以及导致问题的一系列事件。"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:128
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Rqt-Console/Using-Rqt-Console.rst:130
 msgid ""
 "The next tutorial will teach you how to :doc:`create launch files "
 "<../Launch-Files/Creating-Launch-Files>`."
 msgstr ""
-
+"下一个教程将教你如何 :doc:`创建 launch 文件 <../Launch-Files/Creating-Launch-Files>`。"

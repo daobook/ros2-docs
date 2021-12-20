@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:4
 msgid "Understanding ROS 2 topics"
-msgstr ""
+msgstr "理解 ROS 2 主题"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:6
 msgid "**Goal:** Use rqt_graph and command line tools to introspect ROS 2 topics."
-msgstr ""
+msgstr "**目标**：使用 rqt_graph 和命令行工具来介绍 ROS 2 的主题。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -36,11 +36,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:19
 msgid ""
@@ -48,54 +48,59 @@ msgid ""
 "vital element of the ROS graph that act as a bus for nodes to exchange "
 "messages."
 msgstr ""
+"ROS 2 将复杂的系统分解成许多模块化节点。"
+"主题是 ROS graph 的一个重要元素，它充当节点交换消息的总线。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:24
 msgid ""
 "A node may publish data to any number of topics and simultaneously have "
 "subscriptions to any number of topics."
-msgstr ""
+msgstr "节点可以向任意数量的主题发布数据，并同时订阅任意数量的主题。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:28
 msgid ""
 "Topics are one of the main ways in which data is moved between nodes and "
 "therefore between different parts of the system."
-msgstr ""
+msgstr "主题是数据在节点之间以及系统的不同部分之间移动的主要方式之一。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:32
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:34
 msgid ""
 "The :doc:`previous tutorial <../Understanding-ROS2-Nodes>` provides some "
 "useful background information on nodes that is built upon here."
 msgstr ""
+":doc:`前面的教程 <../Understanding-ROS2-Nodes>` 提供了一些关于在此基础上构建的节点的有用背景信息。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:36
 msgid ""
 "As always, don’t forget to source ROS 2 in :doc:`every new terminal you "
 "open <../Configuring-ROS2-Environment>`."
 msgstr ""
+"像往常一样，不要忘记在 :doc:`你打开的每一个新终端 "
+"<../Configuring-ROS2-Environment>` 中为 ROS 2 激活源代码。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:39
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:42
 msgid "1 Setup"
-msgstr ""
+msgstr "1 设置"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:44
 msgid "By now you should be comfortable starting up turtlesim."
-msgstr ""
+msgstr "现在你应该能自如地启动海龟模型了。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:46
 msgid "Open a new terminal and run:"
-msgstr ""
+msgstr "打开一个新的终端并运行："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:52
 msgid "Open another terminal and run:"
-msgstr ""
+msgstr "打开另一个终端并运行："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:58
 msgid ""
@@ -103,6 +108,8 @@ msgid ""
 "that the names of these nodes are ``/turtlesim`` and ``/teleop_turtle`` "
 "by default."
 msgstr ""
+"回想一下 :doc:`之前的教程 <../Understanding-ROS2-Nodes>`，默认情况下，"
+"这些节点的名称是 ``/turtlesim`` 和 ``/teleop_turtle``。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:62
 msgid "2 rqt_graph"
@@ -113,22 +120,27 @@ msgid ""
 "Throughout this tutorial, we will use ``rqt_graph`` to visualize the "
 "changing nodes and topics, as well as the connections between them."
 msgstr ""
+"在本教程中，我们将使用 ``rqt_graph`` 可视化不断变化的节点和主题，以及它们之间的连接。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:66
 msgid ""
 "The :doc:`turtlesim tutorial <../Turtlesim/Introducing-Turtlesim>` tells "
 "you how to install rqt and all its plugins, including ``rqt_graph``."
 msgstr ""
+":doc:`turtlesim 教程 <../Turtlesim/Introducing-Turtlesim>` "
+"告诉您如何安装 ``rqt`` 及其所有插件，包括 ``rqt_graph``。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:68
 msgid "To run rqt_graph, open a new terminal and enter the command:"
-msgstr ""
+msgstr "要运行 ``rqt_graph``，打开一个新的终端并输入命令："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:74
 msgid ""
 "You can also open rqt_graph by opening ``rqt`` and selecting **Plugins** "
 "> **Introspection** > **Node Graph**."
 msgstr ""
+"你也可以通过打开 ``rqt`` 并选择 **Plugins** > **Introspection** > **Node Graph** "
+"来打开 ``rqt_graph``。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:78
 msgid ""
@@ -137,6 +149,8 @@ msgid ""
 "your mouse over the topic in the center, you'll see the color "
 "highlighting like in the image above."
 msgstr ""
+"您应该看到上面的节点和主题，以及围绕图外围的两个操作（现在让我们忽略它们）。"
+"如果你将鼠标悬停在主题的中心，你会看到颜色高亮如上图。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:81
 msgid ""
@@ -146,6 +160,10 @@ msgid ""
 "to move the turtle around) to the ``/turtle1/cmd_vel`` topic, and the "
 "``/turtlesim`` node is subscribed to that topic to receive the data."
 msgstr ""
+"该图描述了 ``/turtlesim`` 节点和 ``/teleop_turtle`` "
+"节点如何在一个主题上相互通信。"
+"``/teleop_turtle`` 节点将数据（您为移动海龟而输入的击键）发布到 "
+"``/turtle1/cmd_vel`` 主题，并且 ``/turtlesim`` 节点订阅该主题以接收数据。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:84
 msgid ""
@@ -153,12 +171,15 @@ msgid ""
 " complex systems with many nodes and topics connected in many different "
 "ways."
 msgstr ""
+"``rqt_graph`` 的高亮显示特性在检查更复杂的系统时非常有用，"
+"这些系统中有许多节点和主题，它们以许多不同的方式连接在一起。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:86
 msgid ""
 "rqt_graph is a graphical introspection tool. Now we’ll look at some "
 "command line tools for introspecting topics."
 msgstr ""
+"``rqt_graph`` 是一个图形自省工具。现在我们来看一些用于内省主题的命令行工具。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:91
 msgid "3 ros2 topic list"
@@ -169,28 +190,32 @@ msgid ""
 "Running the ``ros2 topic list`` command in a new terminal will return a "
 "list of all the topics currently active in the system:"
 msgstr ""
+"在新终端中运行 ``ros2 topic list`` 命令将返回当前系统中激活的所有主题的列表："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:103
 msgid ""
 "``ros2 topic list -t`` will return the same list of topics, this time "
 "with the topic type appended in brackets:"
 msgstr ""
+"``ros2 topic list -t`` 将返回相同的主题列表，这次主题类型加在括号中："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:113
 msgid ""
 "These attributes, particularly the type, are how nodes know they’re "
 "talking about the same information as it moves over topics."
 msgstr ""
+"这些属性，尤其是类型，是节点如何在跨越主题时知道它们所讨论的是相同的信息。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:115
 msgid ""
 "If you’re wondering where all these topics are in rqt_graph, you can "
 "uncheck all the boxes under **Hide:**"
 msgstr ""
+"如果你想知道所有这些主题在 ``rqt_graph`` 中的位置，你可以取消选中隐藏下面的所有框："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:119
 msgid "For now, though, leave those options checked to avoid confusion."
-msgstr ""
+msgstr "不过，现在还是检查一下这些选项，以避免混淆。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:122
 msgid "4 ros2 topic echo"
@@ -198,7 +223,7 @@ msgstr ""
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:124
 msgid "To see the data being published on a topic, use:"
-msgstr ""
+msgstr "要查看某个主题上发布的数据，请使用："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:130
 msgid ""
@@ -206,12 +231,15 @@ msgid ""
 "over the ``/turtle1/cmd_vel`` topic, let's use ``echo`` to introspect on "
 "that topic:"
 msgstr ""
+"因为我们知道 ``/teleop_turtle`` 通过 ``/turtle1/cmd_vel`` 主题将数据发布到 ``/turtlesim``，"
+"所以让我们使用 ``echo`` 对该主题进行内测："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:136
 msgid ""
 "At first, this command won’t return any data. That’s because it’s waiting"
 " for ``/teleop_turtle`` to publish something."
 msgstr ""
+"起初，这个命令不会返回任何数据。这是因为它正在等待 ``/teleop_turtle`` 发布一些内容。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:139
 msgid ""
@@ -220,10 +248,12 @@ msgid ""
 " is running at the same time, and you’ll see position data being "
 "published for every movement you make:"
 msgstr ""
+"返回 ``turtle_teleop_key`` 运行的终端，使用箭头移动海龟。"
+"观察你的 ``echo`` 同时运行的终端，你会看到你做的每一个动作都会发布位置数据："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:154
 msgid "Now return to rqt_graph and uncheck the **Debug** box."
-msgstr ""
+msgstr "现在返回到 ``rqt_graph`` 并取消 **Debug** 框。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:158
 msgid ""
@@ -232,6 +262,8 @@ msgid ""
 "publishing data over the ``cmd_vel`` topic, and two subscribers are "
 "subscribed."
 msgstr ""
+"``/_ros2cli_26646`` 是刚才运行的 ``echo`` 创建的节点（数字可能不同）。"
+"现在您可以看到发布者正在 ``cmd_vel`` 主题上发布数据，并且订阅了两个订阅者。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:162
 msgid "5 ros2 topic info"
@@ -242,14 +274,15 @@ msgid ""
 "Topics don’t have to only be point-to-point communication; it can be one-"
 "to-many, many-to-one, or many-to-many."
 msgstr ""
+"主题不必只是点对点的交流；它可以是一对多、多对一或多对多。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:166
 msgid "Another way to look at this is running:"
-msgstr ""
+msgstr "另一种看待这个问题的方式是运行："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:172
 msgid "Which will return:"
-msgstr ""
+msgstr "这将返回："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:181
 msgid "6 ros2 interface show"
@@ -260,6 +293,7 @@ msgid ""
 "Nodes send data over topics using messages. Publishers and subscribers "
 "must send and receive the same type of message to communicate."
 msgstr ""
+"节点使用消息通过主题发送数据。发布者和订阅者必须发送和接收相同类型的消息进行通信。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:186
 msgid ""
@@ -267,22 +301,27 @@ msgid ""
 "us know what message type is used on each topic. Recall that the "
 "``cmd_vel`` topic has the type:"
 msgstr ""
+"在运行 ``ros2 topic list -t`` 之后，我们看到的主题类型让我们知道每个主题使用的消息类型。"
+"回想一下 ``cmd_vel`` 主题的类型："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:193
 msgid ""
 "This means that in the package ``geometry_msgs`` there is a ``msg`` "
 "called ``Twist``."
 msgstr ""
+"这意味着在包 ``geometry_msgs`` 中有一个名为 ``Twist`` 的 ``msg``。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:195
 msgid ""
 "Now we can run ``ros2 interface show <msg type>`` on this type to learn "
 "its details, specifically, what structure of data the message expects."
 msgstr ""
+"现在我们可以在这个类型上运行 ``ros2 interface show <msg type>`` "
+"来了解它的详细信息，特别是消息所期望的数据结构。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:201
 msgid "For the message type from above it yields:"
-msgstr ""
+msgstr "对于上面的消息类型，它会产生："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:216
 msgid ""
@@ -291,6 +330,10 @@ msgid ""
 "recall the data we saw ``/teleop_turtle`` passing to ``/turtlesim`` with "
 "the ``echo`` command, it’s in the same structure:"
 msgstr ""
+"这告诉您 ``/turtlesim`` 节点需要一个带有两个向量（``linear`` 和 ``angular``）的消息，"
+"每个向量有三个元素。"
+"如果你回想一下我们看到的 ``/teleop_turtle`` 通过 ``echo`` 命令传递给 "
+"``/turtlesim`` 的数据，它的结构是相同的："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:232
 msgid "7 ros2 topic pub"
@@ -301,32 +344,36 @@ msgid ""
 "Now that you have the message structure, you can publish data onto a "
 "topic directly from the command line using:"
 msgstr ""
+"现在你有了消息结构，你可以直接从命令行发布数据到主题使用："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:240
 msgid ""
 "The ``'<args>'`` argument is the actual data you’ll pass to the topic, in"
 " the structure you just discovered in the previous section."
 msgstr ""
+"``'<args>'`` 参数是您将传递给主题的实际数据，在上一节中您刚刚发现的结构中。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:242
 msgid ""
 "It’s important to note that this argument needs to be input in YAML "
 "syntax. Input the full command like so:"
 msgstr ""
+"需要注意的是，这个参数需要在 YAML 语法中输入。像这样输入完整的命令："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:249
 msgid ""
 "``--once`` is an optional argument meaning “publish one message then "
 "exit”."
 msgstr ""
+"``--once`` 是一个可选参数，表示“发布一条消息然后退出”。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:251
 msgid "You will receive the following message in the terminal:"
-msgstr ""
+msgstr "您将在终端收到以下信息："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:258
 msgid "And you will see your turtle move like so:"
-msgstr ""
+msgstr "你会看到你的海龟像这样移动："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:262
 msgid ""
@@ -334,6 +381,8 @@ msgid ""
 "require a steady stream of commands to operate continuously. So, to get "
 "the turtle to keep moving, you can run:"
 msgstr ""
+"turtle（通常是它要模拟的真正的机器人）需要稳定的指令流来持续操作。"
+"所以，为了让 turtle 继续移动，你可以："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:269
 msgid ""
@@ -341,6 +390,8 @@ msgid ""
 "addition of the ``--rate 1`` option, which tells ``ros2 topic pub`` to "
 "publish the command in a steady stream at 1 Hz."
 msgstr ""
+"这里的区别在于删除了 ``--once`` 选项并添加了 ``--rate 1`` 选项，"
+"该选项告诉 ``ros2 topic pub`` 以 1Hz 的稳定流发布命令。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:273
 msgid ""
@@ -350,16 +401,20 @@ msgid ""
 "``ros2 topic echo ...`` node (``/_ros2cli_26646``) and the ``/turtlesim``"
 " node now."
 msgstr ""
+"您可以刷新 ``rqt_graph`` 以查看图形化的方式发生了什么。"
+"你会看到 ``ros 2 topic pub ...`` 节点（``/_ros2cli_30358``）在 ``/turtle1/cmd_vel`` 主题上发布，"
+"并且被两个 ``ros2 topic echo ...`` 节点（``/_ros2cli_26646``）和 ``/turtlesim`` 节点接收。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:278
 msgid "Finally, you can run ``echo`` on the ``pose`` topic and recheck rqt_graph:"
-msgstr ""
+msgstr "最后，您可以在 ``pose`` 主题上运行 ``echo``，并重新检查 ``rqt_graph``："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:286
 msgid ""
 "You can see that the ``/turtlesim`` node is also publishing to the "
 "``pose`` topic, which the new ``echo`` node is subscribed to."
 msgstr ""
+"可以看到 ``/turtlesim`` 节点也发布到 ``pose`` 主题，新 ``echo`` 节点订阅了该主题。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:289
 msgid "8 ros2 topic hz"
@@ -370,12 +425,14 @@ msgid ""
 "For one last introspection on this process, you can view the rate at "
 "which data is published using:"
 msgstr ""
+"关于这个过程的最后一个自省，你可以查看数据发布的速率，使用："
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:297
 msgid ""
 "It will return data on the rate at which the ``/turtlesim`` node is "
 "publishing data to the ``pose`` topic."
 msgstr ""
+"它将返回 ``/turtlesim`` 节点将数据发布到 ``pose`` 主题的速率。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:304
 msgid ""
@@ -384,20 +441,24 @@ msgid ""
 "command with ``turtle1/cmd_vel`` instead of ``turtle1/pose``, you will "
 "see an average reflecting that rate."
 msgstr ""
+"回想一下，您使用 ``ros2 topic pub --rate 1`` 将 ``turtle1/cmd_vel`` "
+"的速率设置为以稳定的 1Hz 发布。如果使用 ``turtle1/cmd_vel`` 而不是 "
+"``turtle1/pose`` 运行上面的命令，您将看到反映该速率的平均值。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:312
 msgid "9 Clean up"
-msgstr ""
+msgstr "9 清理"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:314
 msgid ""
 "At this point you'll have a lot of nodes running. Don’t forget to stop "
 "them by entering ``Ctrl+C`` in each terminal."
 msgstr ""
+"此时，您将有许多节点在运行。不要忘记在每个终端输入 {kbd}`Ctrl`+{kbd}`C`来阻止它们。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:318
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:320
 msgid ""
@@ -407,14 +468,18 @@ msgid ""
 "rqt_graph and command line tools. You should now have a good idea of how "
 "data moves around a ROS 2 system."
 msgstr ""
+"节点通过主题发布信息，这允许任意数量的其他节点订阅和访问该信息。"
+"在本教程中，您使用 ``rqt_graph`` 和命令行工具研究了多个节点之间的主题连接。"
+"现在您应该对数据如何在 ROS 2 系统中移动有了很好的了解。"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:325
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Topics/Understanding-ROS2-Topics.rst:327
 msgid ""
 "Next you'll learn about another communication type in the ROS graph with "
 "the tutorial :doc:`../Services/Understanding-ROS2-Services`"
 msgstr ""
-
+"接下来你将通过教程了解 ROS graph 中的另一种通信类型 "
+":doc:`../Services/Understanding-ROS2-Services`"

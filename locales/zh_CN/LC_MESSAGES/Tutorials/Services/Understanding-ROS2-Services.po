@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:4
 msgid "Understanding ROS 2 services"
-msgstr ""
+msgstr "理解 ROS2 服务"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:6
 msgid "**Goal:** Learn about services in ROS 2 using command line tools."
-msgstr ""
+msgstr "**目标**：了解 ROS 2 中使用命令行工具的服务。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -36,11 +36,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:19
 msgid ""
@@ -50,10 +50,14 @@ msgid ""
 " streams and get continual updates, services only provide data when they "
 "are specifically called by a client."
 msgstr ""
+"服务是 ROS graph 中节点通信的另一种方法。"
+"服务基于调用-响应（call-and-response）模型，"
+"而不是主题的发布者-订阅者（publisher-subscriber）模型。"
+"主题允许节点订阅数据流并获得持续更新，而服务只在客户端特别调用时提供数据。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:28
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:30
 msgid ""
@@ -61,38 +65,44 @@ msgid ""
 "<../Understanding-ROS2-Nodes>` and :doc:`topics <../Topics/Understanding-"
 "ROS2-Topics>`, were covered in previous tutorials in the series."
 msgstr ""
+"本教程中提到的一些概念，如 :doc:`节点 <../Understanding-ROS2-Nodes>` 和 "
+":doc:`主题 <../Topics/Understanding-ROS2-Topics>`，"
+"在本系列之前的教程中已经介绍过。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:32
 msgid ""
 "You will need the :doc:`turtlesim package <../Turtlesim/Introducing-"
 "Turtlesim>`."
 msgstr ""
+"你需要 :doc:`turtlesim 包 <../Turtlesim/Introducing-Turtlesim>`。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:34
 msgid ""
 "As always, don’t forget to source ROS 2 in :doc:`every new terminal you "
 "open <../Configuring-ROS2-Environment>`."
 msgstr ""
+"和往常一样，不要忘记在你 :doc:`打开的每一个新终端  "
+"<../Configuring-ROS2-Environment>` 中都输入 ROS 2。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:37
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:40
 msgid "1 Setup"
-msgstr ""
+msgstr "1 设置"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:41
 msgid "Start up the two turtlesim nodes, ``/turtlesim`` and ``/teleop_turtle``."
-msgstr ""
+msgstr "启动两个 turtlesim 节点 ``/turtlesim`` 和 ``/teleop_turtle``。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:43
 msgid "Open a new terminal and run:"
-msgstr ""
+msgstr "打开一个新的终端并运行："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:49
 msgid "Open another terminal and run:"
-msgstr ""
+msgstr "打开另一个终端并运行："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:56
 msgid "2 ros2 service list"
@@ -103,6 +113,7 @@ msgid ""
 "Running the ``ros2 service list`` command in a new terminal will return a"
 " list of all the services currently active in the system:"
 msgstr ""
+"在新终端中运行 ``ros2 service list`` 命令将返回当前系统中所有活动的服务列表："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:82
 msgid ""
@@ -112,6 +123,9 @@ msgid ""
 "more about parameters in the next tutorial. In this tutorial, the "
 "parameter services will be omitted from discussion."
 msgstr ""
+"您将看到两个节点都有相同的 6 个服务，它们的名称中带有 ``parameters``。"
+"在 ROS 2 中，几乎每个节点都有这些基础设施服务，**参数** 是根据这些基础设施服务构建的。"
+"在下一个教程中将有更多关于参数的内容。在本教程中，参数服务将从讨论中省略。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:87
 msgid ""
@@ -122,6 +136,11 @@ msgid ""
 ":doc:`“Introducing turtlesim and rqt” <../Turtlesim/Introducing-"
 "Turtlesim>` tutorial."
 msgstr ""
+"现在，让我们关注 turtleim-specific 服务，"
+"``/clear``、``/kill``、``/reset``、``/spawn``、``/turtle1/set_pen``、"
+"``/turtle1/teleport_absolute`` 和 ``/turtle1/teleport_relative``。"
+"您可能还记得在 :doc:`“介绍 turtlesim 和 rqt” <../Turtlesim/Introducing-"
+"Turtlesim>` 教程中使用 rqt 与其中一些服务进行交互。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:92
 msgid "3 ros2 service type"
@@ -134,26 +153,31 @@ msgid ""
 "types, except service types have two parts: one message for the request "
 "and another for the response."
 msgstr ""
+"服务具有描述服务的请求和响应数据如何构造的类型。"
+"服务类型的定义类似于主题类型，只不过服务类型有两个部分："
+"一个消息用于请求，另一个消息用于响应。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:97
 msgid "To find out the type of a service, use the command:"
-msgstr ""
+msgstr "要查找服务的类型，使用以下命令："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:103
 msgid ""
 "Let’s take a look at turtlesim’s ``/clear`` service. In a new terminal, "
 "enter the command:"
 msgstr ""
+"让我们看看 turtlesim ``/clear`` 服务。在一个新的终端中，输入命令："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:110
 msgid "Which should return:"
-msgstr ""
+msgstr "它应该返回："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:116
 msgid ""
 "The ``Empty`` type means the service call sends no data when making a "
 "request and receives no data when receiving a response."
 msgstr ""
+"``Empty`` 类型意味着服务调用在发出请求时不发送数据，在接收响应时不接收数据。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:119
 msgid "3.1 ros2 service list -t"
@@ -165,13 +189,15 @@ msgid ""
 "append the ``--show-types`` option, abbreviated as ``-t``, to the "
 "``list`` command:"
 msgstr ""
+"要同时查看所有活动服务的类型，"
+"可以在 ``list`` 命令后面添加 ``--show-types`` 选项，缩写为 ``-t``："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:127
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:156
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:178
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:197
 msgid "Which will return:"
-msgstr ""
+msgstr "这将返回："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:142
 msgid "4 ros2 service find"
@@ -181,11 +207,11 @@ msgstr ""
 msgid ""
 "If you want to find all the services of a specific type, you can use the "
 "command:"
-msgstr ""
+msgstr "如果需要查找特定类型的所有服务，可以使用命令："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:150
 msgid "For example, you can find all the ``Empty`` typed services like this:"
-msgstr ""
+msgstr "例如，你可以像这样找到所有 ``Empty`` 类型的服务："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:164
 msgid "5 ros2 interface show"
@@ -196,10 +222,11 @@ msgid ""
 "You can call services from the command line, but first you need to know "
 "the structure of the input arguments."
 msgstr ""
+"您可以从命令行调用服务，但首先您需要知道输入参数的结构。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:172
 msgid "To run this command on the ``/clear`` service’s type, ``Empty``:"
-msgstr ""
+msgstr "在 ``/clear`` 服务类型为 ``Empty`` 的情况下运行此命令："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:184
 msgid ""
@@ -207,6 +234,8 @@ msgid ""
 "structure (below). But, as you learned earlier, the ``Empty`` type "
 "doesn’t send or receive any data. So, naturally, its structure is blank."
 msgstr ""
+"``---`` 将请求结构（上面）与响应结构（下面）分开。"
+"但是，如前所述，``Empty`` 类型不发送或接收任何数据。所以，自然，它的结构是空白的。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:188
 msgid ""
@@ -214,10 +243,12 @@ msgid ""
 " ``/spawn``. From the results of ``ros2 service list -t``, we know "
 "``/spawn``’s type is ``turtlesim/srv/Spawn``."
 msgstr ""
+"让我们内省一个具有发送和接收数据类型的服务，比如 ``/spawn``。"
+"由 ``ros2 service list -t`` 的结果可知 ``/spawn`` 的类型是 ``turtlesim/srv/Spawn``。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:191
 msgid "To see the arguments in a ``/spawn`` call-and-request, run the command:"
-msgstr ""
+msgstr "要查看 ``/spawn`` 调用和请求中的参数，运行命令："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:208
 msgid ""
@@ -225,6 +256,8 @@ msgid ""
 "call ``/spawn``. ``x``, ``y`` and ``theta`` determine the location of the"
 " spawned turtle, and ``name`` is clearly optional."
 msgstr ""
+"``---`` 行上面的信息告诉我们调用 ``/spawn`` 所需的参数。"
+"``x``，``y`` 和 ``theta`` 决定生成的海龟的位置，``name`` 显然是可选的。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:211
 msgid ""
@@ -232,6 +265,7 @@ msgid ""
 "case, but it can help you understand the data type of the response you "
 "get from the call."
 msgstr ""
+"在本例中，这一行下面的信息不是您需要知道的，但它可以帮助您理解从调用中获得的响应的数据类型。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:214
 msgid "6 ros2 service call"
@@ -243,18 +277,21 @@ msgid ""
 "and how to find the structure of that type’s arguments, you can call a "
 "service using:"
 msgstr ""
+"现在，您已经知道了什么是服务类型、如何查找服务类型以及如何查找该类型参数的结构，"
+"您可以使用以下命令调用服务："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:222
 msgid ""
 "The ``<arguments>`` part is optional. For example, you know that "
 "``Empty`` typed services don’t have any arguments:"
 msgstr ""
+"``<arguments>`` 部分是可选的。例如，你知道 ``Empty`` 类型化服务没有任何参数："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:229
 msgid ""
 "This command will clear the turtlesim window of any lines your turtle has"
 " drawn."
-msgstr ""
+msgstr "此命令将清除 turtle 窗口中所绘制的任何线。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:233
 msgid ""
@@ -262,26 +299,29 @@ msgid ""
 "arguments. Input ``<arguments>`` in a service call from the command-line "
 "need to be in YAML syntax."
 msgstr ""
+"现在让我们通过调用 ``/spawn`` 和输入参数来生成一个新的海龟。"
+"命令行中的服务调用中的输入 ``<arguments>`` 需要使用 YAML 语法。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:236
 msgid "Enter the command:"
-msgstr ""
+msgstr "输入命令："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:242
 msgid ""
 "You will get this method-style view of what’s happening, and then the "
 "service response:"
 msgstr ""
+"你会得到这个方法风格的视图，显示正在发生的事情，然后是服务响应："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:251
 msgid ""
 "Your turtlesim window will update with the newly spawned turtle right "
 "away:"
-msgstr ""
+msgstr "你的 turtlesim 窗口会立即更新新生成的海龟："
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:256
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:258
 msgid ""
@@ -291,32 +331,39 @@ msgid ""
 "pattern where a client makes a request to a node providing the service "
 "and the service processes the request and generates a response."
 msgstr ""
+"节点可以通过 ROS2 中的服务进行通信。"
+"与主题不同——一种通信模式，其中一个节点发布信息，"
+"可以使用一个或多个用户服务请求/响应模式，"
+"客户端发出请求节点提供服务和服务处理请求并生成一个响应。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:261
 msgid ""
 "You generally don’t want to use a service for continuous calls; topics or"
 " even actions would be better suited."
 msgstr ""
+"你通常不希望使用服务进行持续回调；**主题** 甚至 **动作** 会更合适。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:263
 msgid ""
 "In this tutorial you used command line tools to identify, elaborate on, "
 "and call services."
-msgstr ""
+msgstr "在本教程中，您使用命令行工具来识别、详细说明和调用服务。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:266
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:268
 msgid ""
 "In the next tutorial, :doc:`../Parameters/Understanding-ROS2-Parameters`,"
 " you will learn about configuring node settings."
 msgstr ""
+"在下一个教程中，:doc:`../Parameters/Understanding-ROS2-Parameters`，"
+"你将学习配置节点设置的知识。"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:271
 msgid "Related content"
-msgstr ""
+msgstr "相关内容"
 
 #: ../../source/Tutorials/Services/Understanding-ROS2-Services.rst:273
 msgid ""
@@ -324,4 +371,5 @@ msgid ""
 "in-ros-2/15261>`_; it's an excellent realistic application of "
 "\"Understanding ROS 2 services\" using a Robotis robot arm."
 msgstr ""
-
+"请阅读 `教程 <https://discourse.ubuntu.com/t/call-services-"
+"in-ros-2/15261>`_，这是使用 Robotis 机器人手臂“理解 ROS 2 服务”的一个出色的现实应用。"

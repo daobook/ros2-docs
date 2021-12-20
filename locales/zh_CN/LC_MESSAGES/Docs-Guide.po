@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/Docs-Guide.rst:4
 msgid "Docs Guide"
-msgstr ""
+msgstr "文档指南"
 
 #: ../../source/Docs-Guide.rst:6
 msgid ""
@@ -28,10 +28,12 @@ msgid ""
 "is helpful in understanding where specific resources live, how to ask "
 "questions, and which sites are maintained."
 msgstr ""
+"本指南解释了 ROS 1 和 ROS 2 文档基础结构。"
+"它有助于理解具体资源在哪里，如何提问，以及维护哪些站点。"
 
 #: ../../source/Docs-Guide.rst:11
 msgid "Table of Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Docs-Guide.rst:16
 msgid "`ROS Answers <https://answers.ros.org/questions/>`_"
@@ -39,23 +41,27 @@ msgstr ""
 
 #: ../../source/Docs-Guide.rst
 msgid "Purpose"
-msgstr ""
+msgstr "目的"
 
 #: ../../source/Docs-Guide.rst:19
 msgid ""
 "A Q&A community website for ROS 1 and 2 that is similar to `Stack "
 "Exchange <https://stackexchange.com/>`_."
 msgstr ""
+"类似于 `Stack Exchange <https://stackexchange.com/>`_ "
+"的 ROS 1 和 ROS2 的问答社区网站。"
 
 #: ../../source/Docs-Guide.rst
 msgid "References"
-msgstr ""
+msgstr "参考"
 
 #: ../../source/Docs-Guide.rst:22
 msgid ""
 "See the :ref:`Contact Page <Using ROS Answers>` for how to use ROS "
 "Answers."
 msgstr ""
+如何使用 ROS Answers 请参见 "
+":ref:`联系页面 <Using ROS Answers>`。
 
 #: ../../source/Docs-Guide.rst:27
 msgid "`ROS Design <http://design.ros2.org/>`_"
@@ -63,15 +69,16 @@ msgstr ""
 
 #: ../../source/Docs-Guide.rst:30
 msgid "A place that documents many of the early ROS 2 design decisions."
-msgstr ""
+msgstr "一个记录许多早期 ROS 2 设计决策的地方。"
 
 #: ../../source/Docs-Guide.rst
 msgid "Notes"
-msgstr ""
+msgstr "说明"
 
 #: ../../source/Docs-Guide.rst:33
 msgid ":ref:`REPs Section` are preferable to new documents in ROS Design."
 msgstr ""
+"在 ROS 设计中，更可取的是 :ref:`REPs Section`。"
 
 #: ../../source/Docs-Guide.rst:38
 msgid "`ROS Discourse <https://discourse.ros.org/>`_"
@@ -79,13 +86,14 @@ msgstr ""
 
 #: ../../source/Docs-Guide.rst:41
 msgid "A forum for general discussions and announcements for the ROS community."
-msgstr ""
+msgstr "一个为 ROS 社区提供一般性讨论和公告的论坛。"
 
 #: ../../source/Docs-Guide.rst:44
 msgid ""
 "See the :ref:`Contact Page <Using ROS Discourse>` for more information on"
 " discussions on ROS Discourse."
 msgstr ""
+"有关 ROS 讨论的更多信息，请参见 :ref:`联系页面 <Using ROS Discourse>` 。"
 
 #: ../../source/Docs-Guide.rst:49
 msgid "`ROS Docs <https://docs.ros.org>`_ (this site)"
@@ -93,13 +101,13 @@ msgstr ""
 
 #: ../../source/Docs-Guide.rst:53
 msgid "ROS 1 and ROS 2 API documentation"
-msgstr ""
+msgstr "ROS 1 和 ROS 2 API 文档"
 
 #: ../../source/Docs-Guide.rst:54
 msgid ""
 "ROS 2 core documentation, such as installation instructions, tutorials, "
 "guides, roadmap, etc."
-msgstr ""
+msgstr "ROS2 核心文档，如安装说明、教程、指南、路线图等。"
 
 #: ../../source/Docs-Guide.rst:59
 msgid "`ROS Enhancement Proposals (REPs) <https://ros.org/reps/rep-0000.html>`_"
@@ -107,13 +115,14 @@ msgstr ""
 
 #: ../../source/Docs-Guide.rst:62
 msgid "A place for ROS 1 and ROS 2 design and conventions."
-msgstr ""
+msgstr "ROS1 和 ROS2 设计和约定的地方。"
 
 #: ../../source/Docs-Guide.rst:65
 msgid ""
 "REPs are preferable to :ref:`ROS Design Section`, since they have a more "
 "established review process."
 msgstr ""
+"代表比 :ref:`ROS Design Section` 更可取，因为他们有一个更成熟的审查过程。"
 
 #: ../../source/Docs-Guide.rst:70
 msgid "`ROS Index <https://index.ros.org/>`_"
@@ -121,35 +130,37 @@ msgstr ""
 
 #: ../../source/Docs-Guide.rst:73
 msgid "An indexed list of all packages that links to additional information."
-msgstr ""
+msgstr "链接到附加信息的所有包的索引列表。"
 
 #: ../../source/Docs-Guide.rst:76
 msgid "ROS Index is useful for"
-msgstr ""
+msgstr "ROS 索引用于"
 
 #: ../../source/Docs-Guide.rst:78
 msgid "Seeing which ROS distributions a package supports (ROS 1 and ROS 2)"
-msgstr ""
+msgstr "查看软件包支持哪些 ROS 发行版（ROS 1 和 ROS 2）"
 
 #: ../../source/Docs-Guide.rst:79
 msgid "Linking to a packages repository, API documentation, or website"
-msgstr ""
+msgstr "链接到包存储库、API 文档或网站"
 
 #: ../../source/Docs-Guide.rst:80
 msgid ""
 "Inspecting a package's license, build type, maintainers, status, and "
 "dependencies"
-msgstr ""
+msgstr "检查包的许可、构建类型、维护人员、状态和依赖项"
 
 #: ../../source/Docs-Guide.rst:81
 msgid "Finding questions on :ref:`ROS Answers Section` that involve the package"
-msgstr ""
+msgstr "在 :ref:`ROS Answers Section` 中找到涉及包的问题"
 
 #: ../../source/Docs-Guide.rst:83
 msgid ""
 "You can think of ROS 2 index as something similar to the `Python Package "
 "Index (PyPi) <https://pypi.org/>`_ for ROS packages."
 msgstr ""
+"您可以将 ROS 2 索引看作类似于 ROS 包的 `Python Package "
+"Index (PyPi) <https://pypi.org/>`_。"
 
 #: ../../source/Docs-Guide.rst:86
 msgid "`ROS Prerelease <http://prerelease.ros.org/>`_"
@@ -160,10 +171,12 @@ msgid ""
 "A website that helps you generate commands to emulate the `ROS Buildfarm "
 "<https://build.ros.org/>`_ on your local machine."
 msgstr ""
+"一个网站，帮助您生成命令来模拟本地机器上的 `ROS Buildfarm "
+"<https://build.ros.org/>`_。"
 
 #: ../../source/Docs-Guide.rst:92
 msgid "Currently, the frontend of this site only shows ROS 1 distributions."
-msgstr ""
+msgstr "目前，这个网站的前端只显示 ROS 1 的发布。"
 
 #: ../../source/Docs-Guide.rst:95
 msgid "`ROS Robots <https://robots.ros.org/>`_"
@@ -171,13 +184,14 @@ msgstr ""
 
 #: ../../source/Docs-Guide.rst:98
 msgid "A place to showcase robots that use ROS 1 or ROS 2."
-msgstr ""
+msgstr "一个展示使用 ROS 1 或 ROS 2 的 robots 的地方。"
 
 #: ../../source/Docs-Guide.rst:101
 msgid ""
 "Robots on this page are community contributed, see the site for "
 "instructions on how to contribute a robot."
 msgstr ""
+"本页上的机器人由社区贡献，请参阅该网站了解如何贡献 robot。"
 
 #: ../../source/Docs-Guide.rst:104
 msgid "`ROS Wiki <http://wiki.ros.org/>`_"
@@ -185,7 +199,7 @@ msgstr ""
 
 #: ../../source/Docs-Guide.rst:107
 msgid "ROS 1 documentation and user modifiable content."
-msgstr ""
+msgstr "ROS1 文档和用户可修改的内容。"
 
 #: ../../source/Docs-Guide.rst:111
 msgid ""
@@ -194,10 +208,13 @@ msgid ""
 "by :ref:`ROS Docs Section`, :ref:`ROS Index Section`, :ref:`ROS Discourse"
 " Section`, and :ref:`ROS Answers Section`"
 msgstr ""
+"我们不在 ROS 2 中使用维基，因为主持维基的开销很大。"
+"ROS 2 的维基功能将被 :ref:`ROS Docs Section`、:ref:`ROS Index Section`、 "
+":ref:`ROS Discourse Section` 和 :ref:`ROS Answers Section` 所取代"
 
 #: ../../source/Docs-Guide.rst:113
 msgid "The wiki will active until at least the last ROS 1 distribution is EOL."
-msgstr ""
+msgstr "wiki 将至少在最后一个 ROS 1 发行版 EOL 之前激活。"
 
 #: ../../source/Docs-Guide.rst:116
 msgid "`ROS.org <https://www.ros.org/>`_"
@@ -208,10 +225,11 @@ msgid ""
 "The ROS 1 and ROS 2 product landing page, which gives a high-level "
 "description of ROS and links to other ROS sites."
 msgstr ""
+"ROS 1 和 ROS 2 产品登陆页面，提供了 ROS 的高级描述，并链接到其他 ROS 站点。"
 
 #: ../../source/Docs-Guide.rst:122
 msgid "Deprecated"
-msgstr ""
+msgstr "废弃"
 
 #: ../../source/Docs-Guide.rst:125
 msgid "`ROS 2 Docs <https://docs.ros2.org>`_"
@@ -223,4 +241,5 @@ msgid ""
 "Galactic. From Humble and onwards, API documentation will be hosted on "
 ":ref:`ROS Docs Section`."
 msgstr ""
-
+"ROS 2 docs 承载了包括 Galactic 在内的发行版的 API 文档。"
+"从 Humble 开始，API 文档将存放在 :ref:`ROS Docs Section`。"

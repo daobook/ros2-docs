@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/Installation/Latest-Development-Setup.rst:2
 msgid "Installing the latest ROS 2 development"
-msgstr ""
+msgstr "安装最新的 ROS 2 开发版"
 
 #: ../../source/Installation/Latest-Development-Setup.rst:4
 msgid ""
@@ -28,18 +28,21 @@ msgid ""
 "can install ROS 2 by building it from source or installing testing "
 "binaries. This will give you the latest bug fixes and features."
 msgstr ""
+"如果你打算直接为最新的 ROS 2 开发做出贡献，"
+"你可以通过从源代码构建 ROS 2 或安装测试二进制文件来安装 ROS 2。"
+"这将为你提供最新的错误修复和功能。"
 
 #: ../../source/Installation/Latest-Development-Setup.rst:8
 msgid "Testing binaries"
-msgstr ""
+msgstr "测试二进制程序"
 
 #: ../../source/Installation/Latest-Development-Setup.rst:10
 msgid "See :doc:`Testing <Testing>`."
-msgstr ""
+msgstr "参阅 :doc:`测试 <Testing>`。"
 
 #: ../../source/Installation/Latest-Development-Setup.rst:13
 msgid "Building from source"
-msgstr ""
+msgstr "从源码开始构建"
 
 #: ../../source/Installation/Latest-Development-Setup.rst:17
 msgid ""
@@ -48,12 +51,15 @@ msgid ""
 "of ROS 2. Instead, choose a :doc:`ROS distribution <../Installation>` "
 "that has already been released."
 msgstr ""
+"最新开发的版本没有经过与发行版相同的严格测试，如果你正在寻找 ROS 2 的稳定版本，"
+"不建议你选择 :doc:`ROS 发行版 <../Installation>`，它已经被发行了。"
 
 #: ../../source/Installation/Latest-Development-Setup.rst:20
 msgid ""
 "Follow the links below for the latest setup instructions for your "
 "platform:"
 msgstr ""
+"遵循以下链接，了解您平台的最新设置说明："
 
 #: ../../source/Installation/Latest-Development-Setup.rst:22
 msgid ":doc:`Ubuntu Linux <Ubuntu-Development-Setup>`"
@@ -72,4 +78,5 @@ msgid ""
 "For keeping your source code up-to-date, see :doc:`Maintaining a Source "
 "Checkout <Maintaining-a-Source-Checkout>`."
 msgstr ""
-
+"关于保持你的源代码的最新情况，请参见 :doc:`维护一个源代码检出 "
+"<Maintaining-a-Source-Checkout>`。"

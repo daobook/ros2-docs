@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,13 +20,14 @@ msgstr ""
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:4
 msgid "Recording and playing back data"
-msgstr ""
+msgstr "记录和回放数据"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:6
 msgid ""
 "**Goal:** Record data published on a topic so you can replay and examine "
 "it any time."
 msgstr ""
+"**目标**：记录就某一主题发表的数据，以便你可以随时回放和检查。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -38,11 +39,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:19
 msgid ""
@@ -52,22 +53,27 @@ msgid ""
 "reproduce the results of your tests and experiments. Recording topics is "
 "also a great way to share your work and allow others to recreate it."
 msgstr ""
+"``ros2 bag`` 是一个命令行工具，用于记录系统中发布的主题数据。"
+"它积累传递给任意数量主题的数据，并将其保存在数据库中。"
+"然后可以重放数据以再现测试和实验的结果。"
+"记录主题也是分享你的工作并让别人重新创造它的好方法。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:26
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:28
 msgid ""
 "You should have ``ros2 bag`` installed as a part of your regular ROS 2 "
 "setup."
-msgstr ""
+msgstr "您应该已经安装了 ``ros2 bag`` 作为常规 ROS2 设置的一部分。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:30
 msgid ""
 "If you've installed from Debians on Linux and your system doesn’t "
 "recognize the command, install it like so:"
 msgstr ""
+"如果你在 Linux 上用 debian 安装，但是你的系统不能识别这个命令，那么像这样安装它："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:37
 msgid ""
@@ -76,20 +82,26 @@ msgid ""
 "/Understanding-ROS2-Topics>`. It also uses the :doc:`turtlesim package "
 "<../Turtlesim/Introducing-Turtlesim>`."
 msgstr ""
+"本教程讲述了之前教程中涉及的概念，如 "
+":doc:`nodes <../Understanding-ROS2-Nodes>` 和 :doc:`topics <../Topics"
+"/Understanding-ROS2-Topics>`。"
+"它还使用了 :doc:`turtlesim 包 <../Turtlesim/Introducing-Turtlesim>`。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:40
 msgid ""
 "As always, don’t forget to source ROS 2 in :doc:`every new terminal you "
 "open <../Configuring-ROS2-Environment>`."
 msgstr ""
+"像往常一样，不要忘记在 :doc:`你打开的每一个新终端 "
+"<../Configuring-ROS2-Environment>` 中为 ROS 2 激活源代码。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:44
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:47
 msgid "1 Setup"
-msgstr ""
+msgstr "1 设置"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:48
 msgid ""
@@ -97,24 +109,27 @@ msgid ""
 "save and replay later on, so begin by starting up the ``/turtlesim`` and "
 "``/teleop_turtle`` nodes."
 msgstr ""
+"您将在 turtlesim 系统中记录您的键盘输入，以便稍后保存和重放，"
+"因此首先启动 ``/turtlesim`` 和 ``/teleop_turtle`` 节点。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:50
 msgid "Open a new terminal and run:"
-msgstr ""
+msgstr "打开一个新的终端并运行："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:56
 msgid "Open another terminal and run:"
-msgstr ""
+msgstr "打开另一个终端并运行："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:62
 msgid ""
 "Let’s also make a new directory to store our saved recordings, just as "
 "good practice:"
 msgstr ""
+"让我们也创建一个新目录来存储我们保存的记录，这是一个良好的做法："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:70
 msgid "2 Choose a topic"
-msgstr ""
+msgstr "2 选择一个主题"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:72
 msgid ""
@@ -122,10 +137,11 @@ msgid ""
 "see a list of your system's topics, open a new terminal and run the "
 "command:"
 msgstr ""
+"``ros2 bag`` 只能记录发表的主题的数据。要查看系统主题的列表，打开一个新的终端并运行命令："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:79
 msgid "Which will return:"
-msgstr ""
+msgstr "这将返回："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:89
 msgid ""
@@ -133,10 +149,12 @@ msgid ""
 "publishes commands on the ``/turtle1/cmd_vel`` topic to make the turtle "
 "move in turtlesim."
 msgstr ""
+"在主题教程中，您了解到 ``/turtle_teleop`` 节点在 ``/turtle1/cmd_vel`` 主题上发布命令，"
+"使海龟在 ``turtleim`` 中移动。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:91
 msgid "To see the data that ``/turtle1/cmd_vel`` is publishing, run the command:"
-msgstr ""
+msgstr "要查看 ``/turtle1/cmd_vel`` 发布的数据，使用命令："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:97
 msgid ""
@@ -145,6 +163,9 @@ msgid ""
 "it's active. Use the arrow keys to move the turtle around, and you will "
 "see data being published on the terminal running ``ros2 topic echo``."
 msgstr ""
+"一开始什么都不会显示出来，因为 ``teleop`` 没有公布任何数据。"
+"回到你运行遥控终端的地方，选择它，让它激活。"
+"使用方向键移动海龟，您将看到正在运行 ``ros2 topic echo`` 的终端上发布的数据。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:116
 msgid "3 ros2 bag record"
@@ -152,7 +173,7 @@ msgstr ""
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:118
 msgid "To record the data published to a topic use the command syntax:"
-msgstr ""
+msgstr "要记录发布到主题的数据，请使用命令语法："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:124
 msgid ""
@@ -160,16 +181,18 @@ msgid ""
 " move into the ``bag_files`` directory you created earlier, because the "
 "rosbag file will save in the directory where you run it."
 msgstr ""
+"在对选定的主题运行此命令之前，打开一个新的终端并移动到前面创建的 ``bag_files`` 目录中，"
+"因为 rosbag 文件将保存在运行它的目录中。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:126
 msgid "Run the command:"
-msgstr ""
+msgstr "运行以下命令："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:132
 msgid ""
 "You will see the following messages in the terminal (the date and time "
 "will be different):"
-msgstr ""
+msgstr "您将在终端中看到以下消息（日期和时间将会不同）："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:141
 msgid ""
@@ -178,58 +201,65 @@ msgid ""
 "turtle around again. The movements don’t matter, but try to make a "
 "recognizable pattern to see when you replay the data later."
 msgstr ""
+"现在 ``ros2 bag`` 正在记录发表在 ``/turtle1/cmd_vel`` 主题上的数据。"
+"回到 ``teleop`` 终端，再次移动海龟。"
+"这些动作并不重要，但试着在稍后重放数据时找出一个可识别的模式。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:147
 msgid "Press ``Ctrl+C`` to stop recording."
-msgstr ""
+msgstr "按 {kbd}`Ctrl`+{kbd}`C` 停止录制。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:149
 msgid ""
 "The data will be accumulated in a bag file with a name in the pattern of "
 "``rosbag2_year_month_day-hour_minute_second``"
 msgstr ""
+"数据将在一个名为 ``rosbag2_year_month_day-hour_minute_second`` 的包文件中积累。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:152
 msgid "3.1 Record multiple topics"
-msgstr ""
+msgstr "3.1 记录多个主题"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:154
 msgid ""
 "You can also record multiple topics, as well as change the name of the "
 "file ``ros2 bag`` saves to."
 msgstr ""
+"您还可以记录多个主题，以及更改 ``ros2 bag`` 保存到的文件的名称。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:156
 msgid "Run the following command:"
-msgstr ""
+msgstr "执行如下命令："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:162
 msgid ""
 "The ``-o`` option allows you to choose a unique name for your bag file. "
 "The following string, in this case ``subset``, is the file name."
 msgstr ""
+"``-o`` 选项允许您为您的包文件选择一个唯一的名称。"
+"下面的字符串（在本例中是 ``subset``）是文件名。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:165
 msgid ""
 "To record more than one topic at a time, simply list each topic separated"
 " by a space."
-msgstr ""
+msgstr "要一次记录多个主题，只需用空格分开列出每个主题。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:167
 msgid ""
 "You will see the following message, confirming that both topics are being"
 " recorded."
-msgstr ""
+msgstr "您将看到以下消息，确认正在记录这两个主题。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:177
 msgid "You can move the turtle around and press ``Ctrl+C`` when you’re finished."
-msgstr ""
+msgstr "你可以移动海龟，完成后按 {kbd}`Ctrl`+{kbd}`C`。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:181
 msgid ""
 "There is another option you can add to the command, ``-a``, which records"
 " all the topics on your system."
-msgstr ""
+msgstr "您可以向命令添加另一个选项 ``-a``，它记录系统上的所有主题。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:184
 msgid "4 ros2 bag info"
@@ -237,19 +267,21 @@ msgstr ""
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:186
 msgid "You can see details about your recording by running:"
-msgstr ""
+msgstr "你可以通过运行："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:192
 msgid ""
 "Running this command on the ``subset`` bag file will return a list of "
 "information on the file:"
 msgstr ""
+"在 ``subset`` 包文件上运行此命令将返回文件的信息列表："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:210
 msgid ""
 "To view the individual messages, you would have to open up the database, "
 "in this case sqlite3, to examine it, which is beyond the scope of ROS 2."
 msgstr ""
+"要查看各个消息，您必须打开数据库（在本例中是 ``sqlite3``）来检查它，这超出了 ROS 2 的范围。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:213
 msgid "5 ros2 bag play"
@@ -261,14 +293,16 @@ msgid ""
 " teleop is running. Then make sure your turtlesim window is visible so "
 "you can see the bag file in action."
 msgstr ""
+"在播放包文件前，请在终端上输入 {kbd}`Ctrl`+{kbd}`C`。"
+"然后确保 turtlesim 窗口是可见的，这样你就可以看到包文件的运行。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:218
 msgid "Enter the command:"
-msgstr ""
+msgstr "输入命令："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:224
 msgid "The terminal will return the message:"
-msgstr ""
+msgstr "终端将返回消息："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:230
 #, python-format
@@ -277,6 +311,8 @@ msgid ""
 " not 100% exactly; turtlesim is sensitive to small changes in the "
 "system’s timing)."
 msgstr ""
+"你的海龟将遵循你在记录时输入的相同路径"
+"（虽然不是 100% 准确；Turtlesim 对系统时间的微小变化非常敏感）。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:234
 msgid ""
@@ -284,6 +320,8 @@ msgid ""
 "``ros2 bag play`` command won’t quit for as long as you had turtlesim "
 "running, even if you weren’t moving."
 msgstr ""
+"因为 ``subset`` 文件记录了 ``/turtle1/pose`` 主题，只要 ``turtlesim`` 在运行，"
+"``ros2 bag play`` 命令就不会退出，即使你不移动。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:236
 msgid ""
@@ -293,22 +331,27 @@ msgid ""
 "``/turtle1/cmd_vel`` topic’s ``Count`` information was only 9; that’s how"
 " many times we pressed the arrow keys while recording."
 msgstr ""
+"这是因为只要 ``/turtlesim`` 节点是活动的，它就会定期在 ``/turtle1/pose`` 主题上发布数据。"
+"您可能已经注意到，在上面的 ``ros2 bag info`` 示例结果中 ``/turtle1/cmd_vel`` 主题的 "
+"``Count`` 信息只有9；这是我们在录音时按方向键的次数。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:239
 msgid ""
 "Notice that ``/turtle1/pose`` has a ``Count`` value of over 3000; while "
 "we were recording, data was published on that topic 3000 times."
 msgstr ""
+"注意 ``/turtle1/pose`` 的 ``Count`` 值超过 ``3000``；"
+"当我们记录的时候，关于这个话题的数据发表了 3000 次。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:241
 msgid ""
 "To get an idea of how often position data is published, you can run the "
 "command:"
-msgstr ""
+msgstr "要了解位置数据发布的频率，可以运行以下命令："
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:248
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:250
 msgid ""
@@ -316,6 +359,8 @@ msgid ""
 "``ros2 bag`` command. Whether you’re sharing your work with others or "
 "introspecting on your own experiments, it’s a great tool to know about."
 msgstr ""
+"您可以使用 ``ros2 bag`` 命令记录在您的 ROS2 系统中传递的主题数据。"
+"无论你是与他人分享你的工作还是反思你自己的实验，了解它都是一个很好的工具。"
 
 #: ../../source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst:254
 msgid "Next steps"

@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:4
 msgid "Writing a simple publisher and subscriber (C++)"
-msgstr ""
+msgstr "编写一个简单的发布者和订阅者（C++）"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:6
 msgid "**Goal:** Create and run a publisher and subscriber node using C++."
-msgstr ""
+msgstr "**目标**：使用 C++ 创建并运行一个发布者和订阅者节点。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -36,11 +36,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:19
 msgid ""
@@ -51,16 +51,23 @@ msgid ""
 "is a simple “talker” and “listener” system; one node publishes data and "
 "the other subscribes to the topic so it can receive that data."
 msgstr ""
+":doc:`节点 <./Understanding-ROS2-Nodes>` 是通过 ROS graph 进行通信的可执行进程。"
+"在本教程中，节点将通过 :doc:`主题 <./Topics/Understanding-ROS2-Topics>` "
+"以字符串消息的形式相互传递信息。"
+"这里使用的例子是一个简单的“talker”和“listener”系统；"
+"一个节点发布数据，另一个节点订阅主题，以便接收该数据。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:23
 msgid ""
 "The code used in these examples can be found `here "
 "<https://github.com/ros2/examples/tree/master/rclcpp/topics>`__."
 msgstr ""
+"这些示例中使用的代码可以在 `rclcpp topics "
+"<https://github.com/ros2/examples/tree/master/rclcpp/topics>`__ 找到。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:26
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:28
 msgid ""
@@ -68,26 +75,31 @@ msgid ""
 "<./Workspace/Creating-A-Workspace>` and :doc:`create a package "
 "<./Creating-Your-First-ROS2-Package>`."
 msgstr ""
+"在前面的教程中，您学习了如何 :doc:`创建工作区 <./Workspace/Creating-A-Workspace>` "
+"和 :doc:`创建包 <./Creating-Your-First-ROS2-Package>`。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:31
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:34
 msgid "1 Create a package"
-msgstr ""
+msgstr "1 创建一个包"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:36
 msgid ""
 "Open a new terminal and :doc:`source your ROS 2 installation "
 "<./Configuring-ROS2-Environment>` so that ``ros2`` commands will work."
 msgstr ""
+"打开一个新的终端并 :doc:`激活 ROS2 安装的源代码 <./Configuring-ROS2-Environment>`，"
+"这样 ``ros2`` 命令就可以工作了。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:38
 msgid ""
 "Navigate into the ``dev_ws`` directory created in a :ref:`previous "
 "tutorial <new-directory>`."
 msgstr ""
+"导航到 :ref:`上一教程 <new-directory>` 中创建的 ``dev_ws`` 目录。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:40
 msgid ""
@@ -95,12 +107,15 @@ msgid ""
 "root of the workspace. So, navigate into ``dev_ws/src``, and run the "
 "package creation command:"
 msgstr ""
+"回想一下，包应该在 ``src/`` 目录中创建，而不是在工作区的根目录中。"
+"因此，导航到 ``dev_ws/src``，并运行包创建命令："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:47
 msgid ""
 "Your terminal will return a message verifying the creation of your "
 "package ``cpp_pubsub`` and all its necessary files and folders."
 msgstr ""
+"终端将返回一条消息，验证 ``cpp_pubsub`` 包及其所有必要文件和文件夹的创建情况。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:49
 msgid ""
@@ -108,14 +123,16 @@ msgid ""
 "directory in any CMake package where the source files containing "
 "executables belong."
 msgstr ""
+"导航到 ``dev_ws/src/cpp_pubsub/src``。"
+"回想一下，这是任何 CMake 包中包含可执行文件的源文件所在的目录。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:54
 msgid "2 Write the publisher node"
-msgstr ""
+msgstr "2 编写 publisher 节点"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:56
 msgid "Download the example talker code by entering the following command:"
-msgstr ""
+msgstr "输入以下命令下载示例 talker 代码："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:60
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:306
@@ -144,22 +161,23 @@ msgstr ""
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:74
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:320
 msgid "In a Windows command line prompt:"
-msgstr ""
+msgstr "在 Windows 命令行提示符中："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:80
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:326
 msgid "Or in powershell:"
-msgstr ""
+msgstr "或者在 powershell："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:86
 msgid ""
 "Now there will be a new file named ``publisher_member_function.cpp``. "
 "Open the file using your preferred text editor."
 msgstr ""
+"现在将有一个名为 ``publisher_member_function.cpp`` 的新文件。使用首选文本编辑器打开文件。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:137
 msgid "2.1 Examine the code"
-msgstr ""
+msgstr "2.1 检查代码"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:139
 msgid ""
@@ -169,6 +187,9 @@ msgid ""
 "``std_msgs/msg/string.hpp``, which includes the built-in message type you"
 " will use to publish data."
 msgstr ""
+"代码的顶部包含您将要使用的标准 C++ 头文件。"
+"在标准的 C++ 头文件之后是 ``rclcpp/rclcpp.hpp``，它允许你使用 ROS 2 系统中最常见的部分。"
+"最后是 ``std_msgs/msg/string.hpp``，其中包含用于发布数据的内置消息类型。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:143
 msgid ""
@@ -176,6 +197,8 @@ msgid ""
 "have to be added to ``package.xml`` and ``CMakeLists.txt``, which you’ll "
 "do in the next section."
 msgstr ""
+"这些行表示节点的依赖项。"
+"还记得吗，必须将依赖项添加到 ``package.xml`` 和 ``CMakeLists.txt`` 中，这将在下一节中完成。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:158
 msgid ""
@@ -183,6 +206,8 @@ msgid ""
 "from ``rclcpp::Node``. Every ``this`` in the code is referring to the "
 "node."
 msgstr ""
+"下一行通过继承 ``rclcpp::Node`` 来创建节点类 ``MinimalPublisher``。"
+"代码中的每一个 ``this`` 都指向节点。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:165
 msgid ""
@@ -193,6 +218,10 @@ msgid ""
 "Next, ``timer_`` is initialized, which causes the ``timer_callback`` "
 "function to be executed twice a second."
 msgstr ""
+"公共构造函数将节点命名为 ``minimal_publisher``，并将 ``count_`` 初始化为 ``0``。"
+"在构造函数内部，发布者被初始化为 ``String`` 消息类型、主题名称 ``topic`` "
+"以及在发生备份时限制消息所需的队列大小。"
+"接下来，初始化 ``timer_``，这将导致每秒执行两次 ``timer_callback`` 函数。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:180
 msgid ""
@@ -200,10 +229,12 @@ msgid ""
 "messages are actually published. The ``RCLCPP_INFO`` macro ensures every "
 "published message is printed to the console."
 msgstr ""
+"``timer_callback`` 函数是设置消息数据和实际发布消息的地方。"
+"``RCLCPP_INFO`` 宏确保将每个发布的消息打印到控制台。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:194
 msgid "Last is the declaration of the timer, publisher, and counter fields."
-msgstr ""
+msgstr "最后是定时器、发布者和计数器字段的声明。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:202
 msgid ""
@@ -212,10 +243,12 @@ msgid ""
 "``rclcpp::spin`` starts processing data from the node, including "
 "callbacks from the timer."
 msgstr ""
+"紧随 ``MinimalPublishe`` 类之后的是 ``main``，节点实际执行的位置。"
+"``rclcpp::init`` 初始化 ROS 2，``rclcpp::spin`` 开始处理节点数据，包括定时器的回调。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:216
 msgid "2.2 Add dependencies"
-msgstr ""
+msgstr "2.2 添加依赖项"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:218
 msgid ""
@@ -223,10 +256,12 @@ msgid ""
 " the ``CMakeLists.txt`` and ``package.xml`` files have been created for "
 "you."
 msgstr ""
+"导航一层回到 ``dev_ws/src/cpp_pubsub`` 目录，"
+"这里已经为您创建了 ``CMakeLists.txt`` 和 ``package.xml`` 文件。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:220
 msgid "Open ``package.xml`` with your text editor."
-msgstr ""
+msgstr "用文本编辑器打开 ``package.xml``。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:222
 msgid ""
@@ -234,6 +269,8 @@ msgid ""
 "ROS2-Package>`, make sure to fill in the ``<description>``, "
 "``<maintainer>`` and ``<license>`` tags:"
 msgstr ""
+"正如 :doc:`之前的教程 <./Creating-Your-First-ROS2-Package>` "
+"中提到的，确保填写 ``<description>``， ``<maintainer>`` 和 ``<license>`` 标签："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:230
 msgid ""
@@ -241,16 +278,18 @@ msgid ""
 "the following dependencies corresponding to your node’s include "
 "statements:"
 msgstr ""
+"在 ``ament_cmake`` 的 ``buildtool`` 依赖项后面添加一行，"
+"并将下面的依赖项粘贴到你的节点的 ``include`` 语句中："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:237
 msgid ""
 "This declares the package needs ``rclcpp`` and ``std_msgs`` when its code"
 " is executed."
-msgstr ""
+msgstr "声明包在执行代码时需要 ``rclcpp`` 和 ``std_msgs``。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:239
 msgid "Make sure to save the file."
-msgstr ""
+msgstr "确保保存该文件。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:242
 msgid "2.3 CMakeLists.txt"
@@ -261,24 +300,29 @@ msgid ""
 "Now open the ``CMakeLists.txt`` file. Below the existing dependency "
 "``find_package(ament_cmake REQUIRED)``, add the lines:"
 msgstr ""
+"现在打开 ``CMakeLists.txt`` 文件。"
+"在现有依赖项 ``find_package(ament_cmake REQUIRED)`` 下面添加以下行："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:252
 msgid ""
 "After that, add the executable and name it ``talker`` so you can run your"
 " node using ``ros2 run``:"
 msgstr ""
+"之后，添加可执行文件，并将其命名为 ``talker``，这样您就可以使用 ``ros2 run`` 运行您的节点："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:259
 msgid ""
 "Finally, add the ``install(TARGETS…)`` section so ``ros2 run`` can find "
 "your executable:"
 msgstr ""
+"最后，添加 ``install(TARGETS…)`` 部分，这样 ``ros2 run`` 就可以找到你的可执行文件："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:267
 msgid ""
 "You can clean up your ``CMakeLists.txt`` by removing some unnecessary "
 "sections and comments, so it looks like this:"
 msgstr ""
+"你可以清理你的 ``CMakeLists.txt`` 通过删除一些不必要的部分和注释，所以它看起来像这样："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:296
 msgid ""
@@ -286,28 +330,31 @@ msgid ""
 "it, but let’s create the subscriber node first so you can see the full "
 "system at work."
 msgstr ""
+"您现在可以构建您的包，获取本地安装文件的源代码，并运行它，"
+"但是让我们先创建订阅者节点，这样您就可以看到整个系统在工作。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:299
 msgid "3 Write the subscriber node"
-msgstr ""
+msgstr "3 编写订阅节点"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:301
 msgid ""
 "Return to ``dev_ws/src/cpp_pubsub/src`` to create the next node. Enter "
 "the following code in your terminal:"
 msgstr ""
+"返回到 ``dev_ws/src/cpp_pubsub/src`` 以创建下一个节点。在终端中输入以下代码："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:332
 msgid "Entering ``ls`` in the console will now return:"
-msgstr ""
+msgstr "在控制台输入 ``ls`` 现在将返回："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:338
 msgid "Open the ``subscriber_member_function.cpp`` with your text editor."
-msgstr ""
+msgstr "使用文本编辑器打开 ``subscriber_member_function.cpp``。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:375
 msgid "3.1 Examine the code"
-msgstr ""
+msgstr "3.1 检查代码"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:377
 msgid ""
@@ -315,12 +362,15 @@ msgid ""
 "the node is named ``minimal_subscriber``, and the constructor uses the "
 "node’s ``create_subscription`` class to execute the callback."
 msgstr ""
+"订阅者节点的代码与发布者节点的代码几乎相同。"
+"现在节点被命名为 ``minimal_subscriber``，构造函数使用节点的 ``create_subscription`` 类来执行回调。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:380
 msgid ""
 "There is no timer because the subscriber simply responds whenever data is"
 " published to the ``topic`` topic."
 msgstr ""
+"没有计时器，因为只要数据发布到 ``topic`` 主题，订阅者就会响应。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:392
 msgid ""
@@ -328,6 +378,8 @@ msgid ""
 "ROS2-Topics>` that the topic name and message type used by the publisher "
 "and subscriber must match to allow them to communicate."
 msgstr ""
+"回忆一下 :doc:`主题教程 <./Topics/Understanding-ROS2-Topics>` 中的内容，"
+"发布者和订阅者使用的主题名称和消息类型必须匹配才能进行通信。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:394
 msgid ""
@@ -335,10 +387,11 @@ msgid ""
 "published over the topic, and simply writes it to the console using the "
 "``RCLCPP_INFO`` macro."
 msgstr ""
+"``topic_callback`` 函数接收在主题上发布的字符串消息数据，并使用 ``RCLCPP_INFO`` 宏将其写入控制台。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:396
 msgid "The only field declaration in this class is the subscription."
-msgstr ""
+msgstr "该类中唯一的字段声明是订阅。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:407
 msgid ""
@@ -347,12 +400,15 @@ msgid ""
 "starting the timer, but for the subscriber it simply means preparing to "
 "receive messages whenever they come."
 msgstr ""
+"``main`` 函数完全相同，只是现在它旋转 ``MinimalSubscriber`` 节点。"
+"对于发布者节点，旋转意味着启动计时器，但对于订阅者，这仅仅意味着准备在消息到来时接收消息。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:410
 msgid ""
 "Since this node has the same dependencies as the publisher node, there’s "
 "nothing new to add to ``package.xml``."
 msgstr ""
+"由于该节点与 ``publisher`` 节点具有相同的依赖项，所以 ``package.xml`` 中没有新的内容可以添加。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:413
 msgid "3.2 CMakeLists.txt"
@@ -363,16 +419,17 @@ msgid ""
 "Reopen ``CMakeLists.txt`` and add the executable and target for the "
 "subscriber node below the publisher’s entries."
 msgstr ""
+"重新打开 ``CMakeLists.txt``，并在发布者条目下面添加订阅者节点的可执行文件和目标。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:427
 msgid ""
 "Make sure to save the file, and then your pub/sub system should be ready "
 "for use."
-msgstr ""
+msgstr "确保保存文件，然后您的 pub/sub 系统就可以使用了。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:432
 msgid "4 Build and run"
-msgstr ""
+msgstr "4 构建并运行"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:433
 msgid ""
@@ -381,49 +438,53 @@ msgid ""
 "``rosdep`` in the root of your workspace (``dev_ws``) to check for "
 "missing dependencies before building:"
 msgstr ""
+"您可能已经安装了 ``rclcpp`` 和 ``std_msgs`` 包作为您的 ROS 2 系统的一部分。"
+"在你的工作空间的根目录（``dev_ws``）中运行 ``rosdep`` 是一个很好的实践，在构建之前检查缺失的依赖项："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:446
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:450
 msgid "rosdep only runs on Linux, so you can skip ahead to next step."
-msgstr ""
+msgstr "``rosdep`` 只能在 Linux 上运行，所以您可以跳到下一步。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:453
 msgid "Still in the root of your workspace, ``dev_ws``, build your new package:"
-msgstr ""
+msgstr "仍然在你的工作空间的根，``dev_ws``，构建你的新包："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:475
 msgid "Open a new terminal, navigate to ``dev_ws``, and source the setup files:"
-msgstr ""
+msgstr "打开一个新的终端，导航到 ``dev_ws``，并获取安装文件的源代码："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:497
 msgid "Now run the talker node:"
-msgstr ""
+msgstr "现在运行 ``talker`` 节点："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:503
 msgid ""
 "The terminal should start publishing info messages every 0.5 seconds, "
 "like so:"
-msgstr ""
+msgstr "终端应该每 0.5 秒发布一次信息消息，像这样："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:513
 msgid ""
 "Open another terminal, source the setup files from inside ``dev_ws`` "
 "again, and then start the listener node:"
 msgstr ""
+"打开另一个终端，再次从 ``dev_ws`` 内部获取安装文件，然后启动 listener 节点："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:519
 msgid ""
 "The listener will start printing messages to the console, starting at "
 "whatever message count the publisher is on at that time, like so:"
 msgstr ""
+"listener 将开始将消息打印到控制台，从发布者当时的消息计数开始，如下所示："
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:529
 msgid "Enter ``Ctrl+C`` in each terminal to stop the nodes from spinning."
-msgstr ""
+msgstr "在每个终端中输入 {kbd}`Ctrl`+{kbd}`C`，停止节点旋转。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:532
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:534
 msgid ""
@@ -431,10 +492,12 @@ msgid ""
 "Before compiling and running them, you added their dependencies and "
 "executables to the package configuration files."
 msgstr ""
+"您创建了两个节点来通过主题发布和订阅数据。"
+"在编译和运行它们之前，您将它们的依赖项和可执行文件添加到包配置文件中。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:540
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:542
 msgid ""
@@ -443,10 +506,13 @@ msgid ""
 "-Simple-Cpp-Service-And-Client>` or :doc:`Python <./Writing-A-Simple-Py-"
 "Service-And-Client>`."
 msgstr ""
+"接下来，您将使用服务/客户端模型创建另一个简单的 ROS 2 包。"
+"同样，您可以选择用 :doc:`C++ <./Writing-A-Simple-Cpp-Service-And-Client>` "
+"或 :doc:`Python <./Writing-A-Simple-Py-Service-And-Client>` 编写它。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:546
 msgid "Related content"
-msgstr ""
+msgstr "相关内容"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:548
 msgid ""
@@ -455,4 +521,6 @@ msgid ""
 "in the `ros2/examples "
 "<https://github.com/ros2/examples/tree/master/rclcpp/topics>`_ repo."
 msgstr ""
-
+"有几种方法可以在 C++ 中编写发布者和订阅者；请查看 "
+"`ros2/examples <https://github.com/ros2/examples/tree/master/rclcpp/topics>`_  "
+"仓库中的 ``minimal_publisher`` 和 ``minimal_subscriber`` 包。"

@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,13 +20,14 @@ msgstr ""
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:4
 msgid "Understanding ROS 2 nodes"
-msgstr ""
+msgstr "理解 ROS2 节点"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:6
 msgid ""
 "**Goal:** Learn about the function of nodes in ROS 2, and the tools to "
 "interact with them."
 msgstr ""
+"**目标**：了解 ROS 2 中节点的功能，以及与之交互的工具。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -38,21 +39,22 @@ msgstr ""
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:20
 msgid "1 The ROS 2 graph"
-msgstr ""
+msgstr "1 ROS 2 graph"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:22
 msgid ""
 "Over the next few tutorials, you will learn about a series of core ROS 2 "
 "concepts that make up what is referred to as the “ROS (2) graph”."
 msgstr ""
+"在接下来的教程中，你将学习一系列构成 “ROS2 graph” 的核心 ROS 2 概念。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:24
 msgid ""
@@ -60,10 +62,12 @@ msgid ""
 "one time. It encompasses all executables and the connections between them"
 " if you were to map them all out and visualize them."
 msgstr ""
+"ROS graph 是一个由 ROS 2 元素组成的网络，在同一时间一起处理数据。"
+"它包含所有可执行文件以及它们之间的连接，如果您要将它们全部映射出来并可视化的话。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:28
 msgid "2 Nodes in ROS 2"
-msgstr ""
+msgstr "2 ROS 2 中的节点"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:30
 msgid ""
@@ -72,6 +76,10 @@ msgid ""
 "range-finder, etc). Each node can send and receive data to other nodes "
 "via topics, services, actions, or parameters."
 msgstr ""
+"ROS 中的每个节点都应该负责一个单一的模块目标"
+"（例如，一个节点用于控制轮电机，一个节点用于控制激光测距仪，等等）。"
+"每个节点可以通过主题（topics）、服务（services）、动作（actions）或"
+"参数（parameters）向其他节点发送和接收数据。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:35
 msgid ""
@@ -79,26 +87,32 @@ msgid ""
 "ROS 2, a single executable (C++ program, Python program, etc.) can "
 "contain one or more nodes."
 msgstr ""
+"一个完整的机器人系统由许多协同工作的节点组成。"
+"在 ROS 2 中，一个可执行文件（C++ 程序、Python 程序等）可以包含一个或多个节点。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:39
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:41
 msgid ""
 "The :doc:`previous tutorial <./Turtlesim/Introducing-Turtlesim>` shows "
 "you how to install the ``turtlesim`` package used here."
 msgstr ""
+":doc:`前面的教程 <./Turtlesim/Introducing-Turtlesim>` "
+"向您展示了如何安装这里使用的 ``turtlesim`` 包。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:43
 msgid ""
 "As always, don’t forget to source ROS 2 in :doc:`every new terminal you "
 "open <./Configuring-ROS2-Environment>`."
 msgstr ""
+"和往常一样，不要忘记在你 :doc:`打开的每一个新终端 "
+"<./Configuring-ROS2-Environment>` 中都激活 ROS 2。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:46
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:49
 msgid "1 ros2 run"
@@ -106,29 +120,33 @@ msgstr ""
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:51
 msgid "The command ``ros2 run`` launches an executable from a package."
-msgstr ""
+msgstr "命令 ``ros2 run`` 从包中启动一个可执行文件。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:57
 msgid "To run turtlesim, open a new terminal, and enter the following command:"
-msgstr ""
+msgstr "运行 ``turtlesim``，打开一个新的终端，并输入以下命令："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:63
 msgid ""
 "The turtlesim window will open, as you saw in the :doc:`previous tutorial"
 " <./Turtlesim/Introducing-Turtlesim>`."
 msgstr ""
+"turtlesim 窗口将被打开，正如你在 :doc:`上一篇教程 "
+"<./Turtlesim/Introducing-Turtlesim>` 中看到的那样。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:65
 msgid ""
 "Here, the package name is ``turtlesim`` and the executable name is "
 "``turtlesim_node``."
 msgstr ""
+"这里，包名是 ``turtlesim``，可执行文件名是 ``turtlesim_node``。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:67
 msgid ""
 "We still don’t know the node name, however. You can find node names by "
 "using ``ros2 node list``"
 msgstr ""
+"然而，我们仍然不知道节点名。您可以使用 ``ros2 node list`` 查找节点名称。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:71
 msgid "2 ros2 node list"
@@ -140,36 +158,41 @@ msgid ""
 "especially useful when you want to interact with a node, or when you have"
 " a system running many nodes and need to keep track of them."
 msgstr ""
+"``ros2 node list`` 将显示所有运行节点的名称。"
+"当您希望与某个节点进行交互，或者当您的系统运行多个节点并需要跟踪它们时，这一点特别有用。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:76
 msgid ""
 "Open a new terminal while turtlesim is still running in the other one, "
 "and enter the following command:"
 msgstr ""
+"当 ``turtlesim`` 在另一个终端中运行时，打开一个新的终端，并输入以下命令："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:82
 msgid "The terminal will return the node name:"
-msgstr ""
+msgstr "终端将返回节点名："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:88
 msgid "Open another new terminal and start the teleop node with the command:"
-msgstr ""
+msgstr "打开另一个新的终端并使用以下命令启动 ``teleop`` 节点："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:94
 msgid ""
 "Here, we are searching the ``turtlesim`` package again, this time for the"
 " executable named ``turtle_teleop_key``."
 msgstr ""
+"在这里，我们再次搜索 turtlesim 包，这次搜索的是名为 ``turtle_teleop_key`` 的可执行文件。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:96
 msgid ""
 "Return to the terminal where you ran ``ros2 node list`` and run it again."
 " You will now see the names of two active nodes:"
 msgstr ""
+"返回到运行 ``ros2 node list`` 的终端，并再次运行它。现在您将看到两个活动节点的名称："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:105
 msgid "2.1 Remapping"
-msgstr ""
+msgstr "2.1 重新映射"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:107
 msgid ""
@@ -180,12 +203,17 @@ msgid ""
 "last tutorial, you used remapping on ``turtle_teleop_key`` to change the "
 "default turtle being controlled."
 msgstr ""
+"`重新映射 "
+"<https://design.ros2.org/articles/ros_command_line_arguments.html#name-"
+"remapping-rules>`__ 允许您将默认节点属性（如节点名称、主题名称、服务名称等）重新分配给自定义值。"
+"在上一篇教程中，您使用 ``turtle_teleop_key`` 上的重映射来更改正在控制的默认海龟。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:110
 msgid ""
 "Now, lets reassign the name of our ``/turtlesim`` node. In a new "
 "terminal, run the following command:"
 msgstr ""
+"现在，让我们重新分配 ``/turtlesim`` 节点的名称。在新的终端中运行如下命令："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:117
 msgid ""
@@ -193,6 +221,8 @@ msgid ""
 "window will open. However, now if you return to the terminal where you "
 "ran ``ros2 node list``, and run it again, you will see three node names:"
 msgstr ""
+"既然你再次调用 ``ros2 run``，另一个 turtlesim 窗口将打开。"
+"但是，现在如果您返回到运行 ``ros2 node list`` 的终端，并再次运行它，您将看到三个节点名："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:127
 msgid "3 ros2 node info"
@@ -203,10 +233,11 @@ msgid ""
 "Now that you know the names of your nodes, you can access more "
 "information about them with:"
 msgstr ""
+"现在您知道了节点的名称，可以使用以下方法访问更多关于节点的信息："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:135
 msgid "To examine your latest node, ``my_turtle``, run the following command:"
-msgstr ""
+msgstr "要检查最新的节点 ``my_turtle``，运行以下命令："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:141
 msgid ""
@@ -214,28 +245,33 @@ msgid ""
 "and actions (the ROS graph connections) that interact with that node. The"
 " output should look like this:"
 msgstr ""
+"``ros2 node info`` 返回与该节点交互的订阅者、发布者、服务和操作（ROS graph 连接）的列表。"
+"输出应该是这样的："
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:175
 msgid ""
 "Now try running the same command on the ``/teleop_turtle`` node, and see "
 "how its connections differ from ``my_turtle``."
 msgstr ""
+"现在尝试在 ``/teleop_turtle`` 节点上运行相同的命令，看看它的连接与 ``my_turtle`` 有何不同。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:177
 msgid ""
 "You will learn more about the ROS graph connection concepts including the"
 " message types in the upcoming tutorials."
 msgstr ""
+"您将在接下来的教程中了解更多关于 ROS graph 连接的概念，包括消息类型。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:180
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:182
 msgid ""
 "A node is a fundamental ROS 2 element that serves a single, modular "
 "purpose in a robotics system."
 msgstr ""
+"节点是一个基本的 ROS 2 元素，在机器人系统中为一个单一的、模块化的目的服务。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:184
 msgid ""
@@ -243,6 +279,8 @@ msgid ""
 "package by running the executables ``turtlesim_node`` and "
 "``turtle_teleop_key``."
 msgstr ""
+"在本教程中，你利用了从 ``turtlesim`` 包中创建的节点，"
+"运行可执行文件 ``turtlesim_node`` 和 ``turtle_teleop_key``。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:186
 msgid ""
@@ -251,10 +289,13 @@ msgid ""
 "vital to understanding the flow of data in a complex, real-world robot "
 "system."
 msgstr ""
+"您了解了如何使用 ``ros2 node list`` 来发现活动节点名称和 ``ros2 node info``，"
+"以便在单个节点上进行内省。"
+"这些工具对于理解复杂的、真实世界的机器人系统中的数据流至关重要。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:190
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:192
 msgid ""
@@ -262,12 +303,14 @@ msgid ""
 ":doc:`topics tutorial <./Topics/Understanding-ROS2-Topics>`. Topics are "
 "one of the communication types that connects nodes."
 msgstr ""
+"现在你已经了解了 ROS 2 中的节点，你可以继续学习 "
+":doc:`主题 教程 <./Topics/Understanding-ROS2-Topics>`。"
+"主题是连接节点的通信类型之一。"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:196
 msgid "Related content"
-msgstr ""
+msgstr "相关内容"
 
 #: ../../source/Tutorials/Understanding-ROS2-Nodes.rst:198
 msgid "The :doc:`../Concepts` page adds some more detail to the concept of nodes."
-msgstr ""
-
+msgstr ":doc:`../Concepts` 页面对节点的概念增加了一些细节。"

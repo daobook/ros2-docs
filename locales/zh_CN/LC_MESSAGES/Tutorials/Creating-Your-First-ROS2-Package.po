@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,13 +20,14 @@ msgstr ""
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:4
 msgid "Creating your first ROS 2 package"
-msgstr ""
+msgstr "创建你的第一个 ROS 2 包"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:6
 msgid ""
 "**Goal:** Create a new package using either CMake or Python, and run its "
 "executable."
 msgstr ""
+"**目标**：使用 CMake 或 Python 创建一个新包，并运行其可执行文件。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -38,15 +39,15 @@ msgstr ""
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:20
 msgid "1 What is a ROS 2 package?"
-msgstr ""
+msgstr "1 什么是 ROS 2 包？"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:22
 msgid ""
@@ -55,6 +56,8 @@ msgid ""
 " it organized in a package. With packages, you can release your ROS 2 "
 "work and allow others to build and use it easily."
 msgstr ""
+"可以将包视为 ROS 2 代码的容器。如果您希望能够安装代码或与他人共享代码，则需要将其组织在一个软件包中。"
+"使用软件包，您可以发布 ROS2 的工作，并允许其他人轻松构建和使用它。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:26
 msgid ""
@@ -62,16 +65,19 @@ msgid ""
 "its build tool. You can create a package using either CMake or Python, "
 "which are officially supported, though other build types do exist."
 msgstr ""
+"ROS2 中的软件包创建使用 ``ament`` 作为其构建系统，并使用 ``colcon`` 作为其构建工具。"
+"您可以使用官方支持的 CMake 或 Python 创建软件包，但也存在其他构建类型。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:30
 msgid "2 What makes up a ROS 2 package?"
-msgstr ""
+msgstr "2 ROS 2 包由什么组成？"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:32
 msgid ""
 "ROS 2 Python and CMake packages each have their own minimum required "
 "contents:"
 msgstr ""
+"ROS 2 Python 和 CMake 软件包各自具有自己的最低要求内容："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:36
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:52
@@ -88,13 +94,13 @@ msgstr ""
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:38
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:43
 msgid "``package.xml`` file containing meta information about the package"
-msgstr ""
+msgstr "``package.xml`` 文件，其中包含有关程序包的元信息"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:39
 msgid ""
 "``CMakeLists.txt`` file that describes how to build the code within the "
 "package"
-msgstr ""
+msgstr "``CMakeLists.txt`` 文件，描述如何在包中构建代码"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:41
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:60
@@ -110,27 +116,29 @@ msgstr ""
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:44
 msgid "``setup.py`` containing instructions for how to install the package"
-msgstr ""
+msgstr "``setup.py`` 包含有关如何安装软件包的说明"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:45
 msgid ""
 "``setup.cfg`` is required when a package has executables, so ``ros2 run``"
 " can find them"
 msgstr ""
+"当一个软件包有可执行文件时，需要 ``setup.cfg``，以便 ``ros2 run`` 能够找到它们"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:46
 msgid ""
 "``/<package_name>`` - a directory with the same name as your package, "
 "used by ROS 2 tools to find your package, contains ``__init__.py``"
 msgstr ""
+"``/<package_name>`` —— ROS 2 工具用来查找软件包的，与软件包同名的目录包含 ``__init__.py``"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:48
 msgid "The simplest possible package may have a file structure that looks like:"
-msgstr ""
+msgstr "最简单的包可能具有如下文件结构："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:71
 msgid "3 Packages in a workspace"
-msgstr ""
+msgstr "3 工作区中的包"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:73
 msgid ""
@@ -138,6 +146,9 @@ msgid ""
 "their own folder. You can also have packages of different build types in "
 "one workspace (CMake, Python, etc.). You cannot have nested packages."
 msgstr ""
+"一个工作空间可以包含所需数量的程序包，每个程序包都位于其自己的文件夹中。"
+"您还可以在一个工作空间（CMake，Python 等）中拥有不同构建类型的软件包。"
+"您不能有嵌套的程序包。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:77
 msgid ""
@@ -145,14 +156,16 @@ msgid ""
 "create your packages in there. This keeps the top level of the workspace "
 "“clean”."
 msgstr ""
+"最佳做法是在工作区中有一个 ``src`` 文件夹，并在其中创建包。"
+"这样可以使工作空间的顶层保持“干净”。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:80
 msgid "A trivial workspace might look like:"
-msgstr ""
+msgstr "典型的一个工作空间内功能包的结构如下："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:101
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:103
 msgid ""
@@ -160,32 +173,37 @@ msgid ""
 " :doc:`previous tutorial <./Workspace/Creating-A-Workspace>`. You will "
 "create your package in this workspace."
 msgstr ""
+"在遵循 :doc:`上一教程 <./Workspace/Creating-A-Workspace>` 中的说明之后，您应该有一个 ROS 2 工作区。"
+"您将在这个工作区中创建您的包。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:108
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:111
 msgid "1 Create a package"
-msgstr ""
+msgstr "1 创建一个包"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:113
 msgid ""
 "First, :doc:`source your ROS 2 installation <./Configuring-"
 "ROS2-Environment>`."
 msgstr ""
+"首先，:doc:`激活您的 ROS2 环境  <./Configuring-ROS2-Environment>`"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:115
 msgid ""
 "Let’s use the workspace you created in the :ref:`previous tutorial <new-"
 "directory>`, ``dev_ws``, for your new package.`"
 msgstr ""
+"让我们为您的新包，使用您在 :ref:`上一教程 <new-directory>` 中创建的工作空间 ``dev_ws``。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:117
 msgid ""
 "Make sure you are in the ``src`` folder before running the package "
 "creation command."
 msgstr ""
+"运行软件包创建命令之前，请确保您位于 ``src`` 文件夹中。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:121
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:244
@@ -210,35 +228,37 @@ msgstr ""
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:139
 msgid "The command syntax for creating a new package in ROS 2 is:"
-msgstr ""
+msgstr "在 ROS 2 中创建新程序包的命令语法为："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:155
 msgid ""
 "For this tutorial, you will use the optional argument ``--node-name`` "
 "which creates a simple Hello World type executable in the package."
 msgstr ""
+"在本教程中，您将使用可选参数 ``--node-name``，它在包中创建一个简单的 Hello World 类型可执行文件。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:157
 msgid "Enter the following command in your terminal:"
-msgstr ""
+msgstr "在终端中输入以下命令："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:173
 msgid ""
 "You will now have a new folder within your workspace’s ``src`` directory "
 "called ``my_package``."
 msgstr ""
+"你现在将在你的工作空间的 ``src`` 目录下有一个新的文件夹，叫做 ``my_package``。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:175
 msgid "After running the command, your terminal will return the message:"
-msgstr ""
+msgstr "运行该命令后，你的终端将返回信息："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:232
 msgid "You can see the automatically generated files for the new package."
-msgstr ""
+msgstr "你可以看到自动生成的新软件包的文件。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:235
 msgid "2 Build a package"
-msgstr ""
+msgstr "2 构建一个包"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:237
 msgid ""
@@ -246,20 +266,24 @@ msgid ""
 "build many packages at once by running ``colcon build`` in the workspace "
 "root. Otherwise, you would have to build each package individually."
 msgstr ""
+"将软件包放在工作空间中特别有价值，因为您可以通过在工作空间根目录中运行 ``colcon build`` "
+"一次构建许多软件包。"
+"否则，您将必须分别构建每个软件包。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:240
 msgid "Return to the root of your workspace:"
-msgstr ""
+msgstr "返回工作区的根目录："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:262
 msgid "Now you can build your packages:"
-msgstr ""
+msgstr "现在您可以构建软件包："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:284
 msgid ""
 "Windows doesn’t allow long paths, so ``merge-install`` will combine all "
 "the paths into the ``install`` directory."
 msgstr ""
+"Windows 不允许长路径，所以 ``merge-install`` 将把所有路径合并到安装目录中。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:286
 msgid ""
@@ -269,72 +293,82 @@ msgid ""
 "have a few packages in your workspace, but when there are many packages, "
 "``colcon build`` can take a long time."
 msgstr ""
+"回想一下上一个教程，在您的 ``dev_ws`` 中也有 ``ros_tutorials`` 包。"
+"您可能已经注意到，运行 ``colcon build`` 也构建了 ``turtlesim`` 包。"
+"当您的工作区中只有几个包时，这很好，但是当有很多包时，``colcon`` 构建可能会花费很长时间。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:290
 msgid "To build only the ``my_package`` package next time, you can run:"
-msgstr ""
+msgstr "要想下次只构建 ``my_package`` 包，可以运行以下命令："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:297
 msgid "3 Source the setup file"
-msgstr ""
+msgstr "3 激活 setup 文件"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:299
 msgid ""
 "To use your new package and executable, first open a new terminal and "
 "source your main ROS 2 installation."
 msgstr ""
+"要使用新的程序包和可执行文件，请先打开一个新终端，然后获取 ROS2 的主要安装源。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:301
 msgid ""
 "Then, from inside the ``dev_ws`` directory, run the following command to "
 "source your workspace:"
 msgstr ""
+"然后，从 ``dev_ws`` 目录中，运行以下命令来获取您的工作空间："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:323
 msgid ""
 "Now that your workspace has been added to your path, you will be able to "
 "use your new package’s executables."
 msgstr ""
+"现在您的工作区已添加到路径中，您将可以使用新程序包的可执行文件。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:326
 msgid "4 Use the package"
-msgstr ""
+msgstr "4 使用包"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:328
 msgid ""
 "To run the executable you created using the ``--node-name`` argument "
 "during package creation, enter the command:"
 msgstr ""
+"要在软件包创建期间运行使用 ``--node-name`` 参数创建的可执行文件，请输入以下命令："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:334
 msgid "Which will return a message to your terminal:"
-msgstr ""
+msgstr "它会向你的终端返回一条消息："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:351
 msgid "5 Examine package contents"
-msgstr ""
+msgstr "5 测验包内容"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:353
 msgid ""
 "Inside ``dev_ws/src/my_package``, you will see the files and folders that"
 " ``ros2 pkg create`` automatically generated:"
 msgstr ""
+"在 ``dev_ws/src/my_package`` 中，你会看到 ``ros2 pkg create`` 的文件和文件夹自动生成："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:363
 msgid ""
 "``my_node.cpp`` is inside the ``src`` directory. This is where all your "
 "custom C++ nodes will go in the future."
 msgstr ""
+"``my_node.cpp`` 位于 ``src`` 目录中。这是您所有的自定义 C++ 节点在未来的位置。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:372
 msgid ""
 "``my_node.py`` is inside the ``my_package`` directory. This is where all "
 "your custom Python nodes will go in the future."
 msgstr ""
+"``my_node.py`` 位于 ``my_package`` 目录中。这是您的所有自定义 Python 节点在未来的位置。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:376
 msgid "6 Customize package.xml"
-msgstr ""
+msgstr "6 定制 package.xml"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:378
 msgid ""
@@ -344,12 +378,17 @@ msgid ""
 "automatically set, but are required if you ever want to release your "
 "package. The ``maintainer`` field may also need to be filled in."
 msgstr ""
+"创建软件包后，``package.xml`` 文件需要我们手动完善一下。"
+"您可能在返回消息中注意到字段 ``description`` 和 ``license`` 包含 ``TODO`` 注释。"
+"这是因为软件包 ``description`` 和 ``license`` 声明不会自动设置，但是如果您要释放软件包，则必须设置。"
+"``maintainer`` 字段可能也需要填写。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:382
 msgid ""
 "From ``dev_ws/src/my_package``, open ``package.xml`` using your preferred"
 " text editor:"
 msgstr ""
+"从 ``dev_ws/src/my_package``，使用你喜欢的文本编辑器打开 ``package.xml``："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:436
 msgid ""
@@ -357,6 +396,8 @@ msgid ""
 "automatically populated for you. Then, edit the ``description`` line to "
 "summarize the package:"
 msgstr ""
+"如果没有自动为您填充，请在 ``maintainer`` 行中输入您的姓名和电子邮件。"
+"然后，编辑 ``description`` 行来总结包"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:443
 msgid ""
@@ -365,10 +406,14 @@ msgid ""
 "this package is only for practice, it’s safe to use any license. We use "
 "``Apache License 2.0``:"
 msgstr ""
+"然后更新 ``license`` 行。您可以在 `这里 <https://opensource.org/licenses/alphabetical>`__ "
+"阅读更多关于开放源码许可的信息。"
+"由于这个包仅用于实践，所以使用任何许可证都是安全的。"
+"我们使用 ``Apache License 2.0``："
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:451
 msgid "Don’t forget to save once you’re done editing."
-msgstr ""
+msgstr "编辑完成后不要忘记保存。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:453
 msgid ""
@@ -378,10 +423,13 @@ msgid ""
 "is simple and doesn’t have any dependencies, but you will see this space "
 "being utilized in upcoming tutorials."
 msgstr ""
+"在许可标记下面，您将看到一些标记名称以 ``_depend`` 结尾。"
+"在这里，您的 ``package.xml`` 将列出它对其他包的依赖关系，以便 colcon 进行搜索。"
+"``my_package`` 很简单，并且没有任何依赖项，但是您将在接下来的教程中看到这个空间被利用。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:461
 msgid "You’re all done for now!"
-msgstr ""
+msgstr "你们现在都做完了！"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:465
 msgid ""
@@ -391,30 +439,34 @@ msgid ""
 "(``package_name``) also need to match exactly, and should be "
 "automatically populated in both files."
 msgstr ""
+"``setup.py`` 文件包含与 ``package.xml`` 相同的描述、维护程序和许可字段，因此也需要设置这些字段。"
+"它们需要在两个文件中完全匹配。"
+"版本和名称（``package_name``）也需要精确匹配，并且应该在两个文件中自动填充。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:469
 msgid "Open ``setup.py`` with your preferred text editor."
-msgstr ""
+msgstr "用您喜欢的文本编辑器打开 ``setup.py``。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:500
 msgid ""
 "Edit the ``maintainer``, ``maintainer_email``, and ``description`` lines "
 "to match ``package.xml``."
 msgstr ""
+"编辑 ``maintainer``、``maintainer_email`` 和 ``description`` 行以匹配 ``package.xml``。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:502
 msgid "Don’t forget to save the file."
-msgstr ""
+msgstr "别忘了保存文件。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:506
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:508
 msgid ""
 "You’ve created a package to organize your code and make it easy to use "
 "for others."
-msgstr ""
+msgstr "您已经创建了一个包来组织您的代码并使其易于为他人使用。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:510
 msgid ""
@@ -422,10 +474,11 @@ msgid ""
 "then you used colcon to build it so you can use its executables in your "
 "local environment."
 msgstr ""
+"您的软件包将自动填充必要的文件，然后使用 ``colcon`` 进行构建，以便可以在本地环境中使用其可执行文件。"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:513
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Creating-Your-First-ROS2-Package.rst:515
 msgid ""
@@ -434,4 +487,7 @@ msgid ""
 "either :doc:`C++ <./Writing-A-Simple-Cpp-Publisher-And-Subscriber>` or "
 ":doc:`Python <./Writing-A-Simple-Py-Publisher-And-Subscriber>`."
 msgstr ""
-
+"接下来，让我们为一个包添加一些有意义的东西。"
+"你将从一个简单的发布者/订阅者系统开始，你可以选择用 "
+":doc:`C++ <./Writing-A-Simple-Cpp-Publisher-And-Subscriber>` 或 "
+":doc:`Python <./Writing-A-Simple-Py-Publisher-And-Subscriber>` 编写。"

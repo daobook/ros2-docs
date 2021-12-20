@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,29 +20,30 @@ msgstr ""
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:4
 msgid "Configuring your ROS 2 environment"
-msgstr ""
+msgstr "配置 ROS 2 环境"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:6
 msgid ""
 "**Goal:** This tutorial will show you how to prepare your ROS 2 "
 "environment."
 msgstr ""
+"**目标**：本教程将告诉你如何准备你的 ROS 2 环境。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:8
 msgid "**Tutorial level:** Beginner"
-msgstr ""
+msgstr "**教程级别**：初级"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:10
 msgid "**Time:** 5 minutes"
-msgstr ""
+msgstr "**时间**：5 分钟"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:19
 msgid ""
@@ -53,6 +54,10 @@ msgid ""
 "developing with ROS 2, you will typically have several workspaces active "
 "concurrently."
 msgstr ""
+"ROS 2 依赖于使用 shell 环境组合工作区的概念。"
+"“**工作区**” （workspaces）是一个 ROS 术语，指的是你使用 ROS 2 进行开发的系统上的位置。"
+"核心 ROS 2 工作区称为 **底层** （underlay）。随后的本地工作区称为 **覆盖层** （overlays）。"
+"在使用 ROS 2 进行开发时，通常会同时有几个工作区处于激活状态。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:25
 msgid ""
@@ -61,6 +66,9 @@ msgid ""
 "installation of several ROS 2 distributions (or “distros”, e.g. Dashing "
 "and Eloquent) on the same computer and switching between them."
 msgstr ""
+"组合工作区使得针对不同版本的 ROS 2 或针对不同的包集合进行开发更加容易。"
+"它还允许在同一台计算机上安装多个 ROS 2 发行版"
+"（或 “distros”，例如 Dashing 和 Eloquent）并在它们之间进行切换。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:28
 msgid ""
@@ -70,16 +78,20 @@ msgid ""
 "commands, or find or use ROS 2 packages. In other words, you won’t be "
 "able to use ROS 2."
 msgstr ""
+"这可以通过每次打开新的 shell 时都激活 setup 文件，或者将 source 命令"
+"添加到 shell 启动脚本一次来实现。没有激活的 setup 文件，你将无法访"
+"问 ROS 2 命令，或找到或使用 ROS 2 包。换句话说，你不能使用 ROS 2。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:33
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:35
 msgid ""
 "Before starting these tutorials, install ROS 2 by following the "
 "instructions on the ROS 2 :doc:`../Installation` page."
 msgstr ""
+"在开始这些教程之前，按照 :doc:`../Installation` 页面上的说明安装 ROS 2。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:37
 msgid ""
@@ -90,6 +102,10 @@ msgid ""
 " to use the ``sudo apt install ros-<distro>-<package>`` command (used "
 "frequently in the beginner level tutorials) if you install from source."
 msgstr ""
+"本教程中使用的命令假设您遵循了操作系统的二进制包安装指南（Linux 的 Debian 包）。"
+"如果您是从源代码构建的，您仍然可以按照下面的方法进行操作，但是安装文件的路径可能会有所不同。"
+"如果你从源代码安装，你也不能使用 ``sudo apt install ros-<distro>-<package>`` 命令"
+"（在新手教程中经常使用）。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:41
 msgid ""
@@ -97,20 +113,23 @@ msgid ""
 "shell, `this tutorial <http://www.ee.surrey.ac.uk/Teaching/Unix/>`__ will"
 " help."
 msgstr ""
+"如果您正在使用 Linux 或 macOS，但不熟悉 shell，"
+"`Unix 教程 <http://www.ee.surrey.ac.uk/Teaching/Unix/>`__ 将有所帮助。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:44
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:47
 msgid "1 Source the setup files"
-msgstr ""
+msgstr "1 激活 setup 文件"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:49
 msgid ""
 "You will need to run this command on every new shell you open to have "
 "access to the ROS 2 commands, like so:"
 msgstr ""
+"你需要在你打开的每一个 shell 上运行这个命令来访问 ROS 2 命令，就像这样："
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:53
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:82
@@ -138,10 +157,11 @@ msgid ""
 "The exact command depends on where you installed ROS 2. If you're having "
 "problems, ensure the file path leads to your installation."
 msgstr ""
+"确切的命令取决于您安装 ROS 2 的位置。如果遇到问题，请确保文件路径指向您的安装。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:76
 msgid "2 Add sourcing to your shell startup script"
-msgstr ""
+msgstr "2 在 shell 启动脚本中添加 “source”"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:78
 msgid ""
@@ -149,6 +169,8 @@ msgid ""
 "new shell (skipping task 1), then you can add the command to your shell "
 "startup script:"
 msgstr ""
+"如果你不想每次打开一个新的 shell（跳过任务 1）时都要获取安装文件，"
+"那么你可以将这个命令添加到 shell 启动脚本中："
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:88
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:96
@@ -156,6 +178,7 @@ msgid ""
 "To undo this, locate your system’s shell startup script and remove the "
 "appended source command."
 msgstr ""
+"要撤消此命令，请找到系统的 shell 启动脚本并删除附加的 source 命令。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:100
 msgid ""
@@ -163,20 +186,25 @@ msgid ""
 "'WindowsPowerShell'. Within 'WindowsPowerShell', create file "
 "'Microsoft.PowerShell_profile.ps1'. Inside the file, paste:"
 msgstr ""
+"仅对 PowerShell 用户，在“我的文档”中创建一个名为 “WindowsPowerShell” 的文件夹。"
+"在 'WindowsPowerShell' 中，创建文件 'Microsoft.PowerShell_profile.ps1'。"
+"在文件内部，粘贴："
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:108
 msgid ""
 "PowerShell will request permission to run this script everytime a new "
 "shell is opened. To avoid that issue you can run:"
 msgstr ""
+"每次打开一个新的 shell 时，PowerShell 都会请求运行此脚本的权限。"
+"为了避免这个问题，你可以运行："
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:115
 msgid "To undo this, remove the new 'Microsoft.PowerShell_profile.ps1' file."
-msgstr ""
+msgstr "要撤消此操作，请删除新的 'Microsoft.PowerShell_profile.ps1' 的文件。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:118
 msgid "3 Check environment variables"
-msgstr ""
+msgstr "3 检查环境变量"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:120
 msgid ""
@@ -185,10 +213,12 @@ msgid ""
 " your ROS 2 packages, make sure that your environment is properly setup "
 "using the following command:"
 msgstr ""
+"激活 ROS 2 setup 文件将设置操作 ROS 2 所需的几个环境变量。"
+"如果你在寻找或使用你的 ROS 2 包时遇到问题，请确保使用以下命令正确设置你的环境："
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:143
 msgid "Check that variables like ``ROS_DISTRO`` and ``ROS_VERSION`` are set."
-msgstr ""
+msgstr "检查是否设置了 ``ROS_DISTRO`` 和 ``ROS_VERSION`` 等变量。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:151
 msgid ""
@@ -198,22 +228,27 @@ msgid ""
 "from different places), you can `get answers <https://answers.ros.org>`__"
 " from the community."
 msgstr ""
+"如果环境变量设置不正确，请返回安装指南中的安装 ROS 2 包章节。"
+"如果您需要更具体的帮助（因为环境设置文件可能来自不同的地方），"
+"您可以从社区 `获得答案 <https://answers.ros.org>`__。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:155
 msgid "3.1 The ``ROS_DOMAIN_ID`` variable"
-msgstr ""
+msgstr "3.1 ``ROS_DOMAIN_ID`` 变量"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:157
 msgid ""
 "See the `domain ID <../Concepts/About-Domain-ID>` article for details on "
 "ROS domain IDs."
 msgstr ""
+"有关 ROS 域 ID 的详细信息，请参阅 `domain ID <../Concepts/About-Domain-ID>` 文章。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:159
 msgid ""
 "Once you have determined a unique integer for your group of ROS 2 agents,"
 " you can set the environment variable with the following command:"
 msgstr ""
+"一旦您为您的 ROS 2 代理组确定了一个唯一的整数，您可以使用以下命令设置环境变量："
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:169
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:181
@@ -221,14 +256,15 @@ msgid ""
 "To maintain this setting between shell sessions, you can add the command "
 "to your shell startup script:"
 msgstr ""
+"为了在 shell 会话之间保持这个设置，你可以在 shell 启动脚本中添加这个命令："
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:193
 msgid "If you want to make this permanant between shell sessions, also run:"
-msgstr ""
+msgstr "如果你想让这个在 shell 会话之间永久存在，也可以运行："
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:201
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:203
 msgid ""
@@ -237,6 +273,8 @@ msgid ""
 "every new shell you open, or adding the source command to your startup "
 "script."
 msgstr ""
+"ROS 2 开发环境在使用前需要进行正确配置。这可以通过两种方式实现："
+"要么在每个打开的新 shell 中获取 setup 文件，要么将 ``source`` 命令添加到启动脚本中。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:206
 msgid ""
@@ -244,10 +282,12 @@ msgid ""
 "first thing you should do is check your environment variables and ensure "
 "they are set to the version and distro you intended."
 msgstr ""
+"如果您在定位或使用 ros2 包时遇到任何问题，您应该做的第一件事是检查环境变量，"
+"并确保它们被设置为您想要的版本和发行版。"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:209
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Configuring-ROS2-Environment.rst:211
 msgid ""
@@ -255,4 +295,5 @@ msgid ""
 " its setup files, you can start learning the ins and outs of ROS 2 with "
 "the :doc:`turtlesim tool <./Turtlesim/Introducing-Turtlesim>`."
 msgstr ""
-
+"现在你已经有了一个可以工作的 ROS 2 安装，并且知道如何为其设置文件提供源码，"
+"你可以开始用 :doc:`turtlesim 工具 <./Turtlesim/Introducing-Turtlesim>` 来学习 ROS 2 的内涵。"

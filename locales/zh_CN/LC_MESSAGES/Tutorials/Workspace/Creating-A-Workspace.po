@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,13 +20,14 @@ msgstr ""
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:4
 msgid "Creating a workspace"
-msgstr ""
+msgstr "创建工作区"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:6
 msgid ""
 "**Goal:** Create a workspace and learn how to set up an overlay for "
 "development and testing."
 msgstr ""
+"**目标**：创建一个工作空间，并学习如何为开发和测试设置一个覆盖层。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -38,11 +39,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:19
 msgid ""
@@ -51,6 +52,9 @@ msgid ""
 "terminal you plan to work in. This makes ROS 2’s packages available for "
 "you to use in that terminal."
 msgstr ""
+"工作区（workspace）是一个包含 ROS 2 包的目录。"
+"在使用 ROS 2 之前，有必要在您计划工作的终端中激活您的 ROS 2 安装工作区。"
+"这使得您可以在该终端上使用 ROS 2 的包。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:23
 msgid ""
@@ -62,50 +66,57 @@ msgid ""
 "to have several layers of underlays and overlays, with each successive "
 "overlay using the packages of its parent underlays."
 msgstr ""
+"你也可以选择激活一个覆盖层——一个二级工作区，在那里你可以添加新的包，"
+"而不干扰你正在扩展的现有 ROS 2 工作区，或“底层”（underlay）。"
+"你的底层必须包含覆盖层中所有包的依赖项。覆盖层中的包将覆盖底层中的包。"
+"也可以有多层的底层和覆盖层，每个后续的覆盖层都使用其父层的包。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:30
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:32
 msgid ":doc:`ROS 2 installation <../../Installation>`"
-msgstr ""
+msgstr ":doc:`ROS 2 安装 <../../Installation>`"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:33
 msgid ":doc:`colcon installation <../Colcon-Tutorial>`"
-msgstr ""
+msgstr ":doc:`colcon 安装 <../Colcon-Tutorial>`"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:34
 msgid ""
 "`git installation <https://git-scm.com/book/en/v2/Getting-Started-"
 "Installing-Git>`__"
 msgstr ""
+"`git 安装 <https://git-scm.com/book/en/v2/Getting-Started-"
+"Installing-Git>`__"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:35
 msgid ":doc:`turtlesim installation <../Turtlesim/Introducing-Turtlesim>`"
-msgstr ""
+msgstr ":doc:`turtlesim 安装 <../Turtlesim/Introducing-Turtlesim>`"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:36
 msgid "Have `rosdep installed  <https://wiki.ros.org/rosdep#Installing_rosdep>`__"
-msgstr ""
+msgstr "安装了 `rosdep <https://wiki.ros.org/rosdep#Installing_rosdep>`__"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:37
 msgid ""
 "Understanding of basic terminal commands (`here’s a guide for Linux "
 "<http://www.ee.surrey.ac.uk/Teaching/Unix/>`__)"
 msgstr ""
+"了解基本的终端命令（以下是 `Linux 的指南 <http://www.ee.surrey.ac.uk/Teaching/Unix/>`__）"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:38
 msgid "Text editor of your choice"
-msgstr ""
+msgstr "您选择的文本编辑器"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:41
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:44
 msgid "1 Source ROS 2 environment"
-msgstr ""
+msgstr "1 激活 ROS 2 环境"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:46
 msgid ""
@@ -113,12 +124,16 @@ msgid ""
 "(Keep in mind that an underlay does not necessarily have to be the main "
 "ROS 2 installation.)"
 msgstr ""
+"您的主要 ROS 2 安装将是本教程的基础。"
+"（请记住，底层不一定是主要的 ROS 2 安装。）"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:49
 msgid ""
 "Depending on how you installed ROS 2 (from source or binaries), and which"
 " platform you’re on, your exact source command will vary:"
 msgstr ""
+"取决于你如何安装 ROS 2（从源代码或二进制文件），以及你所在的平台，"
+"你的源代码命令会有所不同："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:53
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:86
@@ -155,16 +170,19 @@ msgid ""
 "Remember to use a ``x64 Native Tools Command Prompt for VS 2019`` for "
 "executing the following commands, as we are going to build a workspace."
 msgstr ""
+"记住使用 ``x64 Native Tools Command Prompt for VS 2019`` 命令提示符来执行以下命令，"
+"因为我们将构建一个工作区。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:73
 msgid ""
 "Consult the :doc:`installation guide <../../Installation>` you followed "
 "if these commands don’t work for you."
 msgstr ""
+"如果这些命令对您不起作用，请参考您所遵循的 :doc:`安装指南 <../../Installation>`。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:78
 msgid "2 Create a new directory"
-msgstr ""
+msgstr "2 新建目录"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:80
 msgid ""
@@ -173,6 +191,9 @@ msgid ""
 " the workspace. Let’s choose the directory name ``dev_ws``, for "
 "“development workspace”:"
 msgstr ""
+"最佳实践是为每个新工作区创建一个新目录。"
+"名称并不重要，但让它表明工作区的用途是有帮助的。"
+"让我们为“开发工作区”选择一个名为 ``dev_ws`` 的目录："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:108
 msgid ""
@@ -180,14 +201,16 @@ msgid ""
 "``src`` directory. The above code creates a ``src`` directory inside "
 "``dev_ws`` and then navigates into it."
 msgstr ""
+"另一个最佳实践是将工作区中的任何包放到 ``src`` 目录中。"
+"上面的代码在 ``dev_ws`` 中创建了一个 ``src`` 目录，然后导航到它。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:113
 msgid "3 Clone a sample repo"
-msgstr ""
+msgstr "3 克隆一个样本 repo"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:115
 msgid "Ensure you’re still in the ``dev_ws/src`` directory before you clone."
-msgstr ""
+msgstr "在克隆之前，确保您仍然在 ``dev_ws/`` 目录中。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:117
 msgid ""
@@ -195,6 +218,7 @@ msgid ""
 " packages, but for now you will practice putting a workspace together "
 "using existing packages."
 msgstr ""
+"在其余的初级开发人员教程中，您将创建自己的包，但现在您将练习使用现有的包将工作区放在一起。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:119
 msgid ""
@@ -203,12 +227,15 @@ msgid ""
 "tutorials, you'll be familiar with ``turtlesim``, one of the packages in "
 "this repo."
 msgstr ""
+"您将使用的现有包来自 ``ros_tutorials`` 存储库（repo）。如果你读过“初学者：CLI 工具”教程，"
+"你会熟悉 ``turtlesim``，这是这个 repo 中的一个包。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:122
 msgid ""
 "You can see the repo `on GitHub "
 "<https://github.com/ros/ros_tutorials/>`__."
 msgstr ""
+"你可以在 `GitHub 上 <https://github.com/ros/ros_tutorials/>`__ 看到该仓库。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:124
 msgid ""
@@ -216,12 +243,16 @@ msgid ""
 "list. When you clone this repo, add the ``-b`` argument followed by the "
 "branch that corresponds with your ROS 2 distro."
 msgstr ""
+"注意，在目录列表的左边有一个“Branch”下拉列表。"
+"当你克隆这个 ``repo`` 时，添加 ``-b`` 参数，"
+"后面跟着对应于你的 ROS 2 发行版的分支。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:127
 msgid ""
 "In the ``dev_ws/src`` directory, run the following command for the distro"
 " you're using:"
 msgstr ""
+"在 ``dev_ws/src`` 目录下，针对你正在使用的发行版运行以下命令："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:133
 msgid ""
@@ -230,6 +261,9 @@ msgid ""
 "rest of this tutorial.  The other packages in this repository are not "
 "built because they contain a ``COLCON_IGNORE`` file."
 msgstr ""
+"现在 ``ros_tutorials`` 已经在你的工作空间中克隆了。"
+"``ros_tutorials`` 仓库包含 ``turtlesim`` 包，我们将在本教程的其余部分使用它。"
+"这个资源库中的其他软件包没有被构建，因为它们包含一个 ``COLCON_IGNORE`` 文件"。
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:135
 msgid ""
@@ -237,10 +271,12 @@ msgid ""
 " a fully-functional workspace yet. You need to resolve dependencies and "
 "build the workspace first."
 msgstr ""
+"现在你已经用一个样本包填充了你的工作区，但它还不是一个功能齐全的工作区。"
+"你需要先解决依赖关系并建立工作区。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:140
 msgid "4 Resolve dependencies"
-msgstr ""
+msgstr "4 解决依赖关系"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:142
 msgid ""
@@ -249,10 +285,13 @@ msgid ""
 "for dependencies every time you clone. You wouldn’t want a build to fail "
 "after a long wait because of missing dependencies."
 msgstr ""
+"在构建工作区之前，您需要解析包依赖关系。"
+"您可能已经有了所有的依赖项，但最佳实践是每次克隆时检查依赖项。"
+"您不希望构建在长时间等待后因为缺少依赖项而失败。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:146
 msgid "From the root of your workspace (``dev_ws``), run the following command:"
-msgstr ""
+msgstr "从你的工作区的根（``dev_ws``），运行以下命令："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:160
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:164
@@ -260,6 +299,7 @@ msgid ""
 "rosdep only runs on Linux, so you can skip ahead to section \"5 Build the"
 " workspace with colcon\"."
 msgstr ""
+"``rosdep`` 只能在 Linux 上运行，所以你可以跳到“用 ``colcon`` 构建工作区”小节。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:166
 msgid ""
@@ -269,10 +309,15 @@ msgid ""
 "install-dependencies-using-rosdep>` and the :ref:`\"fat\" archive rosdep "
 "section <linux-install-binary-install-missing-dependencies>`."
 msgstr ""
+"如果你在 Linux 上从源码或 \"fat\" 档案中安装了 ROS 2，"
+"你将需要使用其安装说明中的 rosdep 命令。"
+"这里是 :ref:`from-source rosdep section <linux-development-setup-"
+"install-dependencies-using-rosdep>` 和 :ref:`\"fat\" archive rosdep "
+"section <linux-install-binary-install-missing-dependencies>`"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:169
 msgid "If you already have all your dependencies, the console will return:"
-msgstr ""
+msgstr "如果你已经有了所有的依赖项，控制台将返回："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:175
 msgid ""
@@ -281,64 +326,75 @@ msgid ""
 "through those declarations and installs the ones that are missing. You "
 "can learn more about ``rosdep`` in another tutorial (coming soon)."
 msgstr ""
+"包在 ``package.xml`` 文件中声明它们的依赖项"
+"（在下一个教程中您将了解更多关于包的信息）。"
+"该命令遍历这些声明，并安装缺失的声明。"
+"你可以在另一个教程（即将推出）中了解更多关于 ``rosdep`` 的内容。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:180
 msgid "5 Build the workspace with colcon"
-msgstr ""
+msgstr "5 使用 colcon 构建工作区"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:182
 msgid ""
 "From the root of your workspace (``dev_ws``), you can now build your "
 "packages using the command:"
 msgstr ""
+"从你的工作区的根（``dev_ws``），你现在可以使用命令构建你的包："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:204
 msgid ""
 "Windows doesn’t allow long paths, so ``merge-install`` will combine all "
 "the paths into the ``install`` directory."
 msgstr ""
+"Windows 不允许长路径，所以 ``merge-install`` 将把所有路径合并到安装目录中。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:206
 msgid "The console will return the following message:"
-msgstr ""
+msgstr "控制台将返回以下消息："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:216
 msgid "Other useful arguments for ``colcon build``:"
-msgstr ""
+msgstr "``colcon build`` 的其他有用参数："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:218
 msgid ""
 "``--packages-up-to`` builds the package you want, plus all its "
 "dependencies, but not the whole workspace (saves time)"
 msgstr ""
+"``--packages-up-to`` 构建您想要的包，以及它的所有依赖项，但不是整个工作区（节省时间）"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:219
 msgid ""
 "``--symlink-install`` saves you from having to rebuild every time you "
 "tweak python scripts"
 msgstr ""
+"``--symlink-install`` 节省您在每次调整 Python 脚本时都必须重新构建的时间"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:220
 msgid ""
 "``--event-handlers console_direct+`` shows console output while building "
 "(can otherwise be found in the ``log`` directory)"
 msgstr ""
+"``--event-handlers console_direct+`` 显示构建时的控制台输出（可以在 ``log`` 目录中找到）"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:222
 msgid ""
 "Once the build is finished, enter ``ls`` in the workspace root "
 "(``~/dev_ws``) and you will see that colcon has created new directories:"
 msgstr ""
+"一旦构建完成，在工作区根目录（``~/dev_ws``）中输入 ``ls``，你会看到 ``colcon`` 已经创建了新的目录："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:228
 msgid ""
 "The ``install`` directory is where your workspace’s setup files are, "
 "which you can use to source your overlay."
 msgstr ""
+"``install`` 目录是工作区的 setup 文件所在的位置，您可以使用这些文件来生成覆盖层。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:232
 msgid "6 Source the overlay"
-msgstr ""
+msgstr "6 激活覆盖层"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:234
 msgid ""
@@ -347,26 +403,34 @@ msgid ""
 "an overlay in the same terminal where you built, or likewise building "
 "where an overlay is sourced, may create complex issues."
 msgstr ""
+"在获取覆盖层之前，打开一个新的终端是非常重要的，"
+"它与您构建工作区的那个终端是分开的。"
+"在您所构建的终端中寻找覆盖层，或者在覆盖层来源的终端中寻找覆盖层，"
+"可能会产生复杂的问题。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:237
 msgid ""
 "In the new terminal, source your main ROS 2 environment as the "
 "“underlay”, so you can build the overlay “on top of” it:"
 msgstr ""
+"在新的终端中，source 你的主要 ROS 2 环境作为“底层”，"
+"所以你可以在它之上构建覆盖层："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:255
 msgid ""
 "In this case you can use a normal command prompt, as we are not going to "
 "build any workspace in this terminal."
 msgstr ""
+"在这种情况下，你可以使用普通的命令提示符，"
+"因为我们不打算在这个终端中建立任何工作空间。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:261
 msgid "Go into the root of your workspace:"
-msgstr ""
+msgstr "进入你的工作空间的根部："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:283
 msgid "In the root, source your overlay:"
-msgstr ""
+msgstr "在根部，激活覆盖层。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:307
 msgid ""
@@ -375,6 +439,8 @@ msgid ""
 "overlay as well as the underlay it was created in, allowing you to "
 "utilize both workspaces."
 msgstr ""
+"激活覆盖层的 ``local_setup`` 只会将覆盖层中可用的包添加到您的环境中。"
+"``setup`` 源覆盖以及创建它的底层，允许您利用这两个工作区。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:310
 msgid ""
@@ -383,34 +449,39 @@ msgid ""
 "just sourcing ``dev_ws``'s ``setup``, because that includes the "
 "environment of the underlay it was created in."
 msgstr ""
+"所以，激活你的主要 ROS 2 安装的 ``setup``，"
+"然后 ``dev_ws`` 覆盖的 ``local_setup``，就像你刚刚做的，"
+"是相同的只是来源 ``dev_ws`` 的 ``setup``，"
+"因为这包括它创建的底层环境。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:313
 msgid "Now you can run the ``turtlesim`` package from the overlay:"
-msgstr ""
+msgstr "现在你可以从覆盖层运行 ``turtlesim`` 包："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:319
 msgid ""
 "But how can you tell that this is the overlay turtlesim running, and not "
 "your main installation's turtlesim?"
 msgstr ""
+"但是你怎么知道这是运行的覆盖 ``turtlesim``，而不是你的主安装的 ``turtlesim``？"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:321
 msgid "Let’s modify turtlesim in the overlay so you can see the effects:"
-msgstr ""
+msgstr "让我们在覆盖层中修改 ``turtlesim``，这样你就可以看到效果："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:323
 msgid ""
 "You can modify and rebuild packages in the overlay separately from the "
 "underlay."
-msgstr ""
+msgstr "您可以在覆盖层中单独修改和重建包。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:324
 msgid "The overlay takes precedence over the underlay."
-msgstr ""
+msgstr "覆盖层优先于底层。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:328
 msgid "7 Modify the overlay"
-msgstr ""
+msgstr "7 修改覆盖层"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:330
 msgid ""
@@ -419,28 +490,33 @@ msgid ""
 " ``~/dev_ws/src/ros_tutorials/turtlesim/src``. Open ``turtle_frame.cpp`` "
 "with your preferred text editor."
 msgstr ""
+"你可以通过编辑 ``turtlesim`` 窗口的标题栏在覆盖层中修改 ``turtlesim``。"
+"为此，在 ``~/dev_ws/src/ros_tutorials/turtlesim/src`` 中找到 ``turtle_frame.cpp`` 文件。"
+"使用首选的文本编辑器打开 ``turtle_frame.cpp``。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:334
 msgid ""
 "On line 52 you will see the function ``setWindowTitle(\"TurtleSim\");``. "
 "Change the value ``”TurtleSim”`` to ``”MyTurtleSim”``, and save the file."
 msgstr ""
+"在第 52 行，您将看到函数 ``setWindowTitle("TurtleSim");``。"
+"将 ``”TurtleSim”`` 的值修改为 ``”MyTurtleSim”``，保存文件。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:337
 msgid ""
 "Return to first terminal where you ran ``colcon build`` earlier and run "
 "it again."
-msgstr ""
+msgstr "返回之前运行 ``colcon build`` 的第一个终端并再次运行它。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:339
 msgid ""
 "Return to the second terminal (where the overlay is sourced) and run "
 "turtlesim again:"
-msgstr ""
+msgstr "返回到第二个终端（覆盖的激活），再次运行 ``turtlesim``："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:345
 msgid "You will see the title bar on the turtlesim window now says “MyTurtleSim”."
-msgstr ""
+msgstr "你会看到 ``turtlesim`` 窗口的标题栏现在显示 “MyTurtleSim”。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:349
 msgid ""
@@ -448,22 +524,25 @@ msgid ""
 "earlier, the overlay of your ``dev_ws`` environment takes precedence over"
 " the contents of the underlay."
 msgstr ""
+"即使您的主 ROS 2 环境是在这个终端中早先获得的，您的 ``dev_ws`` 环境的覆盖层优先于底层的内容。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:351
 msgid ""
 "To see that your underlay is still intact, open a brand new terminal and "
 "source only your ROS 2 installation. Run turtlesim again:"
 msgstr ""
+"要看到你的底层仍然完好无损，打开一个全新的终端和来源只您的 ROS 2 安装。"
+"再次运行 ``turtlesim``："
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:360
 msgid ""
 "You can see that modifications in the overlay did not actually affect "
 "anything in the underlay."
-msgstr ""
+msgstr "你可以看到在覆盖层中的修改实际上并没有影响到底层中的任何东西。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:364
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:365
 msgid ""
@@ -472,6 +551,9 @@ msgid ""
 "new workspace. The overlay gets prepended to the path, and takes "
 "precedence over the underlay, as you saw with your modified turtlesim."
 msgstr ""
+"在本教程中，你将你的主要 ROS 2 发行版安装作为你的底层，"
+"并通过在一个新的工作区中克隆和构建包创建一个覆盖层。"
+"覆盖层被附加到路径上，并优先于底层，正如您在修改后的 ``turtlesim`` 中看到的那样。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:368
 msgid ""
@@ -479,10 +561,12 @@ msgid ""
 "so you don’t have to put everything in the same workspace and rebuild a "
 "huge workspace on every iteration."
 msgstr ""
+"对于处理少量的包，建议使用覆盖层，因此您不必将所有内容都放在同一个工作区中，"
+"并在每次迭代时重新构建一个巨大的工作区。"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:371
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Workspace/Creating-A-Workspace.rst:373
 msgid ""
@@ -490,4 +574,5 @@ msgid ""
 "sourcing your own workspace, you can learn how to :doc:`create your own "
 "packages <../Creating-Your-First-ROS2-Package>`."
 msgstr ""
-
+"现在你了解了创建、构建和激活你自己的工作空间背后的细节，"
+"你可以学习如何 :doc:`创建你自己的包 <../Creating-Your-First-ROS2-Package>`。"

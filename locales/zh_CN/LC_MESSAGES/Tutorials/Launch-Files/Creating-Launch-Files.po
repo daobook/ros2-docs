@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:4
 msgid "Creating a launch file"
-msgstr ""
+msgstr "创建 launch 文件"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:6
 msgid "**Goal:** Create a launch file to run a complex ROS 2 system."
-msgstr ""
+msgstr "**目标**：创建一个启动文件来运行一个复杂的 ROS 2 系统。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -36,11 +36,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:19
 msgid ""
@@ -49,56 +49,64 @@ msgid ""
 "more nodes running simultaneously, opening terminals and reentering "
 "configuration details becomes tedious."
 msgstr ""
+"到目前为止，在本教程中，您已经为运行的每个新节点打开了新的终端。"
+"当您创建同时运行越来越多节点的更复杂系统时，打开终端并重新输入配置细节将变得非常繁琐。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:22
 msgid ""
 "Launch files allow you to start up and configure a number of executables "
 "containing ROS 2 nodes simultaneously."
 msgstr ""
+"启动文件允许您同时启动和配置多个包含 ROS 2 节点的可执行文件。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:24
 msgid ""
 "Running a single launch file with the ``ros2 launch`` command will start "
 "up your entire system - all nodes and their configurations - at once."
 msgstr ""
+"使用 ``ros2 launch`` 命令运行单个启动文件将立即启动整个系统——所有节点及其配置。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:28
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:30
 msgid ""
 "This tutorial uses the :doc:`rqt_graph and turtlesim <../Turtlesim"
 "/Introducing-Turtlesim>` packages."
 msgstr ""
+"本教程使用 :doc:`rqt_console 和 turtlesim <../Turtlesim/Introducing-Turtlesim>` 包。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:32
 msgid "You will also need to use a text editor of your preference."
-msgstr ""
+msgstr "您还需要使用您首选的文本编辑器。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:34
 msgid ""
 "As always, don’t forget to source ROS 2 in :doc:`every new terminal you "
 "open <../Configuring-ROS2-Environment>`."
 msgstr ""
+"和往常一样，不要忘记在你打开的每一个 "
+":doc:`新终端中都输入 ROS 2 <../Configuring-ROS2-Environment>`。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:38
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:41
 msgid "1 Setup"
-msgstr ""
+msgstr "1 设置"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:43
 msgid "Create a new directory to store your launch file:"
-msgstr ""
+msgstr "创建一个新的目录来存储你的 launch 文件："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:49
 msgid ""
 "Create a launch file named ``turtlesim_mimic_launch.py`` by entering the "
 "following command in the terminal:"
 msgstr ""
+"在终端中输入以下命令，创建一个名为 ``turtlesim_mimic_launch.py`` 的启动文件："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:53
 msgid "Linux"
@@ -117,38 +125,40 @@ msgid ""
 "You can also go into your system’s file directory using the GUI and "
 "create a new file that way."
 msgstr ""
+"您还可以使用 GUI 进入系统的文件目录，并以这种方式创建一个新文件。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:73
 msgid "Open the new file in your preferred text editor."
-msgstr ""
+msgstr "在首选文本编辑器中打开新文件。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:76
 msgid "2 Write the launch file"
-msgstr ""
+msgstr "编写 launch 文件"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:78
 msgid ""
 "Let’s put together a ROS 2 launch file using the ``turtlesim`` package "
 "and its executables."
 msgstr ""
+"让我们使用 ``turtlesim`` 包及其可执行文件来组合一个 ROS 2 启动文件。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:80
 msgid ""
 "Copy and paste the complete code into the ``turtlesim_mimic_launch.py`` "
 "file:"
-msgstr ""
+msgstr "将完整的代码复制并粘贴到 ``turtlesim_mimic_launch.py`` 文件中："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:116
 msgid "2.1 Examine the launch file"
-msgstr ""
+msgstr "2.1 检查 launch 文件"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:118
 msgid "These import statements pull in some Python ``launch`` modules."
-msgstr ""
+msgstr "这些导入语句会导入一些 Python ``launch`` 模块。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:125
 msgid "Next, the launch description itself begins:"
-msgstr ""
+msgstr "接下来，开始描述 launch 本身："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:134
 msgid ""
@@ -156,12 +166,14 @@ msgid ""
 " ``turtlesim`` package. The goal of the system is to launch two turtlesim"
 " windows, and have one turtle mimic the movements of the other."
 msgstr ""
+"``LaunchDescription`` 中有一个由三个节点组成的系统，所有节点都来自 ``turtlesim`` 包。"
+"该系统的目标是启动两个海龟模拟窗口，让一只海龟模仿另一只的动作。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:137
 msgid ""
 "The first two actions in the launch description launch two turtlesim "
 "windows:"
-msgstr ""
+msgstr "启动描述中的前两个动作启动两个 turtlesim 窗口："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:154
 msgid ""
@@ -169,6 +181,8 @@ msgid ""
 " Unique namespaces allow the system to start two simulators without node "
 "name nor topic name conflicts."
 msgstr ""
+"注意，这两个节点之间的唯一区别是它们的名称空间值。"
+"唯一的名称空间允许系统启动两个没有节点名称或主题名称冲突的模拟器。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:157
 msgid ""
@@ -177,16 +191,19 @@ msgid ""
 "would be no way to distinguish between messages meant for one turtle or "
 "the other."
 msgstr ""
+"在这个系统中，两只海龟都接收关于同一主题的命令，并发布它们在同一主题上的姿势。"
+"如果没有惟一的名称空间，就没有办法区分海龟的消息。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:160
 msgid ""
 "The final node is also from the ``turtlesim`` package, but a different "
 "executable: ``mimic``."
 msgstr ""
+"最后一个节点也来自 turtlesim 包，但它是一个不同的可执行文件：``mimic``。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:176
 msgid "This node has added configuration details in the form of remappings."
-msgstr ""
+msgstr "该节点以重新映射的形式添加了配置细节。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:178
 msgid ""
@@ -197,6 +214,11 @@ msgid ""
 "``/turtlesim2/sim``'s velocity command topic to subscribe to. In other "
 "words, ``turtlesim2`` will mimic ``turtlesim1``'s movements."
 msgstr ""
+"``mimic`` 的 ``/input/pose`` 主题被映射到 ``/turtlesim1/turtle1/pose``，"
+"它的 ``/output/cmd_vel`` 主题被映射到 ``/turtlesim2/turtle1/cmd_vel``。"
+"这意味着 ``mimic`` 将订阅 ``/turtlesim1/sim`` 的 ``pose`` 主题，"
+"并为 ``/turtlesim2/sim`` 的 velocity 命令主题重新发布它。"
+"换句话说，``turtlesim2`` 会模仿 ``turtlesim1`` 的动作。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:184
 msgid "3 ros2 launch"
@@ -207,18 +229,21 @@ msgid ""
 "To launch ``turtlesim_mimic_launch.py``, enter into the directory you "
 "created earlier and run the following command:"
 msgstr ""
+"要启动 ``turtlesim_mimic_launch.py``，请进入之前创建的目录并运行以下命令："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:195
 msgid ""
 "It is possible to launch a launch file directly (as we do above), or "
 "provided by a package. When it is provided by a package, the syntax is:"
 msgstr ""
+"可以直接启动 launch 文件（如上所述），也可以由包提供。当它由包提供时，语法是："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:202
 msgid ""
 "You will learn more about :doc:`creating packages <../Creating-Your-"
 "First-ROS2-Package>` in a later tutorial."
 msgstr ""
+"您将在后面的教程中了解更多关于 :doc:`创建包 <../Creating-Your-First-ROS2-Package>` 的内容。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:206
 msgid ""
@@ -226,6 +251,8 @@ msgid ""
 "``exec_depend`` dependency on the ``ros2launch`` package in your "
 "package's ``package.xml``:"
 msgstr ""
+"对于有启动文件的软件包，"
+"最好在你的软件包的 ``package.xml`` 中添加一个 ``exec_depend`` 对 ``ros2launch`` 软件包的依赖："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:212
 msgid ""
@@ -233,12 +260,15 @@ msgid ""
 "building your package. It also ensures that all :doc:`launch file formats"
 " <../../How-To-Guides/Launch-file-different-formats>` are recognized."
 msgstr ""
+"这有助于确保在构建你的软件包后，``ros2 launch`` 命令是可用的。"
+"它还确保所有 :doc:`launch文件格式<../../How-To-Guides/Launch-file-different-formats>`  被识别。
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:215
 msgid ""
 "Two turtlesim windows will open, and you will see the following "
 "``[INFO]`` messages telling you which nodes your launch file has started:"
 msgstr ""
+"两个 turtlesim 窗口将打开，你将看到以下 ``[INFO]`` 消息，告诉你启动文件已经启动了哪些节点："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:224
 msgid ""
@@ -246,14 +276,17 @@ msgid ""
 " pub`` command on the ``/turtlesim1/turtle1/cmd_vel`` topic to get the "
 "first turtle moving:"
 msgstr ""
+"要查看系统的运行情况，打开一个新的终端，在 ``/turtlesim1/turtle1/cmd_vel`` "
+"主题上运行 ``ros2 topic pub`` 命令，让第一个海龟移动："
+
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:230
 msgid "You will see both turtles following the same path."
-msgstr ""
+msgstr "你会看到两只乌龟走的是同一条路。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:235
 msgid "4 Introspect the system with rqt_graph"
-msgstr ""
+msgstr "4 使用 rqt_graph 内省系统"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:237
 msgid ""
@@ -261,10 +294,11 @@ msgid ""
 "``rqt_graph`` to get a better idea of the relationship between the nodes "
 "in your launch file."
 msgstr ""
+"当系统仍在运行时，打开一个新的终端并运行 ``rqt_graph``，以更好地了解启动文件中节点之间的关系。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:239
 msgid "Run the command:"
-msgstr ""
+msgstr "运行以下命令："
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:247
 msgid ""
@@ -275,10 +309,15 @@ msgid ""
 "``/turtlesim1/sim``'s pose topic, and publishes to ``/turtlesim2/sim``'s "
 "velocity command topic."
 msgstr ""
+"一个隐藏的节点（您运行的 ``ros2 topic pub`` 命令）"
+"将数据发布到左边的 ``/turtlesim1/turtle1/cmd_vel`` 主题，"
+"该主题是 ``/turtlesim1/sim`` 节点订阅的。"
+"graph 的其余部分显示了前面描述的内容：``mimic`` 订阅 ``/turtlesim1/sim`` "
+"的 ``pose`` 主题，并发布 ``/turtlesim2/sim`` 的 velocity 命令主题。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:251
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:253
 msgid ""
@@ -286,10 +325,12 @@ msgid ""
 "specific configuration details. You can create launch files using Python,"
 " and run them using the ``ros2 launch`` command."
 msgstr ""
+"launch 文件简化了具有许多节点和特定配置细节的复杂系统的运行。"
+"您可以使用 Python 创建启动文件，并使用 ``ros2 launch`` 命令运行它们。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:257
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:261
 msgid ""
@@ -297,10 +338,14 @@ msgid ""
 "comparison of these different ROS 2 launch formats in :doc:`../../How-To-"
 "Guides/Launch-file-different-formats`."
 msgstr ""
+"你也可以使用 XML 和 YAML 来创建启动文件。"
+"你可以在 :doc:`../../How-To-Guides/Launch-file-different-formats` "
+"中看到这些不同的 ROS 2 launch 格式的比较。"
 
 #: ../../source/Tutorials/Launch-Files/Creating-Launch-Files.rst:264
 msgid ""
 "In the next tutorial, :doc:`../Ros2bag/Recording-And-Playing-Back-Data`, "
 "you'll learn about another helpful tool, ``ros2bag``."
 msgstr ""
-
+"在下一个教程中，:doc:`../Ros2bag/Recording-And-Playing-Back-Data`，"
+"你将了解另一个有用的工具，``ros2bag``。"

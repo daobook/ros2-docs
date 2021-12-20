@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:4
 msgid "Understanding ROS 2 parameters"
-msgstr ""
+msgstr "理解 ROS2 参数"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:6
 msgid "**Goal:** Learn how to get, set, save and reload parameters in ROS 2."
-msgstr ""
+msgstr "**目标**：学习如何在 ROS 2 中获取、设置、保存和重新加载参数。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:8
 msgid "**Tutorial level:** Beginner"
@@ -36,11 +36,11 @@ msgstr ""
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:14
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:17
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:19
 msgid ""
@@ -50,42 +50,51 @@ msgid ""
 "own parameters. All parameters are dynamically reconfigurable, and built "
 "off of :doc:`ROS 2 services <../Services/Understanding-ROS2-Services>`."
 msgstr ""
+"参数是节点的配置值。"
+"您可以将参数视为节点设置。"
+"节点可以将参数存储为整数、浮点数、布尔值、字符串和列表。"
+"在 ROS 2 中，每个节点维护自己的参数。"
+"所有参数都是动态可重新配置的，并基于 "
+":doc:`ROS 2 服务 <../Services/Understanding-ROS2-Services>` 构建。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:26
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:28
 msgid ""
 "This tutorial uses the :doc:`turtlesim package <../Turtlesim/Introducing-"
 "Turtlesim>`."
 msgstr ""
+"本教程使用 :doc:`turtlesim 包 <../Turtlesim/Introducing-Turtlesim>`。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:30
 msgid ""
 "As always, don’t forget to source ROS 2 in :doc:`every new terminal you "
 "open <../Configuring-ROS2-Environment>`."
 msgstr ""
+"和往常一样，不要忘记在 :doc:`你打开的每一个新终端中都输入 ROS 2 "
+"<../Configuring-ROS2-Environment>`。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:33
 msgid "Tasks"
-msgstr ""
+msgstr "任务"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:36
 msgid "1 Setup"
-msgstr ""
+msgstr "1 设置"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:38
 msgid "Start up the two turtlesim nodes, ``/turtlesim`` and ``/teleop_turtle``."
-msgstr ""
+msgstr "启动两个 turtlesim 节点 ``/turtlesim`` 和 ``/teleop_turtle``。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:40
 msgid "Open a new terminal and run:"
-msgstr ""
+msgstr "打开一个新的终端并运行："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:46
 msgid "Open another terminal and run:"
-msgstr ""
+msgstr "打开另一个终端并运行："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:54
 msgid "2 ros2 param list"
@@ -95,29 +104,31 @@ msgstr ""
 msgid ""
 "To see the parameters belonging to your nodes, open a new terminal and "
 "enter the command:"
-msgstr ""
+msgstr "要查看属于您的节点的参数，打开一个新的终端并输入命令："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:62
 msgid ""
 "You will see the node namespaces, ``/teleop_turtle`` and ``/turtlesim``, "
 "followed by each node’s parameters:"
 msgstr ""
+"您将看到节点名称空间 ``/teleop_turtle`` 和 ``/turtlesim``，后面跟着每个节点的参数："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:84
 msgid ""
 "Every node has the parameter ``use_sim_time``; it’s not unique to "
 "turtlesim."
-msgstr ""
+msgstr "每个节点都有参数 ``use_sim_time``；这并不是乌龟独有的。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:86
 msgid ""
 "Based on their names, it looks like ``/turtlesim``'s parameters determine"
 " the background color of the turtlesim window using RGB color values."
 msgstr ""
+"根据它们的名称，看起来 ``/turtlesim`` 的参数使用 RGB 颜色值确定了 turtlesim 窗口的背景颜色。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:88
 msgid "To determine a parameter's type, you can use ``ros2 param get``."
-msgstr ""
+msgstr "要确定参数的类型，可以使用 ``ros2 param get``。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:92
 msgid "3 ros2 param get"
@@ -125,27 +136,29 @@ msgstr ""
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:94
 msgid "To display the type and current value of a parameter, use the command:"
-msgstr ""
+msgstr "需要查询某个参数的类型和当前值。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:100
 msgid ""
 "Let’s find out the current value of ``/turtlesim``’s parameter "
 "``background_g``:"
-msgstr ""
+msgstr "让我们找出 ``/turtlesim`` 的参数 ``background_g`` 的当前值："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:106
 msgid "Which will return the value:"
-msgstr ""
+msgstr "将返回值："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:112
 msgid "Now you know ``background_g`` holds an integer value."
-msgstr ""
+msgstr "现在你知道 ``background_g`` 保存了一个整数值。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:114
 msgid ""
 "If you run the same command on ``background_r`` and ``background_b``, you"
 " will get the values ``69`` and ``255``, respectively."
 msgstr ""
+"如果您在 ``background_r`` 和 ``background_b`` 上运行相同的命令，"
+"您将分别得到值 ``69`` 和 ``255``。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:117
 msgid "4 ros2 param set"
@@ -153,19 +166,19 @@ msgstr ""
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:119
 msgid "To change a parameter's value at runtime, use the command:"
-msgstr ""
+msgstr "要在运行时更改参数的值，使用命令："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:125
 msgid "Let’s change ``/turtlesim``’s background color:"
-msgstr ""
+msgstr "让我们改变 ``/turtlesim`` 的背景色："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:131
 msgid "Your terminal should return the message:"
-msgstr ""
+msgstr "您的终端应该返回该消息："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:137
 msgid "And the background of your turtlesim window should change colors:"
-msgstr ""
+msgstr "你的 turtlesim 窗口的背景应该改变颜色："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:141
 msgid ""
@@ -173,6 +186,8 @@ msgid ""
 " current session, not permanently. However, you can save your settings "
 "and reload them the next time you start a node."
 msgstr ""
+"使用 ``set`` 命令设置参数只会在当前会话中更改参数，而不是永久更改。"
+"但是，您可以保存设置并在下次启动节点时重新加载它们。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:145
 msgid "5 ros2 param dump"
@@ -182,30 +197,31 @@ msgstr ""
 msgid ""
 "You can “dump” all of a node’s current parameter values into a file to "
 "save them for later by using the command:"
-msgstr ""
+msgstr "该命令可以将节点当前所有的参数值“dump”到文件中，以备以后使用："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:153
 msgid ""
 "To save your current configuration of ``/turtlesim``’s parameters, enter "
 "the command:"
-msgstr ""
+msgstr "要保存 ``/turtlesim`` 参数的当前配置，输入命令："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:159
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:201
 msgid "Your terminal will return the message:"
-msgstr ""
+msgstr "您的终端将返回消息："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:165
 msgid ""
 "You will find a new file in the directory your workspace is running in. "
 "If you open this file, you’ll see the following contents:"
 msgstr ""
+"您将在运行工作区的目录中发现一个新文件。如果你打开这个文件，你会看到以下内容："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:184
 msgid ""
 "Dumping parameters comes in handy if you want to reload the node with the"
 " same parameters in the future."
-msgstr ""
+msgstr "如果您希望在将来用相同的参数重新加载节点，转储参数将非常方便。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:187
 msgid "6 ros2 param load"
@@ -216,26 +232,29 @@ msgid ""
 "You can load parameters from a file to a currently running node using the"
 " command:"
 msgstr ""
+"使用该命令可以将参数从文件加载到当前运行的节点："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:195
 msgid ""
 "To load the ./turtlesim.yaml file generated with ``ros2 param dump`` into"
 " ``/turtlesim`` node’s parameters, enter the command:"
 msgstr ""
+"装载 ``./turtlesim.yaml`` 文件生成的 ros2 参数转储到 ``/turtlesim`` 节点的参数，输入命令："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:216
 msgid ""
 "Read-only parameters can only be modified at startup and not afterwards, "
 "that is why there are some warnings for the \"qos_overrides\" parameters."
 msgstr ""
+"只读参数只能在启动时修改，而不能在启动后修改，这就是为什么“qos_overrides”参数会有一些警告。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:219
 msgid "7 Load parameter file on node startup"
-msgstr ""
+msgstr "7 在节点启动时加载参数文件"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:221
 msgid "To start the same node using your saved parameter values, use:"
-msgstr ""
+msgstr "在节点启动时加载参数文件："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:227
 msgid ""
@@ -243,28 +262,31 @@ msgid ""
 "added flags ``--ros-args`` and ``--params-file``, followed by the file "
 "you want to load."
 msgstr ""
+"这是您总是用来启动 turtlesim 的同一个命令，添加了标志 ``--ros-args`` 和 ``--params-file``，"
+"后面跟着您想要加载的文件。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:229
 msgid ""
 "Stop your running turtlesim node so you can try reloading it with your "
 "saved parameters, using:"
 msgstr ""
+"停止正在运行的 turtlesim 节点，这样你就可以用保存的参数重新加载它，使用："
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:235
 msgid ""
 "The turtlesim window should appear as usual, but with the purple "
 "background you set earlier."
-msgstr ""
+msgstr "turtlesim 窗口应该像往常一样显示，但是使用您之前设置的紫色背景。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:239
 msgid ""
 "In this case, parameters are being modified at startup so the specified "
 "read-only parameters will also take effect."
-msgstr ""
+msgstr "在这种情况下，参数在启动时被修改，因此指定的只读参数也将生效。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:242
 msgid "Summary"
-msgstr ""
+msgstr "小结"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:244
 msgid ""
@@ -273,14 +295,17 @@ msgid ""
 "also save the parameter settings to a file to reload them in a future "
 "session."
 msgstr ""
+"节点有参数来定义它们的默认配置值。您可以从命令行 ``get`` 和 ``set`` 参数值。"
+"您还可以将参数设置保存到一个文件中，以便在以后的会话中重新加载它们。"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:249
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst:251
 msgid ""
 "Jumping back to ROS 2 communication methods, in the next tutorial you'll "
 "learn about :doc:`actions <../Understanding-ROS2-Actions>`."
 msgstr ""
-
+"跳回到 ROS 2 的通信方法，在下一个教程中，"
+"你将学习 :doc:`actions <../Understanding-ROS2-Actions>`。"
