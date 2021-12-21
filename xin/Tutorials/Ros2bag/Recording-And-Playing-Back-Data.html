@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recording and playing back data &mdash; ROS 2 Documentation: Xin  文档</title>
+  <title>记录和回放数据 &mdash; ROS 2 Documentation: Xin  文档</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="Creating a workspace" href="../Workspace/Creating-A-Workspace.html" />
-    <link rel="prev" title="Creating a launch file" href="../Launch-Files/Creating-Launch-Files.html" /> 
+    <link rel="next" title="创建工作区" href="../Workspace/Creating-A-Workspace.html" />
+    <link rel="prev" title="创建 launch 文件" href="../Launch-Files/Creating-Launch-Files.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -48,17 +48,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Installation.html">安装</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Development-Setup.html">在 Ubuntu Linux 上构建 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Install-Binary.html">Installing ROS 2 on Ubuntu Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Install-Debians.html">Installing ROS 2 via Debian Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Install-Debians.html">通过 Debian 软件包安装 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/macOS-Development-Setup.html">Building ROS 2 on macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Development-Setup.html">Building ROS 2 on Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Install-Binary.html">Installing ROS 2 on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Development-Setup.html">在 Windows 上构建 ROS 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Install-Binary.html">在 Windows 上安装ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/RHEL-Development-Setup.html">Building ROS 2 on RHEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/RHEL-Install-Binary.html">Installing ROS 2 on RHEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/RHEL-Install-RPMs.html">Installing ROS 2 via RPM Packages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Fedora-Development-Setup.html">Building ROS 2 on Fedora Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Latest-Development-Setup.html">Installing the latest ROS 2 development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Latest-Development-Setup.html">安装最新的 ROS 2 开发版</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Maintaining-a-Source-Checkout.html">Maintaining a source checkout of ROS 2 Xin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Testing.html">Alternative Installation Sources for Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Testing.html">用于测试的替代安装源</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/DDS-Implementations.html">Installing DDS implementations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Installation/DDS-Implementations/Install-Connext-Security-Plugins.html">Installing Connext security plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Installation/DDS-Implementations/Install-Connext-University-Eval.html">Installing University or Evaluation versions of RTI Connext DDS</a></li>
@@ -68,21 +68,21 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../Docs-Guide.html">Docs Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../Tutorials.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../Configuring-ROS2-Environment.html">Configuring your ROS 2 environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html">Introducing turtlesim and rqt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Nodes.html">Understanding ROS 2 nodes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Topics/Understanding-ROS2-Topics.html">Understanding ROS 2 topics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Services/Understanding-ROS2-Services.html">Understanding ROS 2 services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Parameters/Understanding-ROS2-Parameters.html">Understanding ROS 2 parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Actions.html">Understanding ROS 2 actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Rqt-Console/Using-Rqt-Console.html">Using rqt_console</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Creating-Launch-Files.html">Creating a launch file</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Recording and playing back data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Workspace/Creating-A-Workspace.html">Creating a workspace</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Creating-Your-First-ROS2-Package.html">Creating your first ROS 2 package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (C++)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Docs-Guide.html">文档指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../Tutorials.html">教程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Configuring-ROS2-Environment.html">配置 ROS 2 环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html">介绍 turtlesim 和 rqt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Nodes.html">理解 ROS2 节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Topics/Understanding-ROS2-Topics.html">理解 ROS 2 主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Services/Understanding-ROS2-Services.html">理解 ROS2 服务</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Parameters/Understanding-ROS2-Parameters.html">理解 ROS2 参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Actions.html">理解 ROS 2 的行为</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Rqt-Console/Using-Rqt-Console.html">使用 rqt_console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Creating-Launch-Files.html">创建 launch 文件</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">记录和回放数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Workspace/Creating-A-Workspace.html">创建工作区</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Creating-Your-First-ROS2-Package.html">创建你的第一个 ROS 2 包</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">编写一个简单的发布者和订阅者（C++）</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Py-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (Python)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Cpp-Service-And-Client.html">Writing a simple service and client (C++)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Py-Service-And-Client.html">Writing a simple service and client (Python)</a></li>
@@ -100,7 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Using-Substitutions.html">Using substitutions in launch files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Using-Event-Handlers.html">Using event handlers in launch files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Composition.html">Composing multiple nodes in a single process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Colcon-Tutorial.html">Using colcon to build packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Colcon-Tutorial.html">使用 colcon 构建包</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Monitoring-For-Parameter-Changes-CPP.html">Monitoring for parameter changes (C++)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Tf2/Tf2-Main.html">tf2 Tutorials</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Tf2/Introduction-To-Tf2.html">Introduction to tf2</a></li>
@@ -153,7 +153,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Developing-a-ROS-2-Package.html">Developing a ROS 2 package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Ament-CMake-Documentation.html">ament_cmake user documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Ament-CMake-Python-Documentation.html">ament_cmake_python user documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Launch-files-migration-guide.html">Migrating launch files from ROS 1 to ROS 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Launch-files-migration-guide.html">将启动文件从 ROS 1 迁移到 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Launch-file-different-formats.html">Using Python, XML, and YAML for ROS 2 Launch Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Parameters-YAML-files-migration-guide.html">Migrating YAML parameter files from ROS 1 to ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Node-arguments.html">Passing ROS arguments to nodes via the command-line</a></li>
@@ -263,8 +263,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../Tutorials.html">Tutorials</a> &raquo;</li>
-      <li>Recording and playing back data</li>
+          <li><a href="../../Tutorials.html">教程</a> &raquo;</li>
+      <li>记录和回放数据</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/ros2/ros2_documentation/blob/xin/source/Tutorials/Ros2bag/Recording-And-Playing-Back-Data.rst" class="fa fa-github"> 在 GitHub 上修改</a>
       </li>
@@ -286,75 +286,70 @@
 
 
   <div class="section" id="recording-and-playing-back-data">
-<span id="ros2bag"></span><h1>Recording and playing back data<a class="headerlink" href="#recording-and-playing-back-data" title="永久链接至标题"></a></h1>
-<p><strong>Goal:</strong> Record data published on a topic so you can replay and examine it any time.</p>
+<span id="ros2bag"></span><h1>记录和回放数据<a class="headerlink" href="#recording-and-playing-back-data" title="永久链接至标题"></a></h1>
+<p><strong>目标</strong>：记录就某一主题发表的数据，以便你可以随时回放和检查。</p>
 <p><strong>Tutorial level:</strong> Beginner</p>
 <p><strong>Time:</strong> 10 minutes</p>
 <div class="contents local topic" id="contents">
-<p class="topic-title">Contents</p>
+<p class="topic-title">目录</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#background" id="id1">Background</a></p></li>
-<li><p><a class="reference internal" href="#prerequisites" id="id2">Prerequisites</a></p></li>
-<li><p><a class="reference internal" href="#tasks" id="id3">Tasks</a></p>
+<li><p><a class="reference internal" href="#background" id="id1">背景</a></p></li>
+<li><p><a class="reference internal" href="#prerequisites" id="id2">先决条件</a></p></li>
+<li><p><a class="reference internal" href="#tasks" id="id3">任务</a></p>
 <ul>
-<li><p><a class="reference internal" href="#setup" id="id4">1 Setup</a></p></li>
-<li><p><a class="reference internal" href="#choose-a-topic" id="id5">2 Choose a topic</a></p></li>
+<li><p><a class="reference internal" href="#setup" id="id4">1 设置</a></p></li>
+<li><p><a class="reference internal" href="#choose-a-topic" id="id5">2 选择一个主题</a></p></li>
 <li><p><a class="reference internal" href="#ros2-bag-record" id="id6">3 ros2 bag record</a></p></li>
 <li><p><a class="reference internal" href="#ros2-bag-info" id="id7">4 ros2 bag info</a></p></li>
 <li><p><a class="reference internal" href="#ros2-bag-play" id="id8">5 ros2 bag play</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#summary" id="id9">Summary</a></p></li>
+<li><p><a class="reference internal" href="#summary" id="id9">小结</a></p></li>
 <li><p><a class="reference internal" href="#next-steps" id="id10">Next steps</a></p></li>
 <li><p><a class="reference internal" href="#related-content" id="id11">Related content</a></p></li>
 </ul>
 </div>
 <div class="section" id="background">
-<h2><a class="toc-backref" href="#id1">Background</a><a class="headerlink" href="#background" title="永久链接至标题"></a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> is a command line tool for recording data published on topics in your system.
-It accumulates the data passed on any number of topics and saves it in a database.
-You can then replay the data to reproduce the results of your tests and experiments.
-Recording topics is also a great way to share your work and allow others to recreate it.</p>
+<h2><a class="toc-backref" href="#id1">背景</a><a class="headerlink" href="#background" title="永久链接至标题"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> 是一个命令行工具，用于记录系统中发布的主题数据。它积累传递给任意数量主题的数据，并将其保存在数据库中。然后可以重放数据以再现测试和实验的结果。记录主题也是分享你的工作并让别人重新创造它的好方法。</p>
 </div>
 <div class="section" id="prerequisites">
-<h2><a class="toc-backref" href="#id2">Prerequisites</a><a class="headerlink" href="#prerequisites" title="永久链接至标题"></a></h2>
-<p>You should have <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> installed as a part of your regular ROS 2 setup.</p>
-<p>If you’ve installed from Debians on Linux and your system doesn’t recognize the command, install it like so:</p>
+<h2><a class="toc-backref" href="#id2">先决条件</a><a class="headerlink" href="#prerequisites" title="永久链接至标题"></a></h2>
+<p>您应该已经安装了 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> 作为常规 ROS2 设置的一部分。</p>
+<p>如果你在 Linux 上用 debian 安装，但是你的系统不能识别这个命令，那么像这样安装它：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt-get install ros-xin-ros2bag \</span>
 <span class="go">                     ros-xin-rosbag2-storage-default-plugins</span>
 </pre></div>
 </div>
-<p>This tutorial talks about concepts covered in previous tutorials, like <a class="reference internal" href="../Understanding-ROS2-Nodes.html"><span class="doc">nodes</span></a> and <a class="reference internal" href="../Topics/Understanding-ROS2-Topics.html"><span class="doc">topics</span></a>.
-It also uses the <a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html"><span class="doc">turtlesim package</span></a>.</p>
-<p>As always, don’t forget to source ROS 2 in <a class="reference internal" href="../Configuring-ROS2-Environment.html"><span class="doc">every new terminal you open</span></a>.</p>
+<p>本教程讲述了之前教程中涉及的概念，如 <a class="reference internal" href="../Understanding-ROS2-Nodes.html"><span class="doc">nodes</span></a> 和 <a class="reference internal" href="../Topics/Understanding-ROS2-Topics.html"><span class="doc">topics</span></a>。它还使用了 <a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html"><span class="doc">turtlesim 包</span></a>。</p>
+<p>像往常一样，不要忘记在 <a class="reference internal" href="../Configuring-ROS2-Environment.html"><span class="doc">你打开的每一个新终端</span></a> 中为 ROS 2 激活源代码。</p>
 </div>
 <div class="section" id="tasks">
-<h2><a class="toc-backref" href="#id3">Tasks</a><a class="headerlink" href="#tasks" title="永久链接至标题"></a></h2>
+<h2><a class="toc-backref" href="#id3">任务</a><a class="headerlink" href="#tasks" title="永久链接至标题"></a></h2>
 <div class="section" id="setup">
-<h3><a class="toc-backref" href="#id4">1 Setup</a><a class="headerlink" href="#setup" title="永久链接至标题"></a></h3>
-<p>You’ll be recording your keyboard input in the <code class="docutils literal notranslate"><span class="pre">turtlesim</span></code> system to save and replay later on, so begin by starting up the <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> and <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> nodes.</p>
-<p>Open a new terminal and run:</p>
+<h3><a class="toc-backref" href="#id4">1 设置</a><a class="headerlink" href="#setup" title="永久链接至标题"></a></h3>
+<p>您将在 turtlesim 系统中记录您的键盘输入，以便稍后保存和重放，因此首先启动 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> 节点。</p>
+<p>打开一个新的终端并运行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run turtlesim turtlesim_node</span>
 </pre></div>
 </div>
-<p>Open another terminal and run:</p>
+<p>打开另一个终端并运行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run turtlesim turtle_teleop_key</span>
 </pre></div>
 </div>
-<p>Let’s also make a new directory to store our saved recordings, just as good practice:</p>
+<p>让我们也创建一个新目录来存储我们保存的记录，这是一个良好的做法：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">mkdir bag_files</span>
 <span class="go">cd bag_files</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="choose-a-topic">
-<h3><a class="toc-backref" href="#id5">2 Choose a topic</a><a class="headerlink" href="#choose-a-topic" title="永久链接至标题"></a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> can only record data from topics that are published on.
-To see a list of your system’s topics, open a new terminal and run the command:</p>
+<h3><a class="toc-backref" href="#id5">2 选择一个主题</a><a class="headerlink" href="#choose-a-topic" title="永久链接至标题"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> 只能记录发表的主题的数据。要查看系统主题的列表，打开一个新的终端并运行命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic list</span>
 </pre></div>
 </div>
-<p>Which will return:</p>
+<p>这将返回：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">/parameter_events</span>
 <span class="go">/rosout</span>
 <span class="go">/turtle1/cmd_vel</span>
@@ -362,14 +357,12 @@ To see a list of your system’s topics, open a new terminal and run the command
 <span class="go">/turtle1/pose</span>
 </pre></div>
 </div>
-<p>In the topics tutorial, you learned that the <code class="docutils literal notranslate"><span class="pre">/turtle_teleop</span></code> node publishes commands on the <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> topic to make the turtle move in turtlesim.</p>
-<p>To see the data that <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> is publishing, run the command:</p>
+<p>在主题教程中，您了解到 <code class="docutils literal notranslate"><span class="pre">/turtle_teleop</span></code> 节点在 <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> 主题上发布命令，使海龟在 <code class="docutils literal notranslate"><span class="pre">turtleim</span></code> 中移动。</p>
+<p>要查看 <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> 发布的数据，使用命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic echo /turtle1/cmd_vel</span>
 </pre></div>
 </div>
-<p>Nothing will show up at first because no data is being published by the teleop.
-Return to the terminal where you ran the teleop and select it so it’s active.
-Use the arrow keys to move the turtle around, and you will see data being published on the terminal running <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">echo</span></code>.</p>
+<p>一开始什么都不会显示出来，因为 <code class="docutils literal notranslate"><span class="pre">teleop</span></code> 没有公布任何数据。回到你运行遥控终端的地方，选择它，让它激活。使用方向键移动海龟，您将看到正在运行 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">echo</span></code> 的终端上发布的数据。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">linear:</span>
 <span class="go">  x: 2.0</span>
 <span class="go">  y: 0.0</span>
@@ -384,39 +377,36 @@ Use the arrow keys to move the turtle around, and you will see data being publis
 </div>
 <div class="section" id="ros2-bag-record">
 <h3><a class="toc-backref" href="#id6">3 ros2 bag record</a><a class="headerlink" href="#ros2-bag-record" title="永久链接至标题"></a></h3>
-<p>To record the data published to a topic use the command syntax:</p>
+<p>要记录发布到主题的数据，请使用命令语法：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 bag record &lt;topic_name&gt;</span>
 </pre></div>
 </div>
-<p>Before running this command on your chosen topic, open a new terminal and move into the <code class="docutils literal notranslate"><span class="pre">bag_files</span></code> directory you created earlier, because the rosbag file will save in the directory where you run it.</p>
-<p>Run the command:</p>
+<p>在对选定的主题运行此命令之前，打开一个新的终端并移动到前面创建的 <code class="docutils literal notranslate"><span class="pre">bag_files</span></code> 目录中，因为 rosbag 文件将保存在运行它的目录中。</p>
+<p>运行以下命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 bag record /turtle1/cmd_vel</span>
 </pre></div>
 </div>
-<p>You will see the following messages in the terminal (the date and time will be different):</p>
+<p>您将在终端中看到以下消息（日期和时间将会不同）：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">[INFO] [rosbag2_storage]: Opened database &#39;rosbag2_2019_10_11-05_18_45&#39;.</span>
 <span class="go">[INFO] [rosbag2_transport]: Listening for topics...</span>
 <span class="go">[INFO] [rosbag2_transport]: Subscribed to topic &#39;/turtle1/cmd_vel&#39;</span>
 <span class="go">[INFO] [rosbag2_transport]: All requested topics are subscribed. Stopping discovery...</span>
 </pre></div>
 </div>
-<p>Now <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> is recording the data published on the <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> topic.
-Return to the teleop terminal and move the turtle around again.
-The movements don’t matter, but try to make a recognizable pattern to see when you replay the data later.</p>
+<p>现在 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> 正在记录发表在 <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> 主题上的数据。回到 <code class="docutils literal notranslate"><span class="pre">teleop</span></code> 终端，再次移动海龟。这些动作并不重要，但试着在稍后重放数据时找出一个可识别的模式。</p>
 <img alt="../../_images/record.png" src="../../_images/record.png" />
-<p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> to stop recording.</p>
-<p>The data will be accumulated in a bag file with a name in the pattern of <code class="docutils literal notranslate"><span class="pre">rosbag2_year_month_day-hour_minute_second</span></code></p>
+<p>按 {kbd}`Ctrl`+{kbd}`C` 停止录制。</p>
+<p>数据将在一个名为 <code class="docutils literal notranslate"><span class="pre">rosbag2_year_month_day-hour_minute_second</span></code> 的包文件中积累。</p>
 <div class="section" id="record-multiple-topics">
-<h4>3.1 Record multiple topics<a class="headerlink" href="#record-multiple-topics" title="永久链接至标题"></a></h4>
-<p>You can also record multiple topics, as well as change the name of the file <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> saves to.</p>
-<p>Run the following command:</p>
+<h4>3.1 记录多个主题<a class="headerlink" href="#record-multiple-topics" title="永久链接至标题"></a></h4>
+<p>您还可以记录多个主题，以及更改 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> 保存到的文件的名称。</p>
+<p>执行如下命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 bag record -o subset /turtle1/cmd_vel /turtle1/pose</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">-o</span></code> option allows you to choose a unique name for your bag file.
-The following string, in this case <code class="docutils literal notranslate"><span class="pre">subset</span></code>, is the file name.</p>
-<p>To record more than one topic at a time, simply list each topic separated by a space.</p>
-<p>You will see the following message, confirming that both topics are being recorded.</p>
+<p><code class="docutils literal notranslate"><span class="pre">-o</span></code> 选项允许您为您的包文件选择一个唯一的名称。下面的字符串（在本例中是 <code class="docutils literal notranslate"><span class="pre">subset</span></code>）是文件名。</p>
+<p>要一次记录多个主题，只需用空格分开列出每个主题。</p>
+<p>您将看到以下消息，确认正在记录这两个主题。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">[INFO] [rosbag2_storage]: Opened database &#39;subset&#39;.</span>
 <span class="go">[INFO] [rosbag2_transport]: Listening for topics...</span>
 <span class="go">[INFO] [rosbag2_transport]: Subscribed to topic &#39;/turtle1/cmd_vel&#39;</span>
@@ -424,20 +414,20 @@ The following string, in this case <code class="docutils literal notranslate"><s
 <span class="go">[INFO] [rosbag2_transport]: All requested topics are subscribed. Stopping discovery...</span>
 </pre></div>
 </div>
-<p>You can move the turtle around and press <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> when you’re finished.</p>
+<p>你可以移动海龟，完成后按 {kbd}`Ctrl`+{kbd}`C`。</p>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>There is another option you can add to the command, <code class="docutils literal notranslate"><span class="pre">-a</span></code>, which records all the topics on your system.</p>
+<p>您可以向命令添加另一个选项 <code class="docutils literal notranslate"><span class="pre">-a</span></code>，它记录系统上的所有主题。</p>
 </div>
 </div>
 </div>
 <div class="section" id="ros2-bag-info">
 <h3><a class="toc-backref" href="#id7">4 ros2 bag info</a><a class="headerlink" href="#ros2-bag-info" title="永久链接至标题"></a></h3>
-<p>You can see details about your recording by running:</p>
+<p>你可以通过运行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 bag info &lt;bag_file_name&gt;</span>
 </pre></div>
 </div>
-<p>Running this command on the <code class="docutils literal notranslate"><span class="pre">subset</span></code> bag file will return a list of information on the file:</p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">subset</span></code> 包文件上运行此命令将返回文件的信息列表：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 bag info subset</span>
 </pre></div>
 </div>
@@ -452,41 +442,38 @@ The following string, in this case <code class="docutils literal notranslate"><s
 <span class="go">                 Topic: /turtle1/pose | Type: turtlesim/msg/Pose | Count: 3004 | Serialization Format: cdr</span>
 </pre></div>
 </div>
-<p>To view the individual messages, you would have to open up the database, in this case sqlite3, to examine it, which is beyond the scope of ROS 2.</p>
+<p>要查看各个消息，您必须打开数据库（在本例中是 <code class="docutils literal notranslate"><span class="pre">sqlite3</span></code>）来检查它，这超出了 ROS 2 的范围。</p>
 </div>
 <div class="section" id="ros2-bag-play">
 <h3><a class="toc-backref" href="#id8">5 ros2 bag play</a><a class="headerlink" href="#ros2-bag-play" title="永久链接至标题"></a></h3>
-<p>Before replaying the bag file, enter <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> in the terminal where the teleop is running.
-Then make sure your turtlesim window is visible so you can see the bag file in action.</p>
-<p>Enter the command:</p>
+<p>在播放包文件前，请在终端上输入 {kbd}`Ctrl`+{kbd}`C`。然后确保 turtlesim 窗口是可见的，这样你就可以看到包文件的运行。</p>
+<p>输入命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 bag play subset</span>
 </pre></div>
 </div>
-<p>The terminal will return the message:</p>
+<p>终端将返回消息：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">[INFO] [rosbag2_storage]: Opened database &#39;subset&#39;.</span>
 </pre></div>
 </div>
-<p>Your turtle will follow the same path you entered while recording (though not 100% exactly; turtlesim is sensitive to small changes in the system’s timing).</p>
+<p>你的海龟将遵循你在记录时输入的相同路径（虽然不是 100% 准确；Turtlesim 对系统时间的微小变化非常敏感）。</p>
 <img alt="../../_images/playback.png" src="../../_images/playback.png" />
-<p>Because the <code class="docutils literal notranslate"><span class="pre">subset</span></code> file recorded the <code class="docutils literal notranslate"><span class="pre">/turtle1/pose</span></code> topic, the <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span> <span class="pre">play</span></code> command won’t quit for as long as you had turtlesim running, even if you weren’t moving.</p>
-<p>This is because as long as the <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> node is active, it publishes data on the  <code class="docutils literal notranslate"><span class="pre">/turtle1/pose</span></code> topic at regular intervals.
-You may have noticed in the <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span> <span class="pre">info</span></code> example result above that the  <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> topic’s <code class="docutils literal notranslate"><span class="pre">Count</span></code> information was only 9; that’s how many times we pressed the arrow keys while recording.</p>
-<p>Notice that <code class="docutils literal notranslate"><span class="pre">/turtle1/pose</span></code> has a <code class="docutils literal notranslate"><span class="pre">Count</span></code> value of over 3000; while we were recording, data was published on that topic 3000 times.</p>
-<p>To get an idea of how often position data is published, you can run the command:</p>
+<p>因为 <code class="docutils literal notranslate"><span class="pre">subset</span></code> 文件记录了 <code class="docutils literal notranslate"><span class="pre">/turtle1/pose</span></code> 主题，只要 <code class="docutils literal notranslate"><span class="pre">turtlesim</span></code> 在运行，<code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span> <span class="pre">play</span></code> 命令就不会退出，即使你不移动。</p>
+<p>这是因为只要 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 节点是活动的，它就会定期在 <code class="docutils literal notranslate"><span class="pre">/turtle1/pose</span></code> 主题上发布数据。您可能已经注意到，在上面的 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span> <span class="pre">info</span></code> 示例结果中 <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> 主题的 <code class="docutils literal notranslate"><span class="pre">Count</span></code> 信息只有9；这是我们在录音时按方向键的次数。</p>
+<p>注意 <code class="docutils literal notranslate"><span class="pre">/turtle1/pose</span></code> 的 <code class="docutils literal notranslate"><span class="pre">Count</span></code> 值超过 <code class="docutils literal notranslate"><span class="pre">3000</span></code>；当我们记录的时候，关于这个话题的数据发表了 3000 次。</p>
+<p>要了解位置数据发布的频率，可以运行以下命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic hz /turtle1/pose</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="summary">
-<h2><a class="toc-backref" href="#id9">Summary</a><a class="headerlink" href="#summary" title="永久链接至标题"></a></h2>
-<p>You can record data passed on topics in your ROS 2 system using the <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> command.
-Whether you’re sharing your work with others or introspecting on your own experiments, it’s a great tool to know about.</p>
+<h2><a class="toc-backref" href="#id9">小结</a><a class="headerlink" href="#summary" title="永久链接至标题"></a></h2>
+<p>您可以使用 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">bag</span></code> 命令记录在您的 ROS2 系统中传递的主题数据。无论你是与他人分享你的工作还是反思你自己的实验，了解它都是一个很好的工具。</p>
 </div>
 <div class="section" id="next-steps">
 <h2><a class="toc-backref" href="#id10">Next steps</a><a class="headerlink" href="#next-steps" title="永久链接至标题"></a></h2>
 <p>You’ve completed the “Beginner: CLI Tools” tutorials!
-The next step is tackling the “Beginner: Client Libraries” tutorials, starting with <a class="reference internal" href="../Workspace/Creating-A-Workspace.html"><span class="doc">Creating a workspace</span></a>.</p>
+The next step is tackling the “Beginner: Client Libraries” tutorials, starting with <a class="reference internal" href="../Workspace/Creating-A-Workspace.html"><span class="doc">创建工作区</span></a>.</p>
 </div>
 <div class="section" id="related-content">
 <h2><a class="toc-backref" href="#id11">Related content</a><a class="headerlink" href="#related-content" title="永久链接至标题"></a></h2>
@@ -500,8 +487,8 @@ For more information on QoS compatibility and <code class="docutils literal notr
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../Launch-Files/Creating-Launch-Files.html" class="btn btn-neutral float-left" title="Creating a launch file" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="../Workspace/Creating-A-Workspace.html" class="btn btn-neutral float-right" title="Creating a workspace" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../Launch-Files/Creating-Launch-Files.html" class="btn btn-neutral float-left" title="创建 launch 文件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../Workspace/Creating-A-Workspace.html" class="btn btn-neutral float-right" title="创建工作区" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

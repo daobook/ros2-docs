@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Writing a simple publisher and subscriber (C++) &mdash; ROS 2 Documentation: Xin  文档</title>
+  <title>编写一个简单的发布者和订阅者（C++） &mdash; ROS 2 Documentation: Xin  文档</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
@@ -27,7 +27,7 @@
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="Writing a simple publisher and subscriber (Python)" href="Writing-A-Simple-Py-Publisher-And-Subscriber.html" />
-    <link rel="prev" title="Creating your first ROS 2 package" href="Creating-Your-First-ROS2-Package.html" /> 
+    <link rel="prev" title="创建你的第一个 ROS 2 包" href="Creating-Your-First-ROS2-Package.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -49,17 +49,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../Installation.html">安装</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Installation/Ubuntu-Development-Setup.html">在 Ubuntu Linux 上构建 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Installation/Ubuntu-Install-Binary.html">Installing ROS 2 on Ubuntu Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Installation/Ubuntu-Install-Debians.html">Installing ROS 2 via Debian Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Installation/Ubuntu-Install-Debians.html">通过 Debian 软件包安装 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Installation/macOS-Development-Setup.html">Building ROS 2 on macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Installation/Windows-Development-Setup.html">Building ROS 2 on Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Installation/Windows-Install-Binary.html">Installing ROS 2 on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Installation/Windows-Development-Setup.html">在 Windows 上构建 ROS 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Installation/Windows-Install-Binary.html">在 Windows 上安装ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Installation/RHEL-Development-Setup.html">Building ROS 2 on RHEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Installation/RHEL-Install-Binary.html">Installing ROS 2 on RHEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Installation/RHEL-Install-RPMs.html">Installing ROS 2 via RPM Packages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Installation/Fedora-Development-Setup.html">Building ROS 2 on Fedora Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Installation/Latest-Development-Setup.html">Installing the latest ROS 2 development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Installation/Latest-Development-Setup.html">安装最新的 ROS 2 开发版</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Installation/Maintaining-a-Source-Checkout.html">Maintaining a source checkout of ROS 2 Xin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Installation/Testing.html">Alternative Installation Sources for Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Installation/Testing.html">用于测试的替代安装源</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Installation/DDS-Implementations.html">Installing DDS implementations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Installation/DDS-Implementations/Install-Connext-Security-Plugins.html">Installing Connext security plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Installation/DDS-Implementations/Install-Connext-University-Eval.html">Installing University or Evaluation versions of RTI Connext DDS</a></li>
@@ -69,21 +69,21 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../Docs-Guide.html">Docs Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../Tutorials.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Configuring-ROS2-Environment.html">Configuring your ROS 2 environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Turtlesim/Introducing-Turtlesim.html">Introducing turtlesim and rqt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Understanding-ROS2-Nodes.html">Understanding ROS 2 nodes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Topics/Understanding-ROS2-Topics.html">Understanding ROS 2 topics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Services/Understanding-ROS2-Services.html">Understanding ROS 2 services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Parameters/Understanding-ROS2-Parameters.html">Understanding ROS 2 parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Understanding-ROS2-Actions.html">Understanding ROS 2 actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Rqt-Console/Using-Rqt-Console.html">Using rqt_console</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Launch-Files/Creating-Launch-Files.html">Creating a launch file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Ros2bag/Recording-And-Playing-Back-Data.html">Recording and playing back data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Workspace/Creating-A-Workspace.html">Creating a workspace</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Creating-Your-First-ROS2-Package.html">Creating your first ROS 2 package</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Writing a simple publisher and subscriber (C++)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Docs-Guide.html">文档指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Tutorials.html">教程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Configuring-ROS2-Environment.html">配置 ROS 2 环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Turtlesim/Introducing-Turtlesim.html">介绍 turtlesim 和 rqt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Understanding-ROS2-Nodes.html">理解 ROS2 节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topics/Understanding-ROS2-Topics.html">理解 ROS 2 主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Services/Understanding-ROS2-Services.html">理解 ROS2 服务</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Parameters/Understanding-ROS2-Parameters.html">理解 ROS2 参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Understanding-ROS2-Actions.html">理解 ROS 2 的行为</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Rqt-Console/Using-Rqt-Console.html">使用 rqt_console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Launch-Files/Creating-Launch-Files.html">创建 launch 文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ros2bag/Recording-And-Playing-Back-Data.html">记录和回放数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Workspace/Creating-A-Workspace.html">创建工作区</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Creating-Your-First-ROS2-Package.html">创建你的第一个 ROS 2 包</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">编写一个简单的发布者和订阅者（C++）</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Writing-A-Simple-Py-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (Python)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Writing-A-Simple-Cpp-Service-And-Client.html">Writing a simple service and client (C++)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Writing-A-Simple-Py-Service-And-Client.html">Writing a simple service and client (Python)</a></li>
@@ -101,7 +101,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Launch-Files/Using-Substitutions.html">Using substitutions in launch files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Launch-Files/Using-Event-Handlers.html">Using event handlers in launch files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Composition.html">Composing multiple nodes in a single process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Colcon-Tutorial.html">Using colcon to build packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Colcon-Tutorial.html">使用 colcon 构建包</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Monitoring-For-Parameter-Changes-CPP.html">Monitoring for parameter changes (C++)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Tf2/Tf2-Main.html">tf2 Tutorials</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Tf2/Introduction-To-Tf2.html">Introduction to tf2</a></li>
@@ -154,7 +154,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../How-To-Guides/Developing-a-ROS-2-Package.html">Developing a ROS 2 package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../How-To-Guides/Ament-CMake-Documentation.html">ament_cmake user documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../How-To-Guides/Ament-CMake-Python-Documentation.html">ament_cmake_python user documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../How-To-Guides/Launch-files-migration-guide.html">Migrating launch files from ROS 1 to ROS 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../How-To-Guides/Launch-files-migration-guide.html">将启动文件从 ROS 1 迁移到 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../How-To-Guides/Launch-file-different-formats.html">Using Python, XML, and YAML for ROS 2 Launch Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../How-To-Guides/Parameters-YAML-files-migration-guide.html">Migrating YAML parameter files from ROS 1 to ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../How-To-Guides/Node-arguments.html">Passing ROS arguments to nodes via the command-line</a></li>
@@ -264,8 +264,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../Tutorials.html">Tutorials</a> &raquo;</li>
-      <li>Writing a simple publisher and subscriber (C++)</li>
+          <li><a href="../Tutorials.html">教程</a> &raquo;</li>
+      <li>编写一个简单的发布者和订阅者（C++）</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/ros2/ros2_documentation/blob/xin/source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst" class="fa fa-github"> 在 GitHub 上修改</a>
       </li>
@@ -287,57 +287,53 @@
 
 
   <div class="section" id="writing-a-simple-publisher-and-subscriber-c">
-<span id="cpppubsub"></span><h1>Writing a simple publisher and subscriber (C++)<a class="headerlink" href="#writing-a-simple-publisher-and-subscriber-c" title="永久链接至标题"></a></h1>
-<p><strong>Goal:</strong> Create and run a publisher and subscriber node using C++.</p>
+<span id="cpppubsub"></span><h1>编写一个简单的发布者和订阅者（C++）<a class="headerlink" href="#writing-a-simple-publisher-and-subscriber-c" title="永久链接至标题"></a></h1>
+<p><strong>目标</strong>：使用 C++ 创建并运行一个发布者和订阅者节点。</p>
 <p><strong>Tutorial level:</strong> Beginner</p>
 <p><strong>Time:</strong> 20 minutes</p>
 <div class="contents local topic" id="contents">
-<p class="topic-title">Contents</p>
+<p class="topic-title">目录</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#background" id="id3">Background</a></p></li>
-<li><p><a class="reference internal" href="#prerequisites" id="id4">Prerequisites</a></p></li>
-<li><p><a class="reference internal" href="#tasks" id="id5">Tasks</a></p>
+<li><p><a class="reference internal" href="#background" id="id3">背景</a></p></li>
+<li><p><a class="reference internal" href="#prerequisites" id="id4">先决条件</a></p></li>
+<li><p><a class="reference internal" href="#tasks" id="id5">任务</a></p>
 <ul>
-<li><p><a class="reference internal" href="#create-a-package" id="id6">1 Create a package</a></p></li>
-<li><p><a class="reference internal" href="#write-the-publisher-node" id="id7">2 Write the publisher node</a></p></li>
-<li><p><a class="reference internal" href="#write-the-subscriber-node" id="id8">3 Write the subscriber node</a></p></li>
-<li><p><a class="reference internal" href="#build-and-run" id="id9">4 Build and run</a></p></li>
+<li><p><a class="reference internal" href="#create-a-package" id="id6">1 创建一个包</a></p></li>
+<li><p><a class="reference internal" href="#write-the-publisher-node" id="id7">2 编写 publisher 节点</a></p></li>
+<li><p><a class="reference internal" href="#write-the-subscriber-node" id="id8">3 编写订阅节点</a></p></li>
+<li><p><a class="reference internal" href="#build-and-run" id="id9">4 构建并运行</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#summary" id="id10">Summary</a></p></li>
-<li><p><a class="reference internal" href="#next-steps" id="id11">Next steps</a></p></li>
-<li><p><a class="reference internal" href="#related-content" id="id12">Related content</a></p></li>
+<li><p><a class="reference internal" href="#summary" id="id10">小结</a></p></li>
+<li><p><a class="reference internal" href="#next-steps" id="id11">下一步</a></p></li>
+<li><p><a class="reference internal" href="#related-content" id="id12">相关内容</a></p></li>
 </ul>
 </div>
 <div class="section" id="background">
-<h2><a class="toc-backref" href="#id3">Background</a><a class="headerlink" href="#background" title="永久链接至标题"></a></h2>
-<p><a class="reference internal" href="Understanding-ROS2-Nodes.html"><span class="doc">Nodes</span></a> are executable processes that communicate over the ROS graph.
-In this tutorial, the nodes will pass information in the form of string messages to each other over a <a class="reference internal" href="Topics/Understanding-ROS2-Topics.html"><span class="doc">topic</span></a>.
-The example used here is a simple “talker” and “listener” system; one node publishes data and the other subscribes to the topic so it can receive that data.</p>
-<p>The code used in these examples can be found <a class="reference external" href="https://github.com/ros2/examples/tree/master/rclcpp/topics">here</a>.</p>
+<h2><a class="toc-backref" href="#id3">背景</a><a class="headerlink" href="#background" title="永久链接至标题"></a></h2>
+<p><a class="reference internal" href="Understanding-ROS2-Nodes.html"><span class="doc">节点</span></a> 是通过 ROS graph 进行通信的可执行进程。在本教程中，节点将通过 <a class="reference internal" href="Topics/Understanding-ROS2-Topics.html"><span class="doc">主题</span></a> 以字符串消息的形式相互传递信息。这里使用的例子是一个简单的“talker”和“listener”系统；一个节点发布数据，另一个节点订阅主题，以便接收该数据。</p>
+<p>这些示例中使用的代码可以在 <a class="reference external" href="https://github.com/ros2/examples/tree/master/rclcpp/topics">rclcpp topics</a> 找到。</p>
 </div>
 <div class="section" id="prerequisites">
-<h2><a class="toc-backref" href="#id4">Prerequisites</a><a class="headerlink" href="#prerequisites" title="永久链接至标题"></a></h2>
-<p>In previous tutorials, you learned how to <a class="reference internal" href="Workspace/Creating-A-Workspace.html"><span class="doc">create a workspace</span></a> and <a class="reference internal" href="Creating-Your-First-ROS2-Package.html"><span class="doc">create a package</span></a>.</p>
+<h2><a class="toc-backref" href="#id4">先决条件</a><a class="headerlink" href="#prerequisites" title="永久链接至标题"></a></h2>
+<p>在前面的教程中，您学习了如何 <a class="reference internal" href="Workspace/Creating-A-Workspace.html"><span class="doc">创建工作区</span></a> 和 <a class="reference internal" href="Creating-Your-First-ROS2-Package.html"><span class="doc">创建包</span></a>。</p>
 </div>
 <div class="section" id="tasks">
-<h2><a class="toc-backref" href="#id5">Tasks</a><a class="headerlink" href="#tasks" title="永久链接至标题"></a></h2>
+<h2><a class="toc-backref" href="#id5">任务</a><a class="headerlink" href="#tasks" title="永久链接至标题"></a></h2>
 <div class="section" id="create-a-package">
-<h3><a class="toc-backref" href="#id6">1 Create a package</a><a class="headerlink" href="#create-a-package" title="永久链接至标题"></a></h3>
-<p>Open a new terminal and <a class="reference internal" href="Configuring-ROS2-Environment.html"><span class="doc">source your ROS 2 installation</span></a> so that <code class="docutils literal notranslate"><span class="pre">ros2</span></code> commands will work.</p>
-<p>Navigate into the <code class="docutils literal notranslate"><span class="pre">dev_ws</span></code> directory created in a <a class="reference internal" href="Workspace/Creating-A-Workspace.html#new-directory"><span class="std std-ref">previous tutorial</span></a>.</p>
-<p>Recall that packages should be created in the <code class="docutils literal notranslate"><span class="pre">src</span></code> directory, not the root of the workspace.
-So, navigate into <code class="docutils literal notranslate"><span class="pre">dev_ws/src</span></code>, and run the package creation command:</p>
+<h3><a class="toc-backref" href="#id6">1 创建一个包</a><a class="headerlink" href="#create-a-package" title="永久链接至标题"></a></h3>
+<p>打开一个新的终端并 <a class="reference internal" href="Configuring-ROS2-Environment.html"><span class="doc">激活 ROS2 安装的源代码</span></a>，这样 <code class="docutils literal notranslate"><span class="pre">ros2</span></code> 命令就可以工作了。</p>
+<p>导航到 <a class="reference internal" href="Workspace/Creating-A-Workspace.html#new-directory"><span class="std std-ref">上一教程</span></a> 中创建的 <code class="docutils literal notranslate"><span class="pre">dev_ws</span></code> 目录。</p>
+<p>回想一下，包应该在 <code class="docutils literal notranslate"><span class="pre">src/</span></code> 目录中创建，而不是在工作区的根目录中。因此，导航到 <code class="docutils literal notranslate"><span class="pre">dev_ws/src</span></code>，并运行包创建命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 pkg create --build-type ament_cmake cpp_pubsub</span>
 </pre></div>
 </div>
-<p>Your terminal will return a message verifying the creation of your package <code class="docutils literal notranslate"><span class="pre">cpp_pubsub</span></code> and all its necessary files and folders.</p>
-<p>Navigate into <code class="docutils literal notranslate"><span class="pre">dev_ws/src/cpp_pubsub/src</span></code>.
-Recall that this is the directory in any CMake package where the source files containing executables belong.</p>
+<p>终端将返回一条消息，验证 <code class="docutils literal notranslate"><span class="pre">cpp_pubsub</span></code> 包及其所有必要文件和文件夹的创建情况。</p>
+<p>导航到 <code class="docutils literal notranslate"><span class="pre">dev_ws/src/cpp_pubsub/src</span></code>。回想一下，这是任何 CMake 包中包含可执行文件的源文件所在的目录。</p>
 </div>
 <div class="section" id="write-the-publisher-node">
-<h3><a class="toc-backref" href="#id7">2 Write the publisher node</a><a class="headerlink" href="#write-the-publisher-node" title="永久链接至标题"></a></h3>
-<p>Download the example talker code by entering the following command:</p>
+<h3><a class="toc-backref" href="#id7">2 编写 publisher 节点</a><a class="headerlink" href="#write-the-publisher-node" title="永久链接至标题"></a></h3>
+<p>输入以下命令下载示例 talker 代码：</p>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-TGludXg=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-TGludXg=" name="TGludXg=" role="tab" tabindex="0">Linux</button><button aria-controls="panel-0-bWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-0-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-0-TGludXg=" class="sphinx-tabs-panel group-tab" id="panel-0-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">wget -O publisher_member_function.cpp https://raw.githubusercontent.com/ros2/examples/master/rclcpp/topics/minimal_publisher/member_function.cpp</span>
 </pre></div>
@@ -345,17 +341,16 @@ Recall that this is the directory in any CMake package where the source files co
 </div><div aria-labelledby="tab-0-bWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">wget -O publisher_member_function.cpp https://raw.githubusercontent.com/ros2/examples/master/rclcpp/topics/minimal_publisher/member_function.cpp</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>In a Windows command line prompt:</p>
+</div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>在 Windows 命令行提示符中：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">curl -sk https://raw.githubusercontent.com/ros2/examples/master/rclcpp/topics/minimal_publisher/member_function.cpp -o publisher_member_function.cpp</span>
 </pre></div>
 </div>
-<p>Or in powershell:</p>
+<p>或者在 powershell：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">curl https://raw.githubusercontent.com/ros2/examples/master/rclcpp/topics/minimal_publisher/member_function.cpp -o publisher_member_function.cpp</span>
 </pre></div>
 </div>
 </div></div>
-<p>Now there will be a new file named <code class="docutils literal notranslate"><span class="pre">publisher_member_function.cpp</span></code>.
-Open the file using your preferred text editor.</p>
+<p>现在将有一个名为 <code class="docutils literal notranslate"><span class="pre">publisher_member_function.cpp</span></code> 的新文件。使用首选文本编辑器打开文件。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;chrono&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;functional&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span><span class="cp"></span>
@@ -403,12 +398,9 @@ Open the file using your preferred text editor.</p>
 </pre></div>
 </div>
 <div class="section" id="examine-the-code">
-<h4>2.1 Examine the code<a class="headerlink" href="#examine-the-code" title="永久链接至标题"></a></h4>
-<p>The top of the code includes the standard C++ headers you will be using.
-After the standard C++ headers is the <code class="docutils literal notranslate"><span class="pre">rclcpp/rclcpp.hpp</span></code> include which allows you to use the most common pieces of the ROS 2 system.
-Last is <code class="docutils literal notranslate"><span class="pre">std_msgs/msg/string.hpp</span></code>, which includes the built-in message type you will use to publish data.</p>
-<p>These lines represent the node’s dependencies.
-Recall that dependencies have to be added to <code class="docutils literal notranslate"><span class="pre">package.xml</span></code> and <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>, which you’ll do in the next section.</p>
+<h4>2.1 检查代码<a class="headerlink" href="#examine-the-code" title="永久链接至标题"></a></h4>
+<p>代码的顶部包含您将要使用的标准 C++ 头文件。在标准的 C++ 头文件之后是 <code class="docutils literal notranslate"><span class="pre">rclcpp/rclcpp.hpp</span></code>，它允许你使用 ROS 2 系统中最常见的部分。最后是 <code class="docutils literal notranslate"><span class="pre">std_msgs/msg/string.hpp</span></code>，其中包含用于发布数据的内置消息类型。</p>
+<p>这些行表示节点的依赖项。还记得吗，必须将依赖项添加到 <code class="docutils literal notranslate"><span class="pre">package.xml</span></code> 和 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> 中，这将在下一节中完成。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;chrono&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;functional&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span><span class="cp"></span>
@@ -420,14 +412,11 @@ Recall that dependencies have to be added to <code class="docutils literal notra
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="o">::</span><span class="nn">chrono_literals</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p>The next line creates the node class <code class="docutils literal notranslate"><span class="pre">MinimalPublisher</span></code> by inheriting from <code class="docutils literal notranslate"><span class="pre">rclcpp::Node</span></code>.
-Every <code class="docutils literal notranslate"><span class="pre">this</span></code> in the code is referring to the node.</p>
+<p>下一行通过继承 <code class="docutils literal notranslate"><span class="pre">rclcpp::Node</span></code> 来创建节点类 <code class="docutils literal notranslate"><span class="pre">MinimalPublisher</span></code>。代码中的每一个 <code class="docutils literal notranslate"><span class="pre">this</span></code> 都指向节点。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MinimalPublisher</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="w"></span>
 </pre></div>
 </div>
-<p>The public constructor names the node <code class="docutils literal notranslate"><span class="pre">minimal_publisher</span></code> and initializes <code class="docutils literal notranslate"><span class="pre">count_</span></code> to 0.
-Inside the constructor, the publisher is initialized with the <code class="docutils literal notranslate"><span class="pre">String</span></code> message type, the topic name <code class="docutils literal notranslate"><span class="pre">topic</span></code>, and the required queue size to limit messages in the event of a backup.
-Next, <code class="docutils literal notranslate"><span class="pre">timer_</span></code> is initialized, which causes the <code class="docutils literal notranslate"><span class="pre">timer_callback</span></code> function to be executed twice a second.</p>
+<p>公共构造函数将节点命名为 <code class="docutils literal notranslate"><span class="pre">minimal_publisher</span></code>，并将 <code class="docutils literal notranslate"><span class="pre">count_</span></code> 初始化为 <code class="docutils literal notranslate"><span class="pre">0</span></code>。在构造函数内部，发布者被初始化为 <code class="docutils literal notranslate"><span class="pre">String</span></code> 消息类型、主题名称 <code class="docutils literal notranslate"><span class="pre">topic</span></code> 以及在发生备份时限制消息所需的队列大小。接下来，初始化 <code class="docutils literal notranslate"><span class="pre">timer_</span></code>，这将导致每秒执行两次 <code class="docutils literal notranslate"><span class="pre">timer_callback</span></code> 函数。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">  </span><span class="n">MinimalPublisher</span><span class="p">()</span><span class="w"></span>
 <span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">&quot;minimal_publisher&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">count_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
@@ -438,8 +427,7 @@ Next, <code class="docutils literal notranslate"><span class="pre">timer_</span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">timer_callback</span></code> function is where the message data is set and the messages are actually published.
-The <code class="docutils literal notranslate"><span class="pre">RCLCPP_INFO</span></code> macro ensures every published message is printed to the console.</p>
+<p><code class="docutils literal notranslate"><span class="pre">timer_callback</span></code> 函数是设置消息数据和实际发布消息的地方。<code class="docutils literal notranslate"><span class="pre">RCLCPP_INFO</span></code> 宏确保将每个发布的消息打印到控制台。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="k">private</span><span class="o">:</span><span class="w"></span>
 <span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">timer_callback</span><span class="p">()</span><span class="w"></span>
 <span class="w">  </span><span class="p">{</span><span class="w"></span>
@@ -450,14 +438,13 @@ The <code class="docutils literal notranslate"><span class="pre">RCLCPP_INFO</sp
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Last is the declaration of the timer, publisher, and counter fields.</p>
+<p>最后是定时器、发布者和计数器字段的声明。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="n">rclcpp</span><span class="o">::</span><span class="n">TimerBase</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">timer_</span><span class="p">;</span><span class="w"></span>
 <span class="n">rclcpp</span><span class="o">::</span><span class="n">Publisher</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">publisher_</span><span class="p">;</span><span class="w"></span>
 <span class="kt">size_t</span><span class="w"> </span><span class="n">count_</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Following the <code class="docutils literal notranslate"><span class="pre">MinimalPublisher</span></code> class is <code class="docutils literal notranslate"><span class="pre">main</span></code>, where the node actually executes.
-<code class="docutils literal notranslate"><span class="pre">rclcpp::init</span></code> initializes ROS 2, and <code class="docutils literal notranslate"><span class="pre">rclcpp::spin</span></code> starts processing data from the node, including callbacks from the timer.</p>
+<p>紧随 <code class="docutils literal notranslate"><span class="pre">MinimalPublishe</span></code> 类之后的是 <code class="docutils literal notranslate"><span class="pre">main</span></code>，节点实际执行的位置。<code class="docutils literal notranslate"><span class="pre">rclcpp::init</span></code> 初始化 ROS 2，<code class="docutils literal notranslate"><span class="pre">rclcpp::spin</span></code> 开始处理节点数据，包括定时器的回调。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="p">[])</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w"></span>
@@ -469,43 +456,42 @@ The <code class="docutils literal notranslate"><span class="pre">RCLCPP_INFO</sp
 </div>
 </div>
 <div class="section" id="add-dependencies">
-<h4>2.2 Add dependencies<a class="headerlink" href="#add-dependencies" title="永久链接至标题"></a></h4>
-<p>Navigate one level back to the <code class="docutils literal notranslate"><span class="pre">dev_ws/src/cpp_pubsub</span></code> directory, where the <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">package.xml</span></code> files have been created for you.</p>
-<p>Open <code class="docutils literal notranslate"><span class="pre">package.xml</span></code> with your text editor.</p>
-<p>As mentioned in the <a class="reference internal" href="Creating-Your-First-ROS2-Package.html"><span class="doc">previous tutorial</span></a>, make sure to fill in the <code class="docutils literal notranslate"><span class="pre">&lt;description&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;maintainer&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;license&gt;</span></code> tags:</p>
+<h4>2.2 添加依赖项<a class="headerlink" href="#add-dependencies" title="永久链接至标题"></a></h4>
+<p>导航一层回到 <code class="docutils literal notranslate"><span class="pre">dev_ws/src/cpp_pubsub</span></code> 目录，这里已经为您创建了 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> 和 <code class="docutils literal notranslate"><span class="pre">package.xml</span></code> 文件。</p>
+<p>用文本编辑器打开 <code class="docutils literal notranslate"><span class="pre">package.xml</span></code>。</p>
+<p>正如 <a class="reference internal" href="Creating-Your-First-ROS2-Package.html"><span class="doc">之前的教程</span></a> 中提到的，确保填写 <code class="docutils literal notranslate"><span class="pre">&lt;description&gt;</span></code>， <code class="docutils literal notranslate"><span class="pre">&lt;maintainer&gt;</span></code> 和 <code class="docutils literal notranslate"><span class="pre">&lt;license&gt;</span></code> 标签：</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;description&gt;</span>Examples of minimal publisher/subscriber using rclcpp<span class="nt">&lt;/description&gt;</span>
 <span class="nt">&lt;maintainer</span> <span class="na">email=</span><span class="s">&quot;you@email.com&quot;</span><span class="nt">&gt;</span>Your Name<span class="nt">&lt;/maintainer&gt;</span>
 <span class="nt">&lt;license&gt;</span>Apache License 2.0<span class="nt">&lt;/license&gt;</span>
 </pre></div>
 </div>
-<p>Add a new line after the <code class="docutils literal notranslate"><span class="pre">ament_cmake</span></code> buildtool dependency and paste the following dependencies corresponding to your node’s include statements:</p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">ament_cmake</span></code> 的 <code class="docutils literal notranslate"><span class="pre">buildtool</span></code> 依赖项后面添加一行，并将下面的依赖项粘贴到你的节点的 <code class="docutils literal notranslate"><span class="pre">include</span></code> 语句中：</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;depend&gt;</span>rclcpp<span class="nt">&lt;/depend&gt;</span>
 <span class="nt">&lt;depend&gt;</span>std_msgs<span class="nt">&lt;/depend&gt;</span>
 </pre></div>
 </div>
-<p>This declares the package needs <code class="docutils literal notranslate"><span class="pre">rclcpp</span></code> and <code class="docutils literal notranslate"><span class="pre">std_msgs</span></code> when its code is executed.</p>
-<p>Make sure to save the file.</p>
+<p>声明包在执行代码时需要 <code class="docutils literal notranslate"><span class="pre">rclcpp</span></code> 和 <code class="docutils literal notranslate"><span class="pre">std_msgs</span></code>。</p>
+<p>确保保存该文件。</p>
 </div>
 <div class="section" id="cmakelists-txt">
 <h4>2.3 CMakeLists.txt<a class="headerlink" href="#cmakelists-txt" title="永久链接至标题"></a></h4>
-<p>Now open the <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file.
-Below the existing dependency <code class="docutils literal notranslate"><span class="pre">find_package(ament_cmake</span> <span class="pre">REQUIRED)</span></code>, add the lines:</p>
+<p>现在打开 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> 文件。在现有依赖项 <code class="docutils literal notranslate"><span class="pre">find_package(ament_cmake</span> <span class="pre">REQUIRED)</span></code> 下面添加以下行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">find_package(rclcpp REQUIRED)</span>
 <span class="go">find_package(std_msgs REQUIRED)</span>
 </pre></div>
 </div>
-<p>After that, add the executable and name it <code class="docutils literal notranslate"><span class="pre">talker</span></code> so you can run your node using <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">run</span></code>:</p>
+<p>之后，添加可执行文件，并将其命名为 <code class="docutils literal notranslate"><span class="pre">talker</span></code>，这样您就可以使用 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">run</span></code> 运行您的节点：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">add_executable(talker src/publisher_member_function.cpp)</span>
 <span class="go">ament_target_dependencies(talker rclcpp std_msgs)</span>
 </pre></div>
 </div>
-<p>Finally, add the <code class="docutils literal notranslate"><span class="pre">install(TARGETS…)</span></code> section so <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">run</span></code> can find your executable:</p>
+<p>最后，添加 <code class="docutils literal notranslate"><span class="pre">install(TARGETS…)</span></code> 部分，这样 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">run</span></code> 就可以找到你的可执行文件：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">install(TARGETS</span>
 <span class="go">  talker</span>
 <span class="go">  DESTINATION lib/${PROJECT_NAME})</span>
 </pre></div>
 </div>
-<p>You can clean up your <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> by removing some unnecessary sections and comments, so it looks like this:</p>
+<p>你可以清理你的 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> 通过删除一些不必要的部分和注释，所以它看起来像这样：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cmake_minimum_required(VERSION 3.5)</span>
 <span class="go">project(cpp_pubsub)</span>
 
@@ -532,13 +518,12 @@ Below the existing dependency <code class="docutils literal notranslate"><span c
 <span class="go">ament_package()</span>
 </pre></div>
 </div>
-<p>You could build your package now, source the local setup files, and run it, but let’s create the subscriber node first so you can see the full system at work.</p>
+<p>您现在可以构建您的包，获取本地安装文件的源代码，并运行它，但是让我们先创建订阅者节点，这样您就可以看到整个系统在工作。</p>
 </div>
 </div>
 <div class="section" id="write-the-subscriber-node">
-<h3><a class="toc-backref" href="#id8">3 Write the subscriber node</a><a class="headerlink" href="#write-the-subscriber-node" title="永久链接至标题"></a></h3>
-<p>Return to <code class="docutils literal notranslate"><span class="pre">dev_ws/src/cpp_pubsub/src</span></code> to create the next node.
-Enter the following code in your terminal:</p>
+<h3><a class="toc-backref" href="#id8">3 编写订阅节点</a><a class="headerlink" href="#write-the-subscriber-node" title="永久链接至标题"></a></h3>
+<p>返回到 <code class="docutils literal notranslate"><span class="pre">dev_ws/src/cpp_pubsub/src</span></code> 以创建下一个节点。在终端中输入以下代码：</p>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-TGludXg=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-TGludXg=" name="TGludXg=" role="tab" tabindex="0">Linux</button><button aria-controls="panel-1-bWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-1-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-1-TGludXg=" class="sphinx-tabs-panel group-tab" id="panel-1-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">wget -O subscriber_member_function.cpp https://raw.githubusercontent.com/ros2/examples/master/rclcpp/topics/minimal_subscriber/member_function.cpp</span>
 </pre></div>
@@ -546,20 +531,20 @@ Enter the following code in your terminal:</p>
 </div><div aria-labelledby="tab-1-bWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">wget -O subscriber_member_function.cpp https://raw.githubusercontent.com/ros2/examples/master/rclcpp/topics/minimal_subscriber/member_function.cpp</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>In a Windows command line prompt:</p>
+</div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>在 Windows 命令行提示符中：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">curl -sk https://raw.githubusercontent.com/ros2/examples/master/rclcpp/topics/minimal_subscriber/member_function.cpp -o subscriber_member_function.cpp</span>
 </pre></div>
 </div>
-<p>Or in powershell:</p>
+<p>或者在 powershell：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">curl https://raw.githubusercontent.com/ros2/examples/master/rclcpp/topics/minimal_subscriber/member_function.cpp -o subscriber_member_function.cpp</span>
 </pre></div>
 </div>
 </div></div>
-<p>Entering <code class="docutils literal notranslate"><span class="pre">ls</span></code> in the console will now return:</p>
+<p>在控制台输入 <code class="docutils literal notranslate"><span class="pre">ls</span></code> 现在将返回：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">publisher_member_function.cpp  subscriber_member_function.cpp</span>
 </pre></div>
 </div>
-<p>Open the <code class="docutils literal notranslate"><span class="pre">subscriber_member_function.cpp</span></code> with your text editor.</p>
+<p>使用文本编辑器打开 <code class="docutils literal notranslate"><span class="pre">subscriber_member_function.cpp</span></code>。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span><span class="cp"></span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rclcpp/rclcpp.hpp&quot;</span><span class="cp"></span>
@@ -594,10 +579,9 @@ Enter the following code in your terminal:</p>
 </pre></div>
 </div>
 <div class="section" id="id1">
-<h4>3.1 Examine the code<a class="headerlink" href="#id1" title="永久链接至标题"></a></h4>
-<p>The subscriber node’s code is nearly identical to the publisher’s.
-Now the node is named <code class="docutils literal notranslate"><span class="pre">minimal_subscriber</span></code>, and the constructor uses the node’s <code class="docutils literal notranslate"><span class="pre">create_subscription</span></code> class to execute the callback.</p>
-<p>There is no timer because the subscriber simply responds whenever data is published to the <code class="docutils literal notranslate"><span class="pre">topic</span></code> topic.</p>
+<h4>3.1 检查代码<a class="headerlink" href="#id1" title="永久链接至标题"></a></h4>
+<p>订阅者节点的代码与发布者节点的代码几乎相同。现在节点被命名为 <code class="docutils literal notranslate"><span class="pre">minimal_subscriber</span></code>，构造函数使用节点的 <code class="docutils literal notranslate"><span class="pre">create_subscription</span></code> 类来执行回调。</p>
+<p>没有计时器，因为只要数据发布到 <code class="docutils literal notranslate"><span class="pre">topic</span></code> 主题，订阅者就会响应。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">  </span><span class="n">MinimalSubscriber</span><span class="p">()</span><span class="w"></span>
 <span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">&quot;minimal_subscriber&quot;</span><span class="p">)</span><span class="w"></span>
@@ -607,9 +591,9 @@ Now the node is named <code class="docutils literal notranslate"><span class="pr
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Recall from the <a class="reference internal" href="Topics/Understanding-ROS2-Topics.html"><span class="doc">topic tutorial</span></a> that the topic name and message type used by the publisher and subscriber must match to allow them to communicate.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">topic_callback</span></code> function receives the string message data published over the topic, and simply writes it to the console using the <code class="docutils literal notranslate"><span class="pre">RCLCPP_INFO</span></code> macro.</p>
-<p>The only field declaration in this class is the subscription.</p>
+<p>回忆一下 <a class="reference internal" href="Topics/Understanding-ROS2-Topics.html"><span class="doc">主题教程</span></a> 中的内容，发布者和订阅者使用的主题名称和消息类型必须匹配才能进行通信。</p>
+<p><code class="docutils literal notranslate"><span class="pre">topic_callback</span></code> 函数接收在主题上发布的字符串消息数据，并使用 <code class="docutils literal notranslate"><span class="pre">RCLCPP_INFO</span></code> 宏将其写入控制台。</p>
+<p>该类中唯一的字段声明是订阅。</p>
 <div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="k">private</span><span class="o">:</span><span class="w"></span>
 <span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">topic_callback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">msg</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
 <span class="w">  </span><span class="p">{</span><span class="w"></span>
@@ -618,13 +602,12 @@ Now the node is named <code class="docutils literal notranslate"><span class="pr
 <span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Subscription</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">subscription_</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">main</span></code> function is exactly the same, except now it spins the <code class="docutils literal notranslate"><span class="pre">MinimalSubscriber</span></code> node.
-For the publisher node, spinning meant starting the timer, but for the subscriber it simply means preparing to receive messages whenever they come.</p>
-<p>Since this node has the same dependencies as the publisher node, there’s nothing new to add to <code class="docutils literal notranslate"><span class="pre">package.xml</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">main</span></code> 函数完全相同，只是现在它旋转 <code class="docutils literal notranslate"><span class="pre">MinimalSubscriber</span></code> 节点。对于发布者节点，旋转意味着启动计时器，但对于订阅者，这仅仅意味着准备在消息到来时接收消息。</p>
+<p>由于该节点与 <code class="docutils literal notranslate"><span class="pre">publisher</span></code> 节点具有相同的依赖项，所以 <code class="docutils literal notranslate"><span class="pre">package.xml</span></code> 中没有新的内容可以添加。</p>
 </div>
 <div class="section" id="id2">
 <h4>3.2 CMakeLists.txt<a class="headerlink" href="#id2" title="永久链接至标题"></a></h4>
-<p>Reopen <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> and add the executable and target for the subscriber node below the publisher’s entries.</p>
+<p>重新打开 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>，并在发布者条目下面添加订阅者节点的可执行文件和目标。</p>
 <div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">add_executable</span><span class="p">(</span><span class="s">listener</span> <span class="s">src/subscriber_member_function.cpp</span><span class="p">)</span>
 <span class="nb">ament_target_dependencies</span><span class="p">(</span><span class="s">listener</span> <span class="s">rclcpp</span> <span class="s">std_msgs</span><span class="p">)</span>
 
@@ -634,21 +617,20 @@ For the publisher node, spinning meant starting the timer, but for the subscribe
   <span class="s">DESTINATION</span> <span class="s">lib/</span><span class="o">${</span><span class="nv">PROJECT_NAME</span><span class="o">}</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Make sure to save the file, and then your pub/sub system should be ready for use.</p>
+<p>确保保存文件，然后您的 pub/sub 系统就可以使用了。</p>
 </div>
 </div>
 <div class="section" id="build-and-run">
-<span id="cpppubsub-build-and-run"></span><h3><a class="toc-backref" href="#id9">4 Build and run</a><a class="headerlink" href="#build-and-run" title="永久链接至标题"></a></h3>
-<p>You likely already have the <code class="docutils literal notranslate"><span class="pre">rclcpp</span></code> and <code class="docutils literal notranslate"><span class="pre">std_msgs</span></code> packages installed as part of your ROS 2 system.
-It’s good practice to run <code class="docutils literal notranslate"><span class="pre">rosdep</span></code> in the root of your workspace (<code class="docutils literal notranslate"><span class="pre">dev_ws</span></code>) to check for missing dependencies before building:</p>
+<span id="cpppubsub-build-and-run"></span><h3><a class="toc-backref" href="#id9">4 构建并运行</a><a class="headerlink" href="#build-and-run" title="永久链接至标题"></a></h3>
+<p>您可能已经安装了 <code class="docutils literal notranslate"><span class="pre">rclcpp</span></code> 和 <code class="docutils literal notranslate"><span class="pre">std_msgs</span></code> 包作为您的 ROS 2 系统的一部分。在你的工作空间的根目录（<code class="docutils literal notranslate"><span class="pre">dev_ws</span></code>）中运行 <code class="docutils literal notranslate"><span class="pre">rosdep</span></code> 是一个很好的实践，在构建之前检查缺失的依赖项：</p>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-TGludXg=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-TGludXg=" name="TGludXg=" role="tab" tabindex="0">Linux</button><button aria-controls="panel-2-bWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-2-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-2-TGludXg=" class="sphinx-tabs-panel group-tab" id="panel-2-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">rosdep install -i --from-path src --rosdistro xin -y</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-2-bWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p>rosdep only runs on Linux, so you can skip ahead to next step.</p>
-</div><div aria-labelledby="tab-2-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>rosdep only runs on Linux, so you can skip ahead to next step.</p>
+</div><div aria-labelledby="tab-2-bWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">rosdep</span></code> 只能在 Linux 上运行，所以您可以跳到下一步。</p>
+</div><div aria-labelledby="tab-2-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">rosdep</span></code> 只能在 Linux 上运行，所以您可以跳到下一步。</p>
 </div></div>
-<p>Still in the root of your workspace, <code class="docutils literal notranslate"><span class="pre">dev_ws</span></code>, build your new package:</p>
+<p>仍然在你的工作空间的根，<code class="docutils literal notranslate"><span class="pre">dev_ws</span></code>，构建你的新包：</p>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-TGludXg=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-TGludXg=" name="TGludXg=" role="tab" tabindex="0">Linux</button><button aria-controls="panel-3-bWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-3-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-3-TGludXg=" class="sphinx-tabs-panel group-tab" id="panel-3-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colcon build --packages-select cpp_pubsub</span>
 </pre></div>
@@ -660,7 +642,7 @@ It’s good practice to run <code class="docutils literal notranslate"><span cla
 </pre></div>
 </div>
 </div></div>
-<p>Open a new terminal, navigate to <code class="docutils literal notranslate"><span class="pre">dev_ws</span></code>, and source the setup files:</p>
+<p>打开一个新的终端，导航到 <code class="docutils literal notranslate"><span class="pre">dev_ws</span></code>，并获取安装文件的源代码：</p>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-TGludXg=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-4-TGludXg=" name="TGludXg=" role="tab" tabindex="0">Linux</button><button aria-controls="panel-4-bWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-4-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-4-TGludXg=" class="sphinx-tabs-panel group-tab" id="panel-4-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">. install/setup.bash</span>
 </pre></div>
@@ -672,11 +654,11 @@ It’s good practice to run <code class="docutils literal notranslate"><span cla
 </pre></div>
 </div>
 </div></div>
-<p>Now run the talker node:</p>
+<p>现在运行 <code class="docutils literal notranslate"><span class="pre">talker</span></code> 节点：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run cpp_pubsub talker</span>
 </pre></div>
 </div>
-<p>The terminal should start publishing info messages every 0.5 seconds, like so:</p>
+<p>终端应该每 0.5 秒发布一次信息消息，像这样：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">[INFO] [minimal_publisher]: Publishing: &quot;Hello World: 0&quot;</span>
 <span class="go">[INFO] [minimal_publisher]: Publishing: &quot;Hello World: 1&quot;</span>
 <span class="go">[INFO] [minimal_publisher]: Publishing: &quot;Hello World: 2&quot;</span>
@@ -684,11 +666,11 @@ It’s good practice to run <code class="docutils literal notranslate"><span cla
 <span class="go">[INFO] [minimal_publisher]: Publishing: &quot;Hello World: 4&quot;</span>
 </pre></div>
 </div>
-<p>Open another terminal, source the setup files from inside <code class="docutils literal notranslate"><span class="pre">dev_ws</span></code> again, and then start the listener node:</p>
+<p>打开另一个终端，再次从 <code class="docutils literal notranslate"><span class="pre">dev_ws</span></code> 内部获取安装文件，然后启动 listener 节点：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run cpp_pubsub listener</span>
 </pre></div>
 </div>
-<p>The listener will start printing messages to the console, starting at whatever message count the publisher is on at that time, like so:</p>
+<p>listener 将开始将消息打印到控制台，从发布者当时的消息计数开始，如下所示：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">[INFO] [minimal_subscriber]: I heard: &quot;Hello World: 10&quot;</span>
 <span class="go">[INFO] [minimal_subscriber]: I heard: &quot;Hello World: 11&quot;</span>
 <span class="go">[INFO] [minimal_subscriber]: I heard: &quot;Hello World: 12&quot;</span>
@@ -696,22 +678,20 @@ It’s good practice to run <code class="docutils literal notranslate"><span cla
 <span class="go">[INFO] [minimal_subscriber]: I heard: &quot;Hello World: 14&quot;</span>
 </pre></div>
 </div>
-<p>Enter <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> in each terminal to stop the nodes from spinning.</p>
+<p>在每个终端中输入 <code class="xref any docutils literal notranslate"><span class="pre">Ctrl+C</span></code>，停止节点旋转。</p>
 </div>
 </div>
 <div class="section" id="summary">
-<h2><a class="toc-backref" href="#id10">Summary</a><a class="headerlink" href="#summary" title="永久链接至标题"></a></h2>
-<p>You created two nodes to publish and subscribe to data over a topic.
-Before compiling and running them, you added their dependencies and executables to the package configuration files.</p>
+<h2><a class="toc-backref" href="#id10">小结</a><a class="headerlink" href="#summary" title="永久链接至标题"></a></h2>
+<p>您创建了两个节点来通过主题发布和订阅数据。在编译和运行它们之前，您将它们的依赖项和可执行文件添加到包配置文件中。</p>
 </div>
 <div class="section" id="next-steps">
-<h2><a class="toc-backref" href="#id11">Next steps</a><a class="headerlink" href="#next-steps" title="永久链接至标题"></a></h2>
-<p>Next you’ll create another simple ROS 2 package using the service/client model.
-Again, you can choose to write it in either <a class="reference internal" href="Writing-A-Simple-Cpp-Service-And-Client.html"><span class="doc">C++</span></a> or <a class="reference internal" href="Writing-A-Simple-Py-Service-And-Client.html"><span class="doc">Python</span></a>.</p>
+<h2><a class="toc-backref" href="#id11">下一步</a><a class="headerlink" href="#next-steps" title="永久链接至标题"></a></h2>
+<p>接下来，您将使用服务/客户端模型创建另一个简单的 ROS 2 包。同样，您可以选择用 <a class="reference internal" href="Writing-A-Simple-Cpp-Service-And-Client.html"><span class="doc">C++</span></a> 或 <a class="reference internal" href="Writing-A-Simple-Py-Service-And-Client.html"><span class="doc">Python</span></a> 编写它。</p>
 </div>
 <div class="section" id="related-content">
-<h2><a class="toc-backref" href="#id12">Related content</a><a class="headerlink" href="#related-content" title="永久链接至标题"></a></h2>
-<p>There are several ways you could write a publisher and subscriber in C++; check out the <code class="docutils literal notranslate"><span class="pre">minimal_publisher</span></code> and <code class="docutils literal notranslate"><span class="pre">minimal_subscriber</span></code> packages in the <a class="reference external" href="https://github.com/ros2/examples/tree/master/rclcpp/topics">ros2/examples</a> repo.</p>
+<h2><a class="toc-backref" href="#id12">相关内容</a><a class="headerlink" href="#related-content" title="永久链接至标题"></a></h2>
+<p>有几种方法可以在 C++ 中编写发布者和订阅者；请查看 <a class="reference external" href="https://github.com/ros2/examples/tree/master/rclcpp/topics">ros2/examples</a>  仓库中的 <code class="docutils literal notranslate"><span class="pre">minimal_publisher</span></code> 和 <code class="docutils literal notranslate"><span class="pre">minimal_subscriber</span></code> 包。</p>
 </div>
 </div>
 
@@ -720,7 +700,7 @@ Again, you can choose to write it in either <a class="reference internal" href="
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Creating-Your-First-ROS2-Package.html" class="btn btn-neutral float-left" title="Creating your first ROS 2 package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="Creating-Your-First-ROS2-Package.html" class="btn btn-neutral float-left" title="创建你的第一个 ROS 2 包" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
         <a href="Writing-A-Simple-Py-Publisher-And-Subscriber.html" class="btn btn-neutral float-right" title="Writing a simple publisher and subscriber (Python)" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

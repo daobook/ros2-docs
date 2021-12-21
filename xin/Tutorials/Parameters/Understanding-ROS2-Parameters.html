@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Understanding ROS 2 parameters &mdash; ROS 2 Documentation: Xin  文档</title>
+  <title>理解 ROS2 参数 &mdash; ROS 2 Documentation: Xin  文档</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="Understanding ROS 2 actions" href="../Understanding-ROS2-Actions.html" />
-    <link rel="prev" title="Understanding ROS 2 services" href="../Services/Understanding-ROS2-Services.html" /> 
+    <link rel="next" title="理解 ROS 2 的行为" href="../Understanding-ROS2-Actions.html" />
+    <link rel="prev" title="理解 ROS2 服务" href="../Services/Understanding-ROS2-Services.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -48,17 +48,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Installation.html">安装</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Development-Setup.html">在 Ubuntu Linux 上构建 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Install-Binary.html">Installing ROS 2 on Ubuntu Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Install-Debians.html">Installing ROS 2 via Debian Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Install-Debians.html">通过 Debian 软件包安装 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/macOS-Development-Setup.html">Building ROS 2 on macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Development-Setup.html">Building ROS 2 on Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Install-Binary.html">Installing ROS 2 on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Development-Setup.html">在 Windows 上构建 ROS 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Install-Binary.html">在 Windows 上安装ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/RHEL-Development-Setup.html">Building ROS 2 on RHEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/RHEL-Install-Binary.html">Installing ROS 2 on RHEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/RHEL-Install-RPMs.html">Installing ROS 2 via RPM Packages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Fedora-Development-Setup.html">Building ROS 2 on Fedora Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Latest-Development-Setup.html">Installing the latest ROS 2 development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Latest-Development-Setup.html">安装最新的 ROS 2 开发版</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Maintaining-a-Source-Checkout.html">Maintaining a source checkout of ROS 2 Xin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Testing.html">Alternative Installation Sources for Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Testing.html">用于测试的替代安装源</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/DDS-Implementations.html">Installing DDS implementations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Installation/DDS-Implementations/Install-Connext-Security-Plugins.html">Installing Connext security plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Installation/DDS-Implementations/Install-Connext-University-Eval.html">Installing University or Evaluation versions of RTI Connext DDS</a></li>
@@ -68,21 +68,21 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../Docs-Guide.html">Docs Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../Tutorials.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../Configuring-ROS2-Environment.html">Configuring your ROS 2 environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html">Introducing turtlesim and rqt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Nodes.html">Understanding ROS 2 nodes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Topics/Understanding-ROS2-Topics.html">Understanding ROS 2 topics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Services/Understanding-ROS2-Services.html">Understanding ROS 2 services</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Understanding ROS 2 parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Actions.html">Understanding ROS 2 actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Rqt-Console/Using-Rqt-Console.html">Using rqt_console</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Creating-Launch-Files.html">Creating a launch file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ros2bag/Recording-And-Playing-Back-Data.html">Recording and playing back data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Workspace/Creating-A-Workspace.html">Creating a workspace</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Creating-Your-First-ROS2-Package.html">Creating your first ROS 2 package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (C++)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Docs-Guide.html">文档指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../Tutorials.html">教程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Configuring-ROS2-Environment.html">配置 ROS 2 环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html">介绍 turtlesim 和 rqt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Nodes.html">理解 ROS2 节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Topics/Understanding-ROS2-Topics.html">理解 ROS 2 主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Services/Understanding-ROS2-Services.html">理解 ROS2 服务</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">理解 ROS2 参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Actions.html">理解 ROS 2 的行为</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Rqt-Console/Using-Rqt-Console.html">使用 rqt_console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Creating-Launch-Files.html">创建 launch 文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Ros2bag/Recording-And-Playing-Back-Data.html">记录和回放数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Workspace/Creating-A-Workspace.html">创建工作区</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Creating-Your-First-ROS2-Package.html">创建你的第一个 ROS 2 包</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">编写一个简单的发布者和订阅者（C++）</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Py-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (Python)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Cpp-Service-And-Client.html">Writing a simple service and client (C++)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Py-Service-And-Client.html">Writing a simple service and client (Python)</a></li>
@@ -100,7 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Using-Substitutions.html">Using substitutions in launch files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Using-Event-Handlers.html">Using event handlers in launch files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Composition.html">Composing multiple nodes in a single process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Colcon-Tutorial.html">Using colcon to build packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Colcon-Tutorial.html">使用 colcon 构建包</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Monitoring-For-Parameter-Changes-CPP.html">Monitoring for parameter changes (C++)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Tf2/Tf2-Main.html">tf2 Tutorials</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Tf2/Introduction-To-Tf2.html">Introduction to tf2</a></li>
@@ -153,7 +153,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Developing-a-ROS-2-Package.html">Developing a ROS 2 package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Ament-CMake-Documentation.html">ament_cmake user documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Ament-CMake-Python-Documentation.html">ament_cmake_python user documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Launch-files-migration-guide.html">Migrating launch files from ROS 1 to ROS 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Launch-files-migration-guide.html">将启动文件从 ROS 1 迁移到 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Launch-file-different-formats.html">Using Python, XML, and YAML for ROS 2 Launch Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Parameters-YAML-files-migration-guide.html">Migrating YAML parameter files from ROS 1 to ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Node-arguments.html">Passing ROS arguments to nodes via the command-line</a></li>
@@ -263,8 +263,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../Tutorials.html">Tutorials</a> &raquo;</li>
-      <li>Understanding ROS 2 parameters</li>
+          <li><a href="../../Tutorials.html">教程</a> &raquo;</li>
+      <li>理解 ROS2 参数</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/ros2/ros2_documentation/blob/xin/source/Tutorials/Parameters/Understanding-ROS2-Parameters.rst" class="fa fa-github"> 在 GitHub 上修改</a>
       </li>
@@ -286,64 +286,60 @@
 
 
   <div class="section" id="understanding-ros-2-parameters">
-<span id="ros2params"></span><h1>Understanding ROS 2 parameters<a class="headerlink" href="#understanding-ros-2-parameters" title="永久链接至标题"></a></h1>
-<p><strong>Goal:</strong> Learn how to get, set, save and reload parameters in ROS 2.</p>
+<span id="ros2params"></span><h1>理解 ROS2 参数<a class="headerlink" href="#understanding-ros-2-parameters" title="永久链接至标题"></a></h1>
+<p><strong>目标</strong>：学习如何在 ROS 2 中获取、设置、保存和重新加载参数。</p>
 <p><strong>Tutorial level:</strong> Beginner</p>
 <p><strong>Time:</strong> 5 minutes</p>
 <div class="contents local topic" id="contents">
-<p class="topic-title">Contents</p>
+<p class="topic-title">目录</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#background" id="id1">Background</a></p></li>
-<li><p><a class="reference internal" href="#prerequisites" id="id2">Prerequisites</a></p></li>
-<li><p><a class="reference internal" href="#tasks" id="id3">Tasks</a></p>
+<li><p><a class="reference internal" href="#background" id="id1">背景</a></p></li>
+<li><p><a class="reference internal" href="#prerequisites" id="id2">先决条件</a></p></li>
+<li><p><a class="reference internal" href="#tasks" id="id3">任务</a></p>
 <ul>
-<li><p><a class="reference internal" href="#setup" id="id4">1 Setup</a></p></li>
+<li><p><a class="reference internal" href="#setup" id="id4">1 设置</a></p></li>
 <li><p><a class="reference internal" href="#ros2-param-list" id="id5">2 ros2 param list</a></p></li>
 <li><p><a class="reference internal" href="#ros2-param-get" id="id6">3 ros2 param get</a></p></li>
 <li><p><a class="reference internal" href="#ros2-param-set" id="id7">4 ros2 param set</a></p></li>
 <li><p><a class="reference internal" href="#ros2-param-dump" id="id8">5 ros2 param dump</a></p></li>
 <li><p><a class="reference internal" href="#ros2-param-load" id="id9">6 ros2 param load</a></p></li>
-<li><p><a class="reference internal" href="#load-parameter-file-on-node-startup" id="id10">7 Load parameter file on node startup</a></p></li>
+<li><p><a class="reference internal" href="#load-parameter-file-on-node-startup" id="id10">7 在节点启动时加载参数文件</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#summary" id="id11">Summary</a></p></li>
-<li><p><a class="reference internal" href="#next-steps" id="id12">Next steps</a></p></li>
+<li><p><a class="reference internal" href="#summary" id="id11">小结</a></p></li>
+<li><p><a class="reference internal" href="#next-steps" id="id12">下一步</a></p></li>
 </ul>
 </div>
 <div class="section" id="background">
-<h2><a class="toc-backref" href="#id1">Background</a><a class="headerlink" href="#background" title="永久链接至标题"></a></h2>
-<p>A parameter is a configuration value of a node.
-You can think of parameters as node settings.
-A node can store parameters as integers, floats, booleans, strings and lists.
-In ROS 2, each node maintains its own parameters.
-All parameters are dynamically reconfigurable, and built off of <a class="reference internal" href="../Services/Understanding-ROS2-Services.html"><span class="doc">ROS 2 services</span></a>.</p>
+<h2><a class="toc-backref" href="#id1">背景</a><a class="headerlink" href="#background" title="永久链接至标题"></a></h2>
+<p>参数是节点的配置值。您可以将参数视为节点设置。节点可以将参数存储为整数、浮点数、布尔值、字符串和列表。在 ROS 2 中，每个节点维护自己的参数。所有参数都是动态可重新配置的，并基于 <a class="reference internal" href="../Services/Understanding-ROS2-Services.html"><span class="doc">ROS 2 服务</span></a> 构建。</p>
 </div>
 <div class="section" id="prerequisites">
-<h2><a class="toc-backref" href="#id2">Prerequisites</a><a class="headerlink" href="#prerequisites" title="永久链接至标题"></a></h2>
-<p>This tutorial uses the <a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html"><span class="doc">turtlesim package</span></a>.</p>
-<p>As always, don’t forget to source ROS 2 in <a class="reference internal" href="../Configuring-ROS2-Environment.html"><span class="doc">every new terminal you open</span></a>.</p>
+<h2><a class="toc-backref" href="#id2">先决条件</a><a class="headerlink" href="#prerequisites" title="永久链接至标题"></a></h2>
+<p>本教程使用 <a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html"><span class="doc">turtlesim 包</span></a>。</p>
+<p>和往常一样，不要忘记在 <a class="reference internal" href="../Configuring-ROS2-Environment.html"><span class="doc">你打开的每一个新终端中都输入 ROS 2</span></a>。</p>
 </div>
 <div class="section" id="tasks">
-<h2><a class="toc-backref" href="#id3">Tasks</a><a class="headerlink" href="#tasks" title="永久链接至标题"></a></h2>
+<h2><a class="toc-backref" href="#id3">任务</a><a class="headerlink" href="#tasks" title="永久链接至标题"></a></h2>
 <div class="section" id="setup">
-<h3><a class="toc-backref" href="#id4">1 Setup</a><a class="headerlink" href="#setup" title="永久链接至标题"></a></h3>
-<p>Start up the two turtlesim nodes, <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> and <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code>.</p>
-<p>Open a new terminal and run:</p>
+<h3><a class="toc-backref" href="#id4">1 设置</a><a class="headerlink" href="#setup" title="永久链接至标题"></a></h3>
+<p>启动两个 turtlesim 节点 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code>。</p>
+<p>打开一个新的终端并运行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run turtlesim turtlesim_node</span>
 </pre></div>
 </div>
-<p>Open another terminal and run:</p>
+<p>打开另一个终端并运行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run turtlesim turtle_teleop_key</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="ros2-param-list">
 <h3><a class="toc-backref" href="#id5">2 ros2 param list</a><a class="headerlink" href="#ros2-param-list" title="永久链接至标题"></a></h3>
-<p>To see the parameters belonging to your nodes, open a new terminal and enter the command:</p>
+<p>要查看属于您的节点的参数，打开一个新的终端并输入命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 param list</span>
 </pre></div>
 </div>
-<p>You will see the node namespaces, <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> and <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code>, followed by each node’s parameters:</p>
+<p>您将看到节点名称空间 <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code>，后面跟着每个节点的参数：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">/teleop_turtle:</span>
 <span class="go">  qos_overrides./parameter_events.publisher.depth</span>
 <span class="go">  qos_overrides./parameter_events.publisher.durability</span>
@@ -363,62 +359,60 @@ All parameters are dynamically reconfigurable, and built off of <a class="refere
 <span class="go">  use_sim_time</span>
 </pre></div>
 </div>
-<p>Every node has the parameter <code class="docutils literal notranslate"><span class="pre">use_sim_time</span></code>; it’s not unique to turtlesim.</p>
-<p>Based on their names, it looks like <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code>’s parameters determine the background color of the turtlesim window using RGB color values.</p>
-<p>To determine a parameter’s type, you can use <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">param</span> <span class="pre">get</span></code>.</p>
+<p>每个节点都有参数 <code class="docutils literal notranslate"><span class="pre">use_sim_time</span></code>；这并不是乌龟独有的。</p>
+<p>根据它们的名称，看起来 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 的参数使用 RGB 颜色值确定了 turtlesim 窗口的背景颜色。</p>
+<p>要确定参数的类型，可以使用 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">param</span> <span class="pre">get</span></code>。</p>
 </div>
 <div class="section" id="ros2-param-get">
 <h3><a class="toc-backref" href="#id6">3 ros2 param get</a><a class="headerlink" href="#ros2-param-get" title="永久链接至标题"></a></h3>
-<p>To display the type and current value of a parameter, use the command:</p>
+<p>需要查询某个参数的类型和当前值。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 param get &lt;node_name&gt; &lt;parameter_name&gt;</span>
 </pre></div>
 </div>
-<p>Let’s find out the current value of <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code>’s parameter <code class="docutils literal notranslate"><span class="pre">background_g</span></code>:</p>
+<p>让我们找出 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 的参数 <code class="docutils literal notranslate"><span class="pre">background_g</span></code> 的当前值：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 param get /turtlesim background_g</span>
 </pre></div>
 </div>
-<p>Which will return the value:</p>
+<p>将返回值：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Integer value is: 86</span>
 </pre></div>
 </div>
-<p>Now you know <code class="docutils literal notranslate"><span class="pre">background_g</span></code> holds an integer value.</p>
-<p>If you run the same command on <code class="docutils literal notranslate"><span class="pre">background_r</span></code> and <code class="docutils literal notranslate"><span class="pre">background_b</span></code>, you will get the values <code class="docutils literal notranslate"><span class="pre">69</span></code> and <code class="docutils literal notranslate"><span class="pre">255</span></code>, respectively.</p>
+<p>现在你知道 <code class="docutils literal notranslate"><span class="pre">background_g</span></code> 保存了一个整数值。</p>
+<p>如果您在 <code class="docutils literal notranslate"><span class="pre">background_r</span></code> 和 <code class="docutils literal notranslate"><span class="pre">background_b</span></code> 上运行相同的命令，您将分别得到值 <code class="docutils literal notranslate"><span class="pre">69</span></code> 和 <code class="docutils literal notranslate"><span class="pre">255</span></code>。</p>
 </div>
 <div class="section" id="ros2-param-set">
 <h3><a class="toc-backref" href="#id7">4 ros2 param set</a><a class="headerlink" href="#ros2-param-set" title="永久链接至标题"></a></h3>
-<p>To change a parameter’s value at runtime, use the command:</p>
+<p>要在运行时更改参数的值，使用命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 param set &lt;node_name&gt; &lt;parameter_name&gt; &lt;value&gt;</span>
 </pre></div>
 </div>
-<p>Let’s change <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code>’s background color:</p>
+<p>让我们改变 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 的背景色：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 param set /turtlesim background_r 150</span>
 </pre></div>
 </div>
-<p>Your terminal should return the message:</p>
+<p>您的终端应该返回该消息：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Set parameter successful</span>
 </pre></div>
 </div>
-<p>And the background of your turtlesim window should change colors:</p>
+<p>你的 turtlesim 窗口的背景应该改变颜色：</p>
 <img alt="../../_images/set.png" src="../../_images/set.png" />
-<p>Setting parameters with the <code class="docutils literal notranslate"><span class="pre">set</span></code> command will only change them in your current session, not permanently.
-However, you can save your settings and reload them the next time you start a node.</p>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">set</span></code> 命令设置参数只会在当前会话中更改参数，而不是永久更改。但是，您可以保存设置并在下次启动节点时重新加载它们。</p>
 </div>
 <div class="section" id="ros2-param-dump">
 <h3><a class="toc-backref" href="#id8">5 ros2 param dump</a><a class="headerlink" href="#ros2-param-dump" title="永久链接至标题"></a></h3>
-<p>You can “dump” all of a node’s current parameter values into a file to save them for later by using the command:</p>
+<p>该命令可以将节点当前所有的参数值“dump”到文件中，以备以后使用：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 param dump &lt;node_name&gt;</span>
 </pre></div>
 </div>
-<p>To save your current configuration of <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code>’s parameters, enter the command:</p>
+<p>要保存 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 参数的当前配置，输入命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 param dump /turtlesim</span>
 </pre></div>
 </div>
-<p>Your terminal will return the message:</p>
+<p>您的终端将返回消息：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Saving to:  ./turtlesim.yaml</span>
 </pre></div>
 </div>
-<p>You will find a new file in the directory your workspace is running in.
-If you open this file, you’ll see the following contents:</p>
+<p>您将在运行工作区的目录中发现一个新文件。如果你打开这个文件，你会看到以下内容：</p>
 <div class="highlight-YAML notranslate"><div class="highlight"><pre><span></span><span class="nt">/turtlesim</span><span class="p">:</span>
   <span class="nt">ros__parameters</span><span class="p">:</span>
     <span class="nt">background_b</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">255</span>
@@ -434,19 +428,19 @@ If you open this file, you’ll see the following contents:</p>
     <span class="nt">use_sim_time</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
 </pre></div>
 </div>
-<p>Dumping parameters comes in handy if you want to reload the node with the same parameters in the future.</p>
+<p>如果您希望在将来用相同的参数重新加载节点，转储参数将非常方便。</p>
 </div>
 <div class="section" id="ros2-param-load">
 <h3><a class="toc-backref" href="#id9">6 ros2 param load</a><a class="headerlink" href="#ros2-param-load" title="永久链接至标题"></a></h3>
-<p>You can load parameters from a file to a currently running node using the command:</p>
+<p>使用该命令可以将参数从文件加载到当前运行的节点：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 param load &lt;node_name&gt; &lt;parameter_file&gt;</span>
 </pre></div>
 </div>
-<p>To load the ./turtlesim.yaml file generated with <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">param</span> <span class="pre">dump</span></code> into <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> node’s parameters, enter the command:</p>
+<p>装载 <code class="docutils literal notranslate"><span class="pre">./turtlesim.yaml</span></code> 文件生成的 ros2 参数转储到 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 节点的参数，输入命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 param load /turtlesim ./turtlesim.yaml</span>
 </pre></div>
 </div>
-<p>Your terminal will return the message:</p>
+<p>您的终端将返回消息：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Set parameter background_b successful</span>
 <span class="go">Set parameter background_g successful</span>
 <span class="go">Set parameter background_r successful</span>
@@ -459,36 +453,34 @@ If you open this file, you’ll see the following contents:</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>Read-only parameters can only be modified at startup and not afterwards, that is why there are some warnings for the “qos_overrides” parameters.</p>
+<p>只读参数只能在启动时修改，而不能在启动后修改，这就是为什么“qos_overrides”参数会有一些警告。</p>
 </div>
 </div>
 <div class="section" id="load-parameter-file-on-node-startup">
-<h3><a class="toc-backref" href="#id10">7 Load parameter file on node startup</a><a class="headerlink" href="#load-parameter-file-on-node-startup" title="永久链接至标题"></a></h3>
-<p>To start the same node using your saved parameter values, use:</p>
+<h3><a class="toc-backref" href="#id10">7 在节点启动时加载参数文件</a><a class="headerlink" href="#load-parameter-file-on-node-startup" title="永久链接至标题"></a></h3>
+<p>在节点启动时加载参数文件：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run &lt;package_name&gt; &lt;executable_name&gt; --ros-args --params-file &lt;file_name&gt;</span>
 </pre></div>
 </div>
-<p>This is the same command you always use to start turtlesim, with the added flags <code class="docutils literal notranslate"><span class="pre">--ros-args</span></code> and <code class="docutils literal notranslate"><span class="pre">--params-file</span></code>, followed by the file you want to load.</p>
-<p>Stop your running turtlesim node so you can try reloading it with your saved parameters, using:</p>
+<p>这是您总是用来启动 turtlesim 的同一个命令，添加了标志 <code class="docutils literal notranslate"><span class="pre">--ros-args</span></code> 和 <code class="docutils literal notranslate"><span class="pre">--params-file</span></code>，后面跟着您想要加载的文件。</p>
+<p>停止正在运行的 turtlesim 节点，这样你就可以用保存的参数重新加载它，使用：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run turtlesim turtlesim_node --ros-args --params-file ./turtlesim.yaml</span>
 </pre></div>
 </div>
-<p>The turtlesim window should appear as usual, but with the purple background you set earlier.</p>
+<p>turtlesim 窗口应该像往常一样显示，但是使用您之前设置的紫色背景。</p>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>In this case, parameters are being modified at startup so the specified read-only parameters will also take effect.</p>
+<p>在这种情况下，参数在启动时被修改，因此指定的只读参数也将生效。</p>
 </div>
 </div>
 </div>
 <div class="section" id="summary">
-<h2><a class="toc-backref" href="#id11">Summary</a><a class="headerlink" href="#summary" title="永久链接至标题"></a></h2>
-<p>Nodes have parameters to define their default configuration values.
-You can <code class="docutils literal notranslate"><span class="pre">get</span></code> and <code class="docutils literal notranslate"><span class="pre">set</span></code> parameter values from the command line.
-You can also save the parameter settings to a file to reload them in a future session.</p>
+<h2><a class="toc-backref" href="#id11">小结</a><a class="headerlink" href="#summary" title="永久链接至标题"></a></h2>
+<p>节点有参数来定义它们的默认配置值。您可以从命令行 <code class="docutils literal notranslate"><span class="pre">get</span></code> 和 <code class="docutils literal notranslate"><span class="pre">set</span></code> 参数值。您还可以将参数设置保存到一个文件中，以便在以后的会话中重新加载它们。</p>
 </div>
 <div class="section" id="next-steps">
-<h2><a class="toc-backref" href="#id12">Next steps</a><a class="headerlink" href="#next-steps" title="永久链接至标题"></a></h2>
-<p>Jumping back to ROS 2 communication methods, in the next tutorial you’ll learn about <a class="reference internal" href="../Understanding-ROS2-Actions.html"><span class="doc">actions</span></a>.</p>
+<h2><a class="toc-backref" href="#id12">下一步</a><a class="headerlink" href="#next-steps" title="永久链接至标题"></a></h2>
+<p>跳回到 ROS 2 的通信方法，在下一个教程中，你将学习 <a class="reference internal" href="../Understanding-ROS2-Actions.html"><span class="doc">actions</span></a>。</p>
 </div>
 </div>
 
@@ -497,8 +489,8 @@ You can also save the parameter settings to a file to reload them in a future se
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../Services/Understanding-ROS2-Services.html" class="btn btn-neutral float-left" title="Understanding ROS 2 services" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="../Understanding-ROS2-Actions.html" class="btn btn-neutral float-right" title="Understanding ROS 2 actions" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../Services/Understanding-ROS2-Services.html" class="btn btn-neutral float-left" title="理解 ROS2 服务" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../Understanding-ROS2-Actions.html" class="btn btn-neutral float-right" title="理解 ROS 2 的行为" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

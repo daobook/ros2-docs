@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Understanding ROS 2 topics &mdash; ROS 2 Documentation: Xin  文档</title>
+  <title>理解 ROS 2 主题 &mdash; ROS 2 Documentation: Xin  文档</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="Understanding ROS 2 services" href="../Services/Understanding-ROS2-Services.html" />
-    <link rel="prev" title="Understanding ROS 2 nodes" href="../Understanding-ROS2-Nodes.html" /> 
+    <link rel="next" title="理解 ROS2 服务" href="../Services/Understanding-ROS2-Services.html" />
+    <link rel="prev" title="理解 ROS2 节点" href="../Understanding-ROS2-Nodes.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -48,17 +48,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Installation.html">安装</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Development-Setup.html">在 Ubuntu Linux 上构建 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Install-Binary.html">Installing ROS 2 on Ubuntu Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Install-Debians.html">Installing ROS 2 via Debian Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Ubuntu-Install-Debians.html">通过 Debian 软件包安装 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/macOS-Development-Setup.html">Building ROS 2 on macOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Development-Setup.html">Building ROS 2 on Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Install-Binary.html">Installing ROS 2 on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Development-Setup.html">在 Windows 上构建 ROS 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Windows-Install-Binary.html">在 Windows 上安装ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/RHEL-Development-Setup.html">Building ROS 2 on RHEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/RHEL-Install-Binary.html">Installing ROS 2 on RHEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/RHEL-Install-RPMs.html">Installing ROS 2 via RPM Packages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Fedora-Development-Setup.html">Building ROS 2 on Fedora Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Latest-Development-Setup.html">Installing the latest ROS 2 development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Latest-Development-Setup.html">安装最新的 ROS 2 开发版</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/Maintaining-a-Source-Checkout.html">Maintaining a source checkout of ROS 2 Xin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../Installation/Testing.html">Alternative Installation Sources for Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Installation/Testing.html">用于测试的替代安装源</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../Installation/DDS-Implementations.html">Installing DDS implementations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Installation/DDS-Implementations/Install-Connext-Security-Plugins.html">Installing Connext security plugins</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Installation/DDS-Implementations/Install-Connext-University-Eval.html">Installing University or Evaluation versions of RTI Connext DDS</a></li>
@@ -68,21 +68,21 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../Docs-Guide.html">Docs Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../Tutorials.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../Configuring-ROS2-Environment.html">Configuring your ROS 2 environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html">Introducing turtlesim and rqt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Nodes.html">Understanding ROS 2 nodes</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Understanding ROS 2 topics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Services/Understanding-ROS2-Services.html">Understanding ROS 2 services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Parameters/Understanding-ROS2-Parameters.html">Understanding ROS 2 parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Actions.html">Understanding ROS 2 actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Rqt-Console/Using-Rqt-Console.html">Using rqt_console</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Creating-Launch-Files.html">Creating a launch file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Ros2bag/Recording-And-Playing-Back-Data.html">Recording and playing back data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Workspace/Creating-A-Workspace.html">Creating a workspace</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Creating-Your-First-ROS2-Package.html">Creating your first ROS 2 package</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (C++)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Docs-Guide.html">文档指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../Tutorials.html">教程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Configuring-ROS2-Environment.html">配置 ROS 2 环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html">介绍 turtlesim 和 rqt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Nodes.html">理解 ROS2 节点</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">理解 ROS 2 主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Services/Understanding-ROS2-Services.html">理解 ROS2 服务</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Parameters/Understanding-ROS2-Parameters.html">理解 ROS2 参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Understanding-ROS2-Actions.html">理解 ROS 2 的行为</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Rqt-Console/Using-Rqt-Console.html">使用 rqt_console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Creating-Launch-Files.html">创建 launch 文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Ros2bag/Recording-And-Playing-Back-Data.html">记录和回放数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Workspace/Creating-A-Workspace.html">创建工作区</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Creating-Your-First-ROS2-Package.html">创建你的第一个 ROS 2 包</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">编写一个简单的发布者和订阅者（C++）</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Py-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (Python)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Cpp-Service-And-Client.html">Writing a simple service and client (C++)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Writing-A-Simple-Py-Service-And-Client.html">Writing a simple service and client (Python)</a></li>
@@ -100,7 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Using-Substitutions.html">Using substitutions in launch files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Launch-Files/Using-Event-Handlers.html">Using event handlers in launch files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Composition.html">Composing multiple nodes in a single process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Colcon-Tutorial.html">Using colcon to build packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Colcon-Tutorial.html">使用 colcon 构建包</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Monitoring-For-Parameter-Changes-CPP.html">Monitoring for parameter changes (C++)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Tf2/Tf2-Main.html">tf2 Tutorials</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Tf2/Introduction-To-Tf2.html">Introduction to tf2</a></li>
@@ -153,7 +153,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Developing-a-ROS-2-Package.html">Developing a ROS 2 package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Ament-CMake-Documentation.html">ament_cmake user documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Ament-CMake-Python-Documentation.html">ament_cmake_python user documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Launch-files-migration-guide.html">Migrating launch files from ROS 1 to ROS 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Launch-files-migration-guide.html">将启动文件从 ROS 1 迁移到 ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Launch-file-different-formats.html">Using Python, XML, and YAML for ROS 2 Launch Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Parameters-YAML-files-migration-guide.html">Migrating YAML parameter files from ROS 1 to ROS 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../How-To-Guides/Node-arguments.html">Passing ROS arguments to nodes via the command-line</a></li>
@@ -263,8 +263,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../Tutorials.html">Tutorials</a> &raquo;</li>
-      <li>Understanding ROS 2 topics</li>
+          <li><a href="../../Tutorials.html">教程</a> &raquo;</li>
+      <li>理解 ROS 2 主题</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/ros2/ros2_documentation/blob/xin/source/Tutorials/Topics/Understanding-ROS2-Topics.rst" class="fa fa-github"> 在 GitHub 上修改</a>
       </li>
@@ -286,18 +286,18 @@
 
 
   <div class="section" id="understanding-ros-2-topics">
-<span id="ros2topics"></span><h1>Understanding ROS 2 topics<a class="headerlink" href="#understanding-ros-2-topics" title="永久链接至标题"></a></h1>
-<p><strong>Goal:</strong> Use rqt_graph and command line tools to introspect ROS 2 topics.</p>
+<span id="ros2topics"></span><h1>理解 ROS 2 主题<a class="headerlink" href="#understanding-ros-2-topics" title="永久链接至标题"></a></h1>
+<p><strong>目标</strong>：使用 rqt_graph 和命令行工具来介绍 ROS 2 的主题。</p>
 <p><strong>Tutorial level:</strong> Beginner</p>
 <p><strong>Time:</strong> 20 minutes</p>
 <div class="contents local topic" id="contents">
-<p class="topic-title">Contents</p>
+<p class="topic-title">目录</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#background" id="id1">Background</a></p></li>
-<li><p><a class="reference internal" href="#prerequisites" id="id2">Prerequisites</a></p></li>
-<li><p><a class="reference internal" href="#tasks" id="id3">Tasks</a></p>
+<li><p><a class="reference internal" href="#background" id="id1">背景</a></p></li>
+<li><p><a class="reference internal" href="#prerequisites" id="id2">先决条件</a></p></li>
+<li><p><a class="reference internal" href="#tasks" id="id3">任务</a></p>
 <ul>
-<li><p><a class="reference internal" href="#setup" id="id4">1 Setup</a></p></li>
+<li><p><a class="reference internal" href="#setup" id="id4">1 设置</a></p></li>
 <li><p><a class="reference internal" href="#rqt-graph" id="id5">2 rqt_graph</a></p></li>
 <li><p><a class="reference internal" href="#ros2-topic-list" id="id6">3 ros2 topic list</a></p></li>
 <li><p><a class="reference internal" href="#ros2-topic-echo" id="id7">4 ros2 topic echo</a></p></li>
@@ -305,63 +305,59 @@
 <li><p><a class="reference internal" href="#ros2-interface-show" id="id9">6 ros2 interface show</a></p></li>
 <li><p><a class="reference internal" href="#ros2-topic-pub" id="id10">7 ros2 topic pub</a></p></li>
 <li><p><a class="reference internal" href="#ros2-topic-hz" id="id11">8 ros2 topic hz</a></p></li>
-<li><p><a class="reference internal" href="#clean-up" id="id12">9 Clean up</a></p></li>
+<li><p><a class="reference internal" href="#clean-up" id="id12">9 清理</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#summary" id="id13">Summary</a></p></li>
-<li><p><a class="reference internal" href="#next-steps" id="id14">Next steps</a></p></li>
+<li><p><a class="reference internal" href="#summary" id="id13">小结</a></p></li>
+<li><p><a class="reference internal" href="#next-steps" id="id14">下一步</a></p></li>
 </ul>
 </div>
 <div class="section" id="background">
-<h2><a class="toc-backref" href="#id1">Background</a><a class="headerlink" href="#background" title="永久链接至标题"></a></h2>
-<p>ROS 2 breaks complex systems down into many modular nodes.
-Topics are a vital element of the ROS graph that act as a bus for nodes to exchange messages.</p>
+<h2><a class="toc-backref" href="#id1">背景</a><a class="headerlink" href="#background" title="永久链接至标题"></a></h2>
+<p>ROS 2 将复杂的系统分解成许多模块化节点。主题是 ROS graph 的一个重要元素，它充当节点交换消息的总线。</p>
 <img alt="../../_images/Topic-SinglePublisherandSingleSubscriber.gif" src="../../_images/Topic-SinglePublisherandSingleSubscriber.gif" />
-<p>A node may publish data to any number of topics and simultaneously have subscriptions to any number of topics.</p>
+<p>节点可以向任意数量的主题发布数据，并同时订阅任意数量的主题。</p>
 <img alt="../../_images/Topic-MultiplePublisherandMultipleSubscriber.gif" src="../../_images/Topic-MultiplePublisherandMultipleSubscriber.gif" />
-<p>Topics are one of the main ways in which data is moved between nodes and therefore between different parts of the system.</p>
+<p>主题是数据在节点之间以及系统的不同部分之间移动的主要方式之一。</p>
 </div>
 <div class="section" id="prerequisites">
-<h2><a class="toc-backref" href="#id2">Prerequisites</a><a class="headerlink" href="#prerequisites" title="永久链接至标题"></a></h2>
-<p>The <a class="reference internal" href="../Understanding-ROS2-Nodes.html"><span class="doc">previous tutorial</span></a> provides some useful background information on nodes that is built upon here.</p>
-<p>As always, don’t forget to source ROS 2 in <a class="reference internal" href="../Configuring-ROS2-Environment.html"><span class="doc">every new terminal you open</span></a>.</p>
+<h2><a class="toc-backref" href="#id2">先决条件</a><a class="headerlink" href="#prerequisites" title="永久链接至标题"></a></h2>
+<p><a class="reference internal" href="../Understanding-ROS2-Nodes.html"><span class="doc">前面的教程</span></a> 提供了一些关于在此基础上构建的节点的有用背景信息。</p>
+<p>像往常一样，不要忘记在 <a class="reference internal" href="../Configuring-ROS2-Environment.html"><span class="doc">你打开的每一个新终端</span></a> 中为 ROS 2 激活源代码。</p>
 </div>
 <div class="section" id="tasks">
-<h2><a class="toc-backref" href="#id3">Tasks</a><a class="headerlink" href="#tasks" title="永久链接至标题"></a></h2>
+<h2><a class="toc-backref" href="#id3">任务</a><a class="headerlink" href="#tasks" title="永久链接至标题"></a></h2>
 <div class="section" id="setup">
-<h3><a class="toc-backref" href="#id4">1 Setup</a><a class="headerlink" href="#setup" title="永久链接至标题"></a></h3>
-<p>By now you should be comfortable starting up turtlesim.</p>
-<p>Open a new terminal and run:</p>
+<h3><a class="toc-backref" href="#id4">1 设置</a><a class="headerlink" href="#setup" title="永久链接至标题"></a></h3>
+<p>现在你应该能自如地启动海龟模型了。</p>
+<p>打开一个新的终端并运行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run turtlesim turtlesim_node</span>
 </pre></div>
 </div>
-<p>Open another terminal and run:</p>
+<p>打开另一个终端并运行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 run turtlesim turtle_teleop_key</span>
 </pre></div>
 </div>
-<p>Recall from the <a class="reference internal" href="../Understanding-ROS2-Nodes.html"><span class="doc">previous tutorial</span></a> that the names of these nodes are <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> and <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> by default.</p>
+<p>回想一下 <a class="reference internal" href="../Understanding-ROS2-Nodes.html"><span class="doc">之前的教程</span></a>，默认情况下，这些节点的名称是 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code>。</p>
 </div>
 <div class="section" id="rqt-graph">
 <h3><a class="toc-backref" href="#id5">2 rqt_graph</a><a class="headerlink" href="#rqt-graph" title="永久链接至标题"></a></h3>
-<p>Throughout this tutorial, we will use <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code> to visualize the changing nodes and topics, as well as the connections between them.</p>
-<p>The <a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html"><span class="doc">turtlesim tutorial</span></a> tells you how to install rqt and all its plugins, including <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code>.</p>
-<p>To run rqt_graph, open a new terminal and enter the command:</p>
+<p>在本教程中，我们将使用 <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code> 可视化不断变化的节点和主题，以及它们之间的连接。</p>
+<p><a class="reference internal" href="../Turtlesim/Introducing-Turtlesim.html"><span class="doc">turtlesim 教程</span></a> 告诉您如何安装 <code class="docutils literal notranslate"><span class="pre">rqt</span></code> 及其所有插件，包括 <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code>。</p>
+<p>要运行 <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code>，打开一个新的终端并输入命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">rqt_graph</span>
 </pre></div>
 </div>
-<p>You can also open rqt_graph by opening <code class="docutils literal notranslate"><span class="pre">rqt</span></code> and selecting <strong>Plugins</strong> &gt; <strong>Introspection</strong> &gt; <strong>Node Graph</strong>.</p>
+<p>你也可以通过打开 <code class="docutils literal notranslate"><span class="pre">rqt</span></code> 并选择 <strong>Plugins</strong> &gt; <strong>Introspection</strong> &gt; <strong>Node Graph</strong> 来打开 <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code>。</p>
 <img alt="../../_images/rqt_graph.png" src="../../_images/rqt_graph.png" />
-<p>You should see the above nodes and topic, as well as two actions around the periphery of the graph (let’s ignore those for now).
-If you hover your mouse over the topic in the center, you’ll see the color highlighting like in the image above.</p>
-<p>The graph is depicting how the <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> node and the <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> node are communicating with each other over a topic.
-The <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> node is publishing data (the keystrokes you enter to move the turtle around) to the <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> topic, and the <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> node is subscribed to that topic to receive the data.</p>
-<p>The highlighting feature of rqt_graph is very helpful when examining more complex systems with many nodes and topics connected in many different ways.</p>
-<p>rqt_graph is a graphical introspection tool.
-Now we’ll look at some command line tools for introspecting topics.</p>
+<p>您应该看到上面的节点和主题，以及围绕图外围的两个操作（现在让我们忽略它们）。如果你将鼠标悬停在主题的中心，你会看到颜色高亮如上图。</p>
+<p>该图描述了 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 节点和 <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> 节点如何在一个主题上相互通信。<code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> 节点将数据（您为移动海龟而输入的击键）发布到 <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> 主题，并且 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 节点订阅该主题以接收数据。</p>
+<p><code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code> 的高亮显示特性在检查更复杂的系统时非常有用，这些系统中有许多节点和主题，它们以许多不同的方式连接在一起。</p>
+<p><code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code> 是一个图形自省工具。现在我们来看一些用于内省主题的命令行工具。</p>
 </div>
 <div class="section" id="ros2-topic-list">
 <h3><a class="toc-backref" href="#id6">3 ros2 topic list</a><a class="headerlink" href="#ros2-topic-list" title="永久链接至标题"></a></h3>
-<p>Running the <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">list</span></code> command in a new terminal will return a list of all the topics currently active in the system:</p>
+<p>在新终端中运行 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">list</span></code> 命令将返回当前系统中激活的所有主题的列表：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">/parameter_events</span>
 <span class="go">/rosout</span>
 <span class="go">/turtle1/cmd_vel</span>
@@ -369,7 +365,7 @@ Now we’ll look at some command line tools for introspecting topics.</p>
 <span class="go">/turtle1/pose</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">list</span> <span class="pre">-t</span></code> will return the same list of topics, this time with the topic type appended in brackets:</p>
+<p><code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">list</span> <span class="pre">-t</span></code> 将返回相同的主题列表，这次主题类型加在括号中：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">/parameter_events [rcl_interfaces/msg/ParameterEvent]</span>
 <span class="go">/rosout [rcl_interfaces/msg/Log]</span>
 <span class="go">/turtle1/cmd_vel [geometry_msgs/msg/Twist]</span>
@@ -377,25 +373,23 @@ Now we’ll look at some command line tools for introspecting topics.</p>
 <span class="go">/turtle1/pose [turtlesim/msg/Pose]</span>
 </pre></div>
 </div>
-<p>These attributes, particularly the type, are how nodes know they’re talking about the same information as it moves over topics.</p>
-<p>If you’re wondering where all these topics are in rqt_graph, you can uncheck all the boxes under <strong>Hide:</strong></p>
+<p>这些属性，尤其是类型，是节点如何在跨越主题时知道它们所讨论的是相同的信息。</p>
+<p>如果你想知道所有这些主题在 <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code> 中的位置，你可以取消选中隐藏下面的所有框：</p>
 <img alt="../../_images/unhide.png" src="../../_images/unhide.png" />
-<p>For now, though, leave those options checked to avoid confusion.</p>
+<p>不过，现在还是检查一下这些选项，以避免混淆。</p>
 </div>
 <div class="section" id="ros2-topic-echo">
 <h3><a class="toc-backref" href="#id7">4 ros2 topic echo</a><a class="headerlink" href="#ros2-topic-echo" title="永久链接至标题"></a></h3>
-<p>To see the data being published on a topic, use:</p>
+<p>要查看某个主题上发布的数据，请使用：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic echo &lt;topic_name&gt;</span>
 </pre></div>
 </div>
-<p>Since we know that <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> publishes data to <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> over the <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> topic, let’s use <code class="docutils literal notranslate"><span class="pre">echo</span></code> to introspect on that topic:</p>
+<p>因为我们知道 <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> 通过 <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> 主题将数据发布到 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code>，所以让我们使用 <code class="docutils literal notranslate"><span class="pre">echo</span></code> 对该主题进行内测：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic echo /turtle1/cmd_vel</span>
 </pre></div>
 </div>
-<p>At first, this command won’t return any data.
-That’s because it’s waiting for <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> to publish something.</p>
-<p>Return to the terminal where <code class="docutils literal notranslate"><span class="pre">turtle_teleop_key</span></code> is running and use the arrows to move the turtle around.
-Watch the terminal where your <code class="docutils literal notranslate"><span class="pre">echo</span></code> is running at the same time, and you’ll see position data being published for every movement you make:</p>
+<p>起初，这个命令不会返回任何数据。这是因为它正在等待 <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> 发布一些内容。</p>
+<p>返回 <code class="docutils literal notranslate"><span class="pre">turtle_teleop_key</span></code> 运行的终端，使用箭头移动海龟。观察你的 <code class="docutils literal notranslate"><span class="pre">echo</span></code> 同时运行的终端，你会看到你做的每一个动作都会发布位置数据：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">linear:</span>
 <span class="go">  x: 2.0</span>
 <span class="go">  y: 0.0</span>
@@ -407,19 +401,18 @@ Watch the terminal where your <code class="docutils literal notranslate"><span c
 <span class="go">  ---</span>
 </pre></div>
 </div>
-<p>Now return to rqt_graph and uncheck the <strong>Debug</strong> box.</p>
+<p>现在返回到 <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code> 并取消 <strong>Debug</strong> 框。</p>
 <img alt="../../_images/debug.png" src="../../_images/debug.png" />
-<p><code class="docutils literal notranslate"><span class="pre">/_ros2cli_26646</span></code> is the node created by the <code class="docutils literal notranslate"><span class="pre">echo</span></code> we just ran (the number might be different).
-Now you can see that the publisher is publishing data over the <code class="docutils literal notranslate"><span class="pre">cmd_vel</span></code> topic, and two subscribers are subscribed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">/_ros2cli_26646</span></code> 是刚才运行的 <code class="docutils literal notranslate"><span class="pre">echo</span></code> 创建的节点（数字可能不同）。现在您可以看到发布者正在 <code class="docutils literal notranslate"><span class="pre">cmd_vel</span></code> 主题上发布数据，并且订阅了两个订阅者。</p>
 </div>
 <div class="section" id="ros2-topic-info">
 <h3><a class="toc-backref" href="#id8">5 ros2 topic info</a><a class="headerlink" href="#ros2-topic-info" title="永久链接至标题"></a></h3>
-<p>Topics don’t have to only be point-to-point communication; it can be one-to-many, many-to-one, or many-to-many.</p>
-<p>Another way to look at this is running:</p>
+<p>主题不必只是点对点的交流；它可以是一对多、多对一或多对多。</p>
+<p>另一种看待这个问题的方式是运行：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic info /turtle1/cmd_vel</span>
 </pre></div>
 </div>
-<p>Which will return:</p>
+<p>这将返回：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Type: geometry_msgs/msg/Twist</span>
 <span class="go">Publisher count: 1</span>
 <span class="go">Subscription count: 2</span>
@@ -428,19 +421,17 @@ Now you can see that the publisher is publishing data over the <code class="docu
 </div>
 <div class="section" id="ros2-interface-show">
 <h3><a class="toc-backref" href="#id9">6 ros2 interface show</a><a class="headerlink" href="#ros2-interface-show" title="永久链接至标题"></a></h3>
-<p>Nodes send data over topics using messages.
-Publishers and subscribers must send and receive the same type of message to communicate.</p>
-<p>The topic types we saw earlier after running <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">list</span> <span class="pre">-t</span></code> let us know what message type is used on each topic.
-Recall that the <code class="docutils literal notranslate"><span class="pre">cmd_vel</span></code> topic has the type:</p>
+<p>节点使用消息通过主题发送数据。发布者和订阅者必须发送和接收相同类型的消息进行通信。</p>
+<p>在运行 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">list</span> <span class="pre">-t</span></code> 之后，我们看到的主题类型让我们知道每个主题使用的消息类型。回想一下 <code class="docutils literal notranslate"><span class="pre">cmd_vel</span></code> 主题的类型：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">geometry_msgs/msg/Twist</span>
 </pre></div>
 </div>
-<p>This means that in the package <code class="docutils literal notranslate"><span class="pre">geometry_msgs</span></code> there is a <code class="docutils literal notranslate"><span class="pre">msg</span></code> called <code class="docutils literal notranslate"><span class="pre">Twist</span></code>.</p>
-<p>Now we can run <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">interface</span> <span class="pre">show</span> <span class="pre">&lt;msg</span> <span class="pre">type&gt;</span></code> on this type to learn its details, specifically, what structure of data the message expects.</p>
+<p>这意味着在包 <code class="docutils literal notranslate"><span class="pre">geometry_msgs</span></code> 中有一个名为 <code class="docutils literal notranslate"><span class="pre">Twist</span></code> 的 <code class="docutils literal notranslate"><span class="pre">msg</span></code>。</p>
+<p>现在我们可以在这个类型上运行 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">interface</span> <span class="pre">show</span> <span class="pre">&lt;msg</span> <span class="pre">type&gt;</span></code> 来了解它的详细信息，特别是消息所期望的数据结构。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 interface show geometry_msgs/msg/Twist</span>
 </pre></div>
 </div>
-<p>For the message type from above it yields:</p>
+<p>对于上面的消息类型，它会产生：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>This expresses velocity <span class="k">in</span> free space broken into its linear and angular parts.
 
 <span class="go">    Vector3  linear</span>
@@ -453,8 +444,7 @@ Recall that the <code class="docutils literal notranslate"><span class="pre">cmd
 <span class="go">            float64 z</span>
 </pre></div>
 </div>
-<p>This tells you that the <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> node is expecting a message with two vectors, <code class="docutils literal notranslate"><span class="pre">linear</span></code> and <code class="docutils literal notranslate"><span class="pre">angular</span></code>, of three elements each.
-If you recall the data we saw <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> passing to <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> with the <code class="docutils literal notranslate"><span class="pre">echo</span></code> command, it’s in the same structure:</p>
+<p>这告诉您 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 节点需要一个带有两个向量（<code class="docutils literal notranslate"><span class="pre">linear</span></code> 和 <code class="docutils literal notranslate"><span class="pre">angular</span></code>）的消息，每个向量有三个元素。如果你回想一下我们看到的 <code class="docutils literal notranslate"><span class="pre">/teleop_turtle</span></code> 通过 <code class="docutils literal notranslate"><span class="pre">echo</span></code> 命令传递给 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 的数据，它的结构是相同的：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">linear:</span>
 <span class="go">  x: 2.0</span>
 <span class="go">  y: 0.0</span>
@@ -469,70 +459,63 @@ If you recall the data we saw <code class="docutils literal notranslate"><span c
 </div>
 <div class="section" id="ros2-topic-pub">
 <h3><a class="toc-backref" href="#id10">7 ros2 topic pub</a><a class="headerlink" href="#ros2-topic-pub" title="永久链接至标题"></a></h3>
-<p>Now that you have the message structure, you can publish data onto a topic directly from the command line using:</p>
+<p>现在你有了消息结构，你可以直接从命令行发布数据到主题使用：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic pub &lt;topic_name&gt; &lt;msg_type&gt; &#39;&lt;args&gt;&#39;</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">'&lt;args&gt;'</span></code> argument is the actual data you’ll pass to the topic, in the structure you just discovered in the previous section.</p>
-<p>It’s important to note that this argument needs to be input in YAML syntax.
-Input the full command like so:</p>
+<p><code class="docutils literal notranslate"><span class="pre">'&lt;args&gt;'</span></code> 参数是您将传递给主题的实际数据，在上一节中您刚刚发现的结构中。</p>
+<p>需要注意的是，这个参数需要在 YAML 语法中输入。像这样输入完整的命令：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist &quot;{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}&quot;</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">--once</span></code> is an optional argument meaning “publish one message then exit”.</p>
-<p>You will receive the following message in the terminal:</p>
+<p><code class="docutils literal notranslate"><span class="pre">--once</span></code> 是一个可选参数，表示“发布一条消息然后退出”。</p>
+<p>您将在终端收到以下信息：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">publisher: beginning loop</span>
 <span class="go">publishing #1: geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=2.0, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=1.8))</span>
 </pre></div>
 </div>
-<p>And you will see your turtle move like so:</p>
+<p>你会看到你的海龟像这样移动：</p>
 <img alt="../../_images/pub_once.png" src="../../_images/pub_once.png" />
-<p>The turtle (and commonly the real robots which it is meant to emulate) require a steady stream of commands to operate continuously.
-So, to get the turtle to keep moving, you can run:</p>
+<p>turtle（通常是它要模拟的真正的机器人）需要稳定的指令流来持续操作。所以，为了让 turtle 继续移动，你可以：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic pub --rate 1 /turtle1/cmd_vel geometry_msgs/msg/Twist &quot;{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}&quot;</span>
 </pre></div>
 </div>
-<p>The difference here is the removal of the <code class="docutils literal notranslate"><span class="pre">--once</span></code> option and the addition of the <code class="docutils literal notranslate"><span class="pre">--rate</span> <span class="pre">1</span></code> option, which tells <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">pub</span></code> to publish the command in a steady stream at 1 Hz.</p>
+<p>这里的区别在于删除了 <code class="docutils literal notranslate"><span class="pre">--once</span></code> 选项并添加了 <code class="docutils literal notranslate"><span class="pre">--rate</span> <span class="pre">1</span></code> 选项，该选项告诉 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">pub</span></code> 以 1Hz 的稳定流发布命令。</p>
 <img alt="../../_images/pub_stream.png" src="../../_images/pub_stream.png" />
-<p>You can refresh rqt_graph to see what’s happening graphically.
-You will see the <code class="docutils literal notranslate"><span class="pre">ros</span> <span class="pre">2</span> <span class="pre">topic</span> <span class="pre">pub</span> <span class="pre">...</span></code> node (<code class="docutils literal notranslate"><span class="pre">/_ros2cli_30358</span></code>) is publishing over the <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> topic, and is being received by both the <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">echo</span> <span class="pre">...</span></code> node (<code class="docutils literal notranslate"><span class="pre">/_ros2cli_26646</span></code>) and the <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> node now.</p>
+<p>您可以刷新 <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code> 以查看图形化的方式发生了什么。你会看到 <code class="docutils literal notranslate"><span class="pre">ros</span> <span class="pre">2</span> <span class="pre">topic</span> <span class="pre">pub</span> <span class="pre">...</span></code> 节点（<code class="docutils literal notranslate"><span class="pre">/_ros2cli_30358</span></code>）在 <code class="docutils literal notranslate"><span class="pre">/turtle1/cmd_vel</span></code> 主题上发布，并且被两个 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">echo</span> <span class="pre">...</span></code> 节点（<code class="docutils literal notranslate"><span class="pre">/_ros2cli_26646</span></code>）和 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 节点接收。</p>
 <img alt="../../_images/rqt_graph2.png" src="../../_images/rqt_graph2.png" />
-<p>Finally, you can run <code class="docutils literal notranslate"><span class="pre">echo</span></code> on the <code class="docutils literal notranslate"><span class="pre">pose</span></code> topic and recheck rqt_graph:</p>
+<p>最后，您可以在 <code class="docutils literal notranslate"><span class="pre">pose</span></code> 主题上运行 <code class="docutils literal notranslate"><span class="pre">echo</span></code>，并重新检查 <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code>：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic echo /turtle1/pose</span>
 </pre></div>
 </div>
 <img alt="../../_images/rqt_graph3.png" src="../../_images/rqt_graph3.png" />
-<p>You can see that the <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> node is also publishing to the <code class="docutils literal notranslate"><span class="pre">pose</span></code> topic, which the new <code class="docutils literal notranslate"><span class="pre">echo</span></code> node is subscribed to.</p>
+<p>可以看到 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 节点也发布到 <code class="docutils literal notranslate"><span class="pre">pose</span></code> 主题，新 <code class="docutils literal notranslate"><span class="pre">echo</span></code> 节点订阅了该主题。</p>
 </div>
 <div class="section" id="ros2-topic-hz">
 <h3><a class="toc-backref" href="#id11">8 ros2 topic hz</a><a class="headerlink" href="#ros2-topic-hz" title="永久链接至标题"></a></h3>
-<p>For one last introspection on this process, you can view the rate at which data is published using:</p>
+<p>关于这个过程的最后一个自省，你可以查看数据发布的速率，使用：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ros2 topic hz /turtle1/pose</span>
 </pre></div>
 </div>
-<p>It will return data on the rate at which the <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> node is publishing data to the <code class="docutils literal notranslate"><span class="pre">pose</span></code> topic.</p>
+<p>它将返回 <code class="docutils literal notranslate"><span class="pre">/turtlesim</span></code> 节点将数据发布到 <code class="docutils literal notranslate"><span class="pre">pose</span></code> 主题的速率。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">average rate: 59.354</span>
 <span class="go">  min: 0.005s max: 0.027s std dev: 0.00284s window: 58</span>
 </pre></div>
 </div>
-<p>Recall that you set the rate of <code class="docutils literal notranslate"><span class="pre">turtle1/cmd_vel</span></code> to publish at a steady 1 Hz using <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">pub</span> <span class="pre">--rate</span> <span class="pre">1</span></code>.
-If you run the above command with <code class="docutils literal notranslate"><span class="pre">turtle1/cmd_vel</span></code> instead of <code class="docutils literal notranslate"><span class="pre">turtle1/pose</span></code>, you will see an average reflecting that rate.</p>
+<p>回想一下，您使用 <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">pub</span> <span class="pre">--rate</span> <span class="pre">1</span></code> 将 <code class="docutils literal notranslate"><span class="pre">turtle1/cmd_vel</span></code> 的速率设置为以稳定的 1Hz 发布。如果使用 <code class="docutils literal notranslate"><span class="pre">turtle1/cmd_vel</span></code> 而不是 <code class="docutils literal notranslate"><span class="pre">turtle1/pose</span></code> 运行上面的命令，您将看到反映该速率的平均值。</p>
 </div>
 <div class="section" id="clean-up">
-<h3><a class="toc-backref" href="#id12">9 Clean up</a><a class="headerlink" href="#clean-up" title="永久链接至标题"></a></h3>
-<p>At this point you’ll have a lot of nodes running.
-Don’t forget to stop them by entering <code class="docutils literal notranslate"><span class="pre">Ctrl+C</span></code> in each terminal.</p>
+<h3><a class="toc-backref" href="#id12">9 清理</a><a class="headerlink" href="#clean-up" title="永久链接至标题"></a></h3>
+<p>此时，您将有许多节点在运行。不要忘记在每个终端输入 {kbd}`Ctrl`+{kbd}`C`来阻止它们。</p>
 </div>
 </div>
 <div class="section" id="summary">
-<h2><a class="toc-backref" href="#id13">Summary</a><a class="headerlink" href="#summary" title="永久链接至标题"></a></h2>
-<p>Nodes publish information over topics, which allows any number of other nodes to subscribe to and access that information.
-In this tutorial you examined the connections between several nodes over topics using rqt_graph and command line tools.
-You should now have a good idea of how data moves around a ROS 2 system.</p>
+<h2><a class="toc-backref" href="#id13">小结</a><a class="headerlink" href="#summary" title="永久链接至标题"></a></h2>
+<p>节点通过主题发布信息，这允许任意数量的其他节点订阅和访问该信息。在本教程中，您使用 <code class="docutils literal notranslate"><span class="pre">rqt_graph</span></code> 和命令行工具研究了多个节点之间的主题连接。现在您应该对数据如何在 ROS 2 系统中移动有了很好的了解。</p>
 </div>
 <div class="section" id="next-steps">
-<h2><a class="toc-backref" href="#id14">Next steps</a><a class="headerlink" href="#next-steps" title="永久链接至标题"></a></h2>
-<p>Next you’ll learn about another communication type in the ROS graph with the tutorial <a class="reference internal" href="../Services/Understanding-ROS2-Services.html"><span class="doc">Understanding ROS 2 services</span></a></p>
+<h2><a class="toc-backref" href="#id14">下一步</a><a class="headerlink" href="#next-steps" title="永久链接至标题"></a></h2>
+<p>接下来你将通过教程了解 ROS graph 中的另一种通信类型 <a class="reference internal" href="../Services/Understanding-ROS2-Services.html"><span class="doc">理解 ROS2 服务</span></a></p>
 </div>
 </div>
 
@@ -541,8 +524,8 @@ You should now have a good idea of how data moves around a ROS 2 system.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../Understanding-ROS2-Nodes.html" class="btn btn-neutral float-left" title="Understanding ROS 2 nodes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="../Services/Understanding-ROS2-Services.html" class="btn btn-neutral float-right" title="Understanding ROS 2 services" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../Understanding-ROS2-Nodes.html" class="btn btn-neutral float-left" title="理解 ROS2 节点" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../Services/Understanding-ROS2-Services.html" class="btn btn-neutral float-right" title="理解 ROS2 服务" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
