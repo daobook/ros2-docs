@@ -480,7 +480,7 @@ msgstr ""
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:529
 msgid "Enter ``Ctrl+C`` in each terminal to stop the nodes from spinning."
-msgstr "在每个终端中输入 {kbd}`Ctrl`+{kbd}`C`，停止节点旋转。"
+msgstr "在每个终端中输入 `Ctrl+C`，停止节点旋转。"
 
 #: ../../source/Tutorials/Writing-A-Simple-Cpp-Publisher-And-Subscriber.rst:532
 msgid "Summary"

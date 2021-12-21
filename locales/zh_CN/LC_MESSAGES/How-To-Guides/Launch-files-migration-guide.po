@@ -2,7 +2,7 @@
 # Copyright (C) 2021, Open Robotics
 # This file is distributed under the same license as the ROS 2 documentation
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# xinetzone <735613050@qq.com>, 2021.
 #
 #, fuzzy
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 10:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: xinetzone <735613050@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,31 +20,34 @@ msgstr ""
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:9
 msgid "Migrating launch files from ROS 1 to ROS 2"
-msgstr ""
+msgstr "将启动文件从 ROS 1 迁移到 ROS 2"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:13
 msgid "Table of Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:15
 msgid ""
 "This guide describes how to write XML launch files for an easy migration "
 "from ROS 1."
 msgstr ""
+"本指南介绍了如何编写 XML 启动文件，以便轻松地从 ROS 1.X 迁移。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:18
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:20
 msgid ""
 "A description of the ROS 2 launch system and its Python API can be found "
 "in :doc:`Launch System tutorial <../Tutorials/Launch-system>`."
 msgstr ""
+"关于 ROS 2 launch 系统及其 Python API 的描述可以在 :doc:`launch 系统教程 "
+"<../Tutorials/Launch-system>` 中找到。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:24
 msgid "Migrating tags from ROS 1 to ROS 2"
-msgstr ""
+msgstr "将标签从 ROS 1 迁移到 ROS 2"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:27
 msgid "launch"
@@ -52,11 +55,11 @@ msgstr ""
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:29
 msgid "`Available in ROS 1 <https://wiki.ros.org/roslaunch/XML/launch>`__."
-msgstr ""
+msgstr "`在 ROS 1 中可用 <https://wiki.ros.org/roslaunch/XML/launch>`__。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:30
 msgid "``launch`` is the root element of any ROS 2 launch XML file."
-msgstr ""
+msgstr "``launch`` 是任何 ROS 2 launch XML 文件的根元素。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:33
 msgid "node"
@@ -64,32 +67,33 @@ msgstr ""
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:35
 msgid "`Available in ROS 1 <https://wiki.ros.org/roslaunch/XML/node>`__."
-msgstr ""
+msgstr "`在 ROS 1 中可用 <https://wiki.ros.org/roslaunch/XML/node>`__。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:36
 msgid "Launches a new node."
-msgstr ""
+msgstr "启动一个新的节点。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:40
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:184
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:200
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:265
 msgid "Differences from ROS 1:"
-msgstr ""
+msgstr "与 ROS 1 的区别："
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:38
 msgid "``type`` attribute is now ``exec``."
-msgstr ""
+msgstr "``type`` 属性现在是 ``exec``。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:39
 msgid "``ns`` attribute is now ``namespace``."
-msgstr ""
+msgstr "``ns`` 属性现在是 ``namespace``。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:40
 msgid ""
 "The following attributes aren't available: ``machine``, ``respawn``, "
 "``respawn_delay``, ``clear_params``."
 msgstr ""
+"以下属性不可用：``machine``、``respawn``、``respawn_delay``、``clear_params``。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:43
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:62
@@ -100,7 +104,7 @@ msgstr ""
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:268
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:341
 msgid "Example"
-msgstr ""
+msgstr "示例"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:53
 msgid "param"
@@ -108,11 +112,11 @@ msgstr ""
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:55
 msgid "`Available in ROS 1 <https://wiki.ros.org/roslaunch/XML/param>`__."
-msgstr ""
+msgstr "`ROS 1 可得到 <https://wiki.ros.org/roslaunch/XML/param>`__。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:56
 msgid "Used for passing a parameter to a node."
-msgstr ""
+msgstr "用于向一个节点传递参数。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:57
 msgid ""
@@ -121,15 +125,18 @@ msgid ""
 "in ROS 2: ``type``, ``textfile``, ``binfile``, ``executable``, "
 "``command``."
 msgstr ""
+"在 ROS 2 中没有全局参数的概念。"
+"由于这个原因，它只能嵌套在 ``node`` 标签中使用。"
+"有些属性在 ROS 2 中不被支持：``type``、``textfile``、``binfile``、``executable``、``command``。"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:73
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:391
 msgid "Type inference rules"
-msgstr ""
+msgstr "类型推论规则"
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:75
 msgid "Here are some examples of how to write parameters:"
-msgstr ""
+msgstr "这里有一些如何写参数的例子："
 
 #: ../../source/How-To-Guides/Launch-files-migration-guide.rst:103
 msgid "Parameter grouping"
