@@ -39,8 +39,7 @@ def count_packets(filename):
     command += ' (rtps.sm.rdEntityId == 0x000201C4))" | wc -l'
 
     res = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
-    n_packets = int(res.communicate()[0].decode().rstrip())
-    return n_packets
+    return int(res.communicate()[0].decode().rstrip())
 
 
 if __name__ == '__main__':
@@ -57,10 +56,7 @@ if __name__ == '__main__':
             print('Cannot find file {}'.format(f))
             continue
 
-        protocol = 'Simple'
-        if 'server' in f:
-            protocol = 'Discovery Server'
-
+        protocol = 'Discovery Server' if 'server' in f else 'Simple'
         protocols.append(protocol)
         packets.append(count_packets(f))
 

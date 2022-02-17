@@ -190,13 +190,17 @@ class RedirectFrom(Directive):
             ))[0]: redirect_urls
             for document_path, redirect_urls in cls.redirections.items()
         }
-        redirection_conflict = next((
-            (canon_1, canon_2, redirs_1.intersection(redirs_2))
-            for (canon_1, redirs_1), (canon_2, redirs_2)
-            in itertools.combinations(redirections.items(), 2)
-            if redirs_1.intersection(redirs_2)
-        ), None)
-        if redirection_conflict:
+        if redirection_conflict := next(
+            (
+                (canon_1, canon_2, redirs_1.intersection(redirs_2))
+                for (canon_1, redirs_1), (
+                    canon_2,
+                    redirs_2,
+                ) in itertools.combinations(redirections.items(), 2)
+                if redirs_1.intersection(redirs_2)
+            ),
+            None,
+        ):
             canonical_url_1, canonical_url_2 = redirection_conflict[:2]
             conflicting_redirect_urls = redirection_conflict[-1]
             raise RuntimeError(
@@ -210,8 +214,7 @@ class RedirectFrom(Directive):
             for redirect_urls in redirections.values()
             for redirect_url in redirect_urls
         }
-        conflicting_urls = all_canonical_urls.intersection(all_redirect_urls)
-        if conflicting_urls:
+        if conflicting_urls := all_canonical_urls.intersection(all_redirect_urls):
             raise RuntimeError(
                 'Some redirects conflict with existing documents: {}'.format(
                     conflicting_urls

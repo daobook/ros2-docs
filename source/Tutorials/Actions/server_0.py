@@ -17,8 +17,7 @@ class FibonacciActionServer(Node):
 
     def execute_callback(self, goal_handle):
         self.get_logger().info('Executing goal...')
-        result = Fibonacci.Result()
-        return result
+        return Fibonacci.Result()
 
 
 def main(args=None):

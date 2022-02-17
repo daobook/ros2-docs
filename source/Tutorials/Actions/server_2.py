@@ -20,8 +20,10 @@ class FibonacciActionServer(Node):
 
         sequence = [0, 1]
 
-        for i in range(1, goal_handle.request.order):
-            sequence.append(sequence[i] + sequence[i-1])
+        sequence.extend(
+            sequence[i] + sequence[i - 1]
+            for i in range(1, goal_handle.request.order)
+        )
 
         goal_handle.succeed()
 
